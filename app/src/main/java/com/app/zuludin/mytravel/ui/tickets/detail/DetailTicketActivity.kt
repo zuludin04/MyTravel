@@ -1,0 +1,72 @@
+package com.app.zuludin.mytravel.ui.tickets.detail
+
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
+import android.view.MenuItem
+import com.app.zuludin.mytravel.R
+import com.app.zuludin.mytravel.data.model.remote.CarRental
+import com.app.zuludin.mytravel.data.model.remote.Flight
+import com.app.zuludin.mytravel.data.model.remote.Hotel
+import com.app.zuludin.mytravel.data.model.remote.Train
+import com.app.zuludin.mytravel.ui.tickets.detail.flight.DetailFlightFragment
+import com.app.zuludin.mytravel.ui.tickets.detail.hotel.DetailHotelFragment
+import com.app.zuludin.mytravel.ui.tickets.detail.rental.DetailRentalFragment
+import com.app.zuludin.mytravel.ui.tickets.detail.train.DetailTrainFragment
+import com.app.zuludin.mytravel.utils.addFragment
+import com.app.zuludin.mytravel.utils.toolbarTitle
+import kotlinx.android.synthetic.main.detail_ticket_activity.*
+
+class DetailTicketActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.detail_ticket_activity)
+
+        val pageTitle = intent.getStringExtra(DETAIL_PAGE_TITLE)
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        setupFragment(pageTitle)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) finish()
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setupFragment(fragmentConst: String) {
+        when (fragmentConst) {
+            "Flight" -> {
+                val flight: Flight = intent.getParcelableExtra(DETAIL_DATA)
+                toolbarTitle("${flight.originCode} - ${flight.destinationCode}")
+                initializeFragment(DetailFlightFragment.getInstance(flight))
+            }
+            "Hotel" -> {
+                val hotel: Hotel = intent.getParcelableExtra(DETAIL_DATA)
+                toolbarTitle(hotel.hotelName.toString())
+                initializeFragment(DetailHotelFragment.getInstance(hotel))
+            }
+            "Train" -> {
+                val train: Train = intent.getParcelableExtra(DETAIL_DATA)
+                toolbarTitle("${train.codeOrigin} - ${train.codeDestination}")
+                initializeFragment(DetailTrainFragment.getInstance(train))
+            }
+            "Rental" -> {
+                val rental: CarRental = intent.getParcelableExtra(DETAIL_DATA)
+                toolbarTitle(rental.carName.toString())
+                initializeFragment(DetailRentalFragment.getInstance(rental))
+            }
+        }
+    }
+
+    private fun initializeFragment(fragment: Fragment) {
+        addFragment(fragment, R.id.frame_container)
+    }
+
+    companion object {
+        const val DETAIL_PAGE_TITLE = "detailPageTitle"
+        const val DETAIL_DATA = "detailData"
+    }
+}

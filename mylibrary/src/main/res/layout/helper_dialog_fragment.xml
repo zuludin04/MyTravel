@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/top_bar"
+            android:background="@color/secondaryColor">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:tint="@color/white"
+                android:id="@+id/close_page"
+                android:padding="16dp"
+                android:contentDescription="@null"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Airport"
+                android:id="@+id/dialog_title"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/close_page"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_helper"
+            android:layout_below="@+id/top_bar"
+            android:visibility="gone"
+            android:background="@android:color/white"
+            android:clipToPadding="false"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_bar"
+            android:id="@+id/calendar"
+            android:visibility="gone"
+            android:background="@color/white">
+
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendar_view"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/cancel_button"
+                    android:background="@android:color/transparent"
+                    android:text="@string/cancel"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/confirm_button"
+                    android:background="@color/secondaryColor"
+                    android:textColor="@color/white"
+                    android:text="@string/confirm"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

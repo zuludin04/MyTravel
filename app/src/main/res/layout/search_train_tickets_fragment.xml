@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Origin"
+            app:dropdownItem="Initial station"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/origin_station"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"/>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Destination"
+            android:layout_below="@+id/origin_station"
+            app:dropdownItem="Arrival station"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/destination_station"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Departure"
+            app:dropdownItem="03 Jan 2018"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/departure_date"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/destination_station"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passengers"
+            android:layout_below="@+id/departure_date"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:paddingStart="8dp"
+            android:id="@+id/pass"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/primaryTextColor"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/pass"
+            android:id="@+id/passenger">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Adult"
+                app:dropdownMode="true"
+                app:dropdownItem="1"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/adult"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Child"
+                app:dropdownMode="true"
+                app:dropdownItem="0"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/child"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Seat"
+            app:dropdownItem="Pick seat"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/seat_class"
+            android:layout_below="@+id/passenger"
+            app:dropdownMode="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:id="@+id/search_ticket"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>

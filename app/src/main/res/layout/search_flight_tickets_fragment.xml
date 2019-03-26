@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Origin"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:dropdownItem="Initial airport"
+            app:dropdownIcon="@drawable/ic_flight_origin"
+            android:id="@+id/origin_airport"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:dropdownLabel="Destination"
+            app:layout_constraintTop_toBottomOf="@+id/origin_airport"
+            app:dropdownItem="Arrival airport"
+            app:dropdownIcon="@drawable/ic_flight_destination"
+            android:id="@+id/destination_airport"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/destination_airport"
+            android:layout_marginTop="8dp"
+            android:id="@+id/date"
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:animateLayoutChanges="true">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Departure"
+                app:dropdownItem="03 Jan 2018"
+                app:dropdownIcon="@drawable/ic_flight_departure"
+                android:id="@+id/departure_date"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Arrival"
+                android:visibility="gone"
+                app:dropdownItem="04 Jan 2018"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/last_date"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passengers"
+            app:layout_constraintTop_toBottomOf="@+id/date"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:paddingStart="8dp"
+            android:id="@+id/pass"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/primaryTextColor"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/pass"
+            android:id="@+id/input_pass"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Adult"
+                app:dropdownItem="1"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_passenger"
+                android:id="@+id/adult"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Child"
+                app:dropdownItem="0"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_passenger"
+                android:id="@+id/child"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Infant"
+                app:dropdownItem="0"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_passenger"
+                android:id="@+id/infant"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Seat Class"
+            app:layout_constraintTop_toBottomOf="@+id/input_pass"
+            app:dropdownItem="Pick seat class"
+            app:dropdownIcon="@drawable/ic_seat_class"
+            android:id="@+id/seat_class"
+            app:dropdownMode="true"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAllCaps="false"
+            android:id="@+id/search_ticket"
+            android:background="@color/secondaryDarkColor"
+            android:textColor="@color/white"/>
+</android.support.constraint.ConstraintLayout>

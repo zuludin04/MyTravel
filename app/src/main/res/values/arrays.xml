@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="explore_title">
+        <item>Flight</item>
+        <item>Hotel</item>
+        <item>Train</item>
+        <item>Rental</item>
+        <item>Food</item>
+        <item>Top Up</item>
+    </string-array>
+
+    <array name="explore_icon">
+        <item>@drawable/ic_airplane</item>
+        <item>@drawable/ic_hotel</item>
+        <item>@drawable/ic_train_menu</item>
+        <item>@drawable/ic_taxi</item>
+        <item>@drawable/ic_breakfast</item>
+        <item>@drawable/ic_vacations</item>
+    </array>
+
+    <string-array name="adult">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="child">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="night_stay">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="airport_class">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+        <item>Premium Economy</item>
+    </string-array>
+
+    <string-array name="car_seat">
+        <item>All</item>
+        <item>4 seats</item>
+        <item>5 – 6 seats</item>
+        <item>More 6 seats</item>
+    </string-array>
+
+    <string-array name="room_hotel">
+        <item>1 Room</item>
+        <item>2 Room</item>
+        <item>3 Room</item>
+        <item>4 Room</item>
+        <item>5 Room</item>
+    </string-array>
+
+    <string-array name="guest_hotel">
+        <item>1 Guest</item>
+        <item>2 Guest</item>
+        <item>3 Guest</item>
+        <item>4 Guest</item>
+    </string-array>
+
+    <string-array name="rental_duration">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="payment_name">
+        <item>Credit Card</item>
+        <item>ATM</item>
+        <item>Bank Transfer</item>
+        <item>M-Banking</item>
+        <item>Merchant 01</item>
+        <item>Merchant 02</item>
+    </string-array>
+
+    <string-array name="payment_description">
+        <item>Pay with VISA, MasterCard, JCB or AMEX</item>
+        <item>Pay through ATM Bersama, Prima, or Alto</item>
+        <item>Pay from your nearest Bank</item>
+        <item>Pay using your phone</item>
+        <item>Pay from Merchant One</item>
+        <item>Pay via Merchant Two</item>
+    </string-array>
+
+    <string-array name="payment_icon">
+        <item>@drawable/ic_credit_card</item>
+        <item>@drawable/ic_atm</item>
+        <item>@drawable/ic_transfer</item>
+        <item>@drawable/ic_mbanking</item>
+        <item>@drawable/ic_merchant_1</item>
+        <item>@drawable/ic_merchant_2</item>
+    </string-array>
+
+    <string-array name="atm_transfer_banks">
+        <item>BCA</item>
+        <item>Mandiri</item>
+        <item>BRI</item>
+        <item>BNI</item>
+    </string-array>
+
+    <string-array name="mbanking_type">
+        <item>klikBCA</item>
+        <item>Mandiri Online</item>
+        <item>Mobile Banking BRI</item>
+        <item>BNI Mobile Banking</item>
+    </string-array>
+
+</resources>

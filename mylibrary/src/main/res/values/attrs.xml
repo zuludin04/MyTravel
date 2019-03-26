@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FloatingLabelDropdown">
+        <attr name="dropdownLabel" format="string"/>
+        <attr name="dropdownItem" format="string"/>
+        <attr name="dropdownIcon" format="reference"/>
+        <attr name="dropdownMode" format="boolean"/>
+    </declare-styleable>
+
+</resources>

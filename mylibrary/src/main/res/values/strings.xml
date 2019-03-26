@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string-array name="title">
+        <item>Mr</item>
+        <item>Mrs</item>
+    </string-array>
+
+    <string-array name="id_type">
+        <item>KTP</item>
+        <item>SIM</item>
+        <item>Passport</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

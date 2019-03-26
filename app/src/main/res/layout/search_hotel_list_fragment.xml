@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="City"
+            app:dropdownItem="Select region"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/hotel_city"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/date"
+            android:layout_below="@+id/hotel_city"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Check-In"
+                app:dropdownItem="03 Jan 2018"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/check_in_hotel"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Night"
+                app:dropdownItem="1"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/total_night"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Check-Out"
+            app:dropdownItem="04 Jan 2018"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/check_out_hotel"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/date"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/check_out_hotel"
+            android:id="@+id/passenger">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Room"
+                app:dropdownItem="1 Room"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/hotel_room"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Guest"
+                app:dropdownItem="1 Guest"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/hotel_guest"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:id="@+id/search_hotel"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>

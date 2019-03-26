@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Region"
+            app:dropdownItem="Select region"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/region_city"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/date"
+            android:layout_below="@+id/region_city"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp">
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Date"
+                app:dropdownItem="03 Jan 2018"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/rental_date"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+        <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dropdownLabel="Duration"
+                app:dropdownItem="1"
+                app:dropdownMode="true"
+                app:dropdownIcon="@drawable/ic_airplane"
+                android:id="@+id/rental_duration"
+                android:padding="8dp"
+                android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Pick-Up Time"
+            app:dropdownItem="13:00"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:id="@+id/car_pickup_time"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/date"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <com.app.zuludin.mylibrary.dropdown.FloatingLabelDropdown
+            android:id="@+id/car_seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dropdownLabel="Seat"
+            app:dropdownItem="All"
+            app:dropdownMode="true"
+            android:layout_marginBottom="8dp"
+            app:dropdownIcon="@drawable/ic_airplane"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/car_pickup_time"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:id="@+id/search_rental"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"/>
+</RelativeLayout>

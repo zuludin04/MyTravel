@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        app:cardElevation="3dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_airplane"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/divider"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/flight_logo"/>
+
+        <ImageView
+                android:contentDescription="@null"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintStart_toStartOf="@+id/origin_code"
+                android:padding="4dp"
+                android:tint="@android:color/darker_gray"
+                android:src="@drawable/ic_plane"
+                app:layout_constraintEnd_toEndOf="@+id/destination_code"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/divider"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="11:45"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/origin_time"
+                app:layout_constraintStart_toEndOf="@+id/flight_logo"
+                android:layout_marginStart="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="14:55"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/destination_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="SKH"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/origin_time"
+                android:layout_marginTop="2dp"
+                android:id="@+id/origin_code"
+                app:layout_constraintStart_toEndOf="@+id/flight_logo"
+                android:layout_marginStart="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="GNR"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:id="@+id/destination_code"
+                app:layout_constraintTop_toBottomOf="@+id/origin_time"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Tangerang"
+                android:textSize="15sp"
+                android:id="@+id/origin_city"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintTop_toBottomOf="@+id/origin_code"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toEndOf="@+id/flight_logo"
+                android:layout_marginStart="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Bali"
+                android:id="@+id/destination_city"
+                android:textSize="15sp"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintTop_toBottomOf="@+id/origin_code"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/origin_city"
+                android:layout_marginTop="4dp"
+                android:alpha=".5"
+                android:id="@+id/divider"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp 1.150.000"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold"
+                android:id="@+id/flight_price"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
