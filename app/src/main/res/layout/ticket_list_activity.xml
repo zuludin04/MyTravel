@@ -18,7 +18,8 @@
                 android:id="@+id/toolbar"
                 android:background="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways"
-                style="@style/ToolbarStyle"/>
+                android:theme="@style/ToolbarStyle"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     </android.support.design.widget.AppBarLayout>
 

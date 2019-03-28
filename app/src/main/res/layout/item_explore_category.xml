@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/category_image"
+                android:contentDescription="@null"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1"
+                app:layout_constraintTop_toTopOf="@+id/category_image"
+                app:layout_constraintEnd_toEndOf="@+id/category_image"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:id="@+id/category_total"/>
+
+        <TextView
+                android:id="@+id/category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/category_image"
+                app:layout_constraintBottom_toBottomOf="@+id/category_image"
+                tools:text="Category"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
