@@ -13,7 +13,10 @@ import com.app.zuludin.mytravel.data.model.remote.CarRental
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
 import com.app.zuludin.mytravel.utils.currencyText
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail_rental_fragment.view.*
+import java.lang.Exception
 
 /**
  * A simple [Fragment] subclass.
@@ -47,7 +50,20 @@ class DetailRentalFragment : Fragment() {
     private fun setupDetailLayout(view: View) {
         val rental: CarRental = arguments?.getParcelable(RENTAL_DATA)!!
 
-        view.rental_detail_image.setImageResource(rental.carImage!!)
+        Picasso.get()
+            .load(rental.carImage!!)
+            .noFade()
+            .into(view.rental_detail_image, object : Callback {
+                override fun onSuccess() {
+                    activity?.supportStartPostponedEnterTransition()
+                }
+
+                override fun onError(e: Exception?) {
+                    activity?.supportStartPostponedEnterTransition()
+                }
+            })
+
+//        view.rental_detail_image.setImageResource(rental.carImage!!)
         view.rental_detail_car.text = rental.carName
         view.rental_detail_rental.text = rental.rentalName
         view.rental_detail_rating.rating = rental.rentalRating?.toFloat()!!

@@ -16,8 +16,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:text="Book Ticket"
                 android:textStyle="bold"
                 android:id="@+id/list_title"/>

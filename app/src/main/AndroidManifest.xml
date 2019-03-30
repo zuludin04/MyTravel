@@ -43,6 +43,9 @@
         <activity
                 android:name=".ui.transaction.TransactionDetailActivity"
                 android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".ui.explore.ExploreDetailActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

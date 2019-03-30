@@ -2,7 +2,9 @@ package com.app.zuludin.mytravel.ui.main.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.ActivityOptionsCompat
 import android.support.v4.app.Fragment
+import android.support.v4.util.Pair
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +14,7 @@ import com.app.zuludin.mytravel.data.model.local.CategoryItem
 import com.app.zuludin.mytravel.data.model.local.CategoryList
 import com.app.zuludin.mytravel.data.model.local.ExploreItem
 import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
 import com.app.zuludin.mytravel.ui.tickets.search.SearchTravelActivity
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_explore_fragment.view.*
@@ -23,8 +26,20 @@ import kotlinx.android.synthetic.main.main_explore_fragment.view.*
 class MainExploreFragment : Fragment() {
 
     private val adapter = AdvancedSrvAdapter().apply {
-        addViewHolder(CategoryList::class, R.layout.item_horizontal_recycler) { CategoryListViewHolder(it) }
-        addViewHolder(ExploreList::class, R.layout.item_horizontal_recycler) { ExploreListViewHolder(it) }
+        addViewHolder(CategoryList::class, R.layout.item_horizontal_recycler) {
+            CategoryListViewHolder(it) { _, _ ->
+
+            }
+        }
+        addViewHolder(ExploreList::class, R.layout.item_horizontal_recycler) {
+            ExploreListViewHolder(it) { image, item ->
+                val intent = Intent(requireContext(), ExploreDetailActivity::class.java)
+                val pair: Pair<View, String> = Pair.create(image, getString(R.string.image_transition_name))
+                val options = ActivityOptionsCompat.makeSceneTransitionAnimation(activity!!, pair)
+                intent.putExtra("explore", item)
+                startActivity(intent, options.toBundle())
+            }
+        }
     }
 
     override fun onCreateView(
