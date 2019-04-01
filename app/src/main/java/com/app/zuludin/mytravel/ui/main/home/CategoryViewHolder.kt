@@ -38,7 +38,7 @@ class CategoryItemViewHolder(
     override fun bind(item: CategoryItem) {
         itemView.category_image.setImageResource(item.image)
         itemView.category_name.text = item.item
-        itemView.category_total.text = item.total
+//        itemView.category_total.text = item.total
         itemView.setOnClickListener { listener(item, adapterPosition) }
     }
 }

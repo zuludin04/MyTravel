@@ -98,9 +98,10 @@ class MainExploreFragment : Fragment() {
 
         val name = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
         val total = arrayListOf("30", "63", "43", "78", "72", "59", "120")
+        val icon = arrayListOf(R.drawable.beach, R.drawable.theme_park, R.drawable.museum, R.drawable.zoo, R.drawable.restaurant)
 
         for (i in name.indices) {
-            list.add(CategoryItem(R.drawable.bali, name[i], total[i]))
+            list.add(CategoryItem(icon[i], name[i], total[i]))
         }
 
         return CategoryList(list, "Category")

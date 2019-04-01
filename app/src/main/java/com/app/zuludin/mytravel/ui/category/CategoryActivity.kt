@@ -34,8 +34,10 @@ class CategoryActivity : AppCompatActivity() {
             override fun onPageScrolled(p0: Int, p1: Float, p2: Int) {}
 
             override fun onPageSelected(position: Int) {
+                val icon = arrayListOf(R.drawable.beach, R.drawable.theme_park, R.drawable.museum, R.drawable.zoo, R.drawable.restaurant)
                 val pagerCategory = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
                 toolbar_title.text = pagerCategory[position]
+                toolbar_image.setImageResource(icon[position])
             }
         })
     }
