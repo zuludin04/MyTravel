@@ -46,6 +46,9 @@
         <activity
                 android:name=".ui.explore.ExploreDetailActivity"
                 android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".ui.category.CategoryActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

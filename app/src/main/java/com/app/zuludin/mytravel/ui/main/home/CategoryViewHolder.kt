@@ -3,7 +3,6 @@ package com.app.zuludin.mytravel.ui.main.home
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import android.widget.ImageView
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.CategoryItem
 import com.app.zuludin.mytravel.data.model.local.CategoryList
@@ -14,7 +13,7 @@ import kotlinx.android.synthetic.main.item_horizontal_recycler.view.*
 
 class CategoryListViewHolder(
     itemView: View,
-    private val listener: (image: ImageView, item: CategoryItem) -> Unit
+    private val listener: (item: CategoryItem, position: Int) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<CategoryList> {
     private val adapter: BasicSrvAdapter by lazy {
         BasicSrvAdapter().apply {
@@ -34,12 +33,12 @@ class CategoryListViewHolder(
 
 class CategoryItemViewHolder(
     itemView: View,
-    private val listener: (image: ImageView, item: CategoryItem) -> Unit
+    private val listener: (item: CategoryItem, position: Int) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<CategoryItem> {
     override fun bind(item: CategoryItem) {
         itemView.category_image.setImageResource(item.image)
         itemView.category_name.text = item.item
         itemView.category_total.text = item.total
-        itemView.setOnClickListener { listener(itemView.category_image, item) }
+        itemView.setOnClickListener { listener(item, adapterPosition) }
     }
 }

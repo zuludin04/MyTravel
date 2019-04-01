@@ -12,12 +12,17 @@ import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.CategoryItem
 import com.app.zuludin.mytravel.data.model.local.CategoryList
-import com.app.zuludin.mytravel.data.model.local.ExploreItem
 import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.data.model.remote.TravelData
+import com.app.zuludin.mytravel.data.model.remote.TravelExplore
+import com.app.zuludin.mytravel.ui.category.CategoryActivity
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
 import com.app.zuludin.mytravel.ui.tickets.search.SearchTravelActivity
+import com.app.zuludin.mytravel.utils.JsonUtils
+import com.google.gson.GsonBuilder
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_explore_fragment.view.*
+import kotlin.random.Random
 
 /**
  * A simple [Fragment] subclass.
@@ -27,8 +32,12 @@ class MainExploreFragment : Fragment() {
 
     private val adapter = AdvancedSrvAdapter().apply {
         addViewHolder(CategoryList::class, R.layout.item_horizontal_recycler) {
-            CategoryListViewHolder(it) { _, _ ->
-
+            CategoryListViewHolder(it) { item, position ->
+                val intent = Intent(requireContext(), CategoryActivity::class.java)
+                intent.putExtra("category", item)
+                intent.putExtra("position", position)
+                startActivity(intent)
+                activity?.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
             }
         }
         addViewHolder(ExploreList::class, R.layout.item_horizontal_recycler) {
@@ -87,7 +96,7 @@ class MainExploreFragment : Fragment() {
     private fun categoryList(): CategoryList {
         val list: MutableList<CategoryItem> = mutableListOf()
 
-        val name = arrayListOf("Beach", "Theme Park", "Museum", "Beach", "Trip", "Zoo", "Restaurant")
+        val name = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
         val total = arrayListOf("30", "63", "43", "78", "72", "59", "120")
 
         for (i in name.indices) {
@@ -98,18 +107,32 @@ class MainExploreFragment : Fragment() {
     }
 
     private fun exploreItems(): List<ExploreList> {
-        val items: MutableList<ExploreItem> = mutableListOf()
+        val data = JsonUtils.readJsonFile(requireContext(), "explore.json")
+        val gson = GsonBuilder().setPrettyPrinting().create()
+        val travelData: TravelData = gson.fromJson(data, TravelData::class.java)
+
         val list: MutableList<ExploreList> = mutableListOf()
 
+        val random = Random(travelData.explore.size)
+
+        val recommendations: ArrayList<TravelExplore> = ArrayList(10)
         for (i in 1..10) {
-            items.add(ExploreItem(R.drawable.singapore, "Theme", "Anything"))
+            recommendations.add(travelData.explore[random.nextInt(travelData.explore.size)])
         }
 
-        val name = arrayListOf("Recommendations", "Top Spots", "Recent Places")
-
-        for (i in name.indices) {
-            list.add(ExploreList(items, name[i]))
+        val topSpot: ArrayList<TravelExplore> = ArrayList(10)
+        for (i in 1..10) {
+            topSpot.add(travelData.explore[random.nextInt(travelData.explore.size)])
         }
+
+        val recent: ArrayList<TravelExplore> = ArrayList(10)
+        for (i in 1..10) {
+            recent.add(travelData.explore[random.nextInt(travelData.explore.size)])
+        }
+
+        list.add(ExploreList(recommendations, "Recommendations"))
+        list.add(ExploreList(topSpot, "Top Spots"))
+        list.add(ExploreList(recent, "Recent Place"))
 
         return list
     }

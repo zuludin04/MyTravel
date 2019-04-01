@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
-    <string-array name="explore_title">
-        <item>Flight</item>
-        <item>Hotel</item>
-        <item>Train</item>
-        <item>Rental</item>
-        <item>Food</item>
-        <item>Top Up</item>
-    </string-array>
-
-    <array name="explore_icon">
-        <item>@drawable/ic_airplane</item>
-        <item>@drawable/ic_hotel</item>
-        <item>@drawable/ic_train_menu</item>
-        <item>@drawable/ic_taxi</item>
-        <item>@drawable/ic_breakfast</item>
-        <item>@drawable/ic_vacations</item>
-    </array>
 
     <string-array name="adult">
         <item>1</item>

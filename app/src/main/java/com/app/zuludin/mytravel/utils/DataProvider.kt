@@ -2,39 +2,9 @@ package com.app.zuludin.mytravel.utils
 
 import android.content.Context
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.local.Menu
 import com.app.zuludin.mytravel.data.model.remote.*
 
 object DataProvider {
-
-    fun exploresData(): List<Explore> {
-        val list: MutableList<Explore> = mutableListOf()
-
-        val rating = 4
-
-        for (i in 1..5) {
-            list.add(
-                Explore(
-                    R.drawable.bali,
-                    "Bali",
-                    "43 activities",
-                    rating.toFloat()
-                )
-            )
-        }
-
-        return list
-    }
-
-    fun foodsData(): List<Food> {
-        val list: MutableList<Food> = mutableListOf()
-
-        for (i in 1..4) {
-            list.add(Food(R.drawable.food, "Ayam Bakar", "Rp 250.000"))
-        }
-
-        return list
-    }
 
     fun hotelsData(
         city: String,
@@ -699,21 +669,6 @@ object DataProvider {
         return list
     }
 
-    fun menuList(context: Context): MutableList<Menu> {
-        val list: MutableList<Menu> = mutableListOf()
-
-        val titles = context.resources.getStringArray(R.array.explore_title)
-        val icons = context.resources.obtainTypedArray(R.array.explore_icon)
-
-        for (i in titles.indices) {
-            list.add(Menu(titles[i], icons.getResourceId(i, 0)))
-        }
-
-        icons.recycle()
-
-        return list
-    }
-
     fun dropdownList(context: Context, arrayList: Int): List<String> {
         val list: MutableList<String> = mutableListOf()
         val items = context.resources.getStringArray(arrayList)
@@ -779,11 +734,13 @@ object DataProvider {
                 }
             }
         } else {
-            transactions.addAll(arrayListOf(
-                "One",
-                "Two",
-                "Three"
-            ))
+            transactions.addAll(
+                arrayListOf(
+                    "One",
+                    "Two",
+                    "Three"
+                )
+            )
         }
 
         return transactions

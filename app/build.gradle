@@ -12,8 +12,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "BASE_URL", "\"http://api.apixu.com/v1/\""
-        buildConfigField "String", "TSDB_API_KEY", "\"555db5d75bcb4977a72100646191202\""
         multiDexEnabled true
     }
     buildTypes {
@@ -61,6 +59,8 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.transferwise:sequence-layout:1.0.7'
     implementation 'com.github.ganfra:material-spinner:2.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
     implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.4'
 
     implementation project(':mylibrary')

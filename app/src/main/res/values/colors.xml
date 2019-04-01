@@ -11,4 +11,5 @@
     <color name="black">#000000</color>
     <color name="blue">#4A98F7</color>
     <color name="inactiveColor">#424242</color>
+    <color name="placeholder_bg">#dddddd</color>
 </resources>

@@ -1,6 +1,7 @@
 package com.app.zuludin.mytravel.data.model.local
 
 import android.os.Parcelable
+import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -11,6 +12,6 @@ data class ExploreItem(
 ) : Parcelable
 
 data class ExploreList(
-    val explores: List<ExploreItem>,
+    val explores: List<TravelExplore>,
     val title: String
 )

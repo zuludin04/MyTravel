@@ -2,7 +2,7 @@ package com.app.zuludin.mytravel.data.model.remote
 
 import com.google.gson.annotations.SerializedName
 
-data class Forecast(
-    @SerializedName("forecastday")
-    val forecastday: List<ForecastDay>? = null
+data class TravelData(
+    @SerializedName("explore")
+    val explore: List<TravelExplore>
 )

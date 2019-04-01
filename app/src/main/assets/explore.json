@@ -1,0 +1,2304 @@
+{
+  "explore": [
+    {
+      "name": "Nihiwatu",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Pantai-Nihiwatu1.jpg?alt=media&token=259c9ef1-5397-4e79-ba11-0c7f9211a5d7",
+      "location": "Sumba, Nusa Tenggara Timur",
+      "open": "24 hours",
+      "rating": 4.8,
+      "category": "Beach",
+      "about": "Letaknya yang tersembunyi di balik sebuah hutan. Pantai sepanjang 2,5 kilometer ini dianggap sebagai surga yang belum tersentuh.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Raja Ampat",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Raja-Ampat.jpg?alt=media&token=fdf83ac8-253d-41af-a5f8-fda9c02d3224",
+      "location": "Papua Barat",
+      "open": "24 hours",
+      "rating": 4.5,
+      "category": "Beach",
+      "about": "Keindahan Raja Ampat telah kesohor hingga level dunia. Pesonanya memang luar biasa.Papua menjadi titik timur Indonesia. Sepertinya tak perlu dijelaskan lagi keindahan tempat ini.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Tomini Bay",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tomini-bay-gorontalo-bagus.jpg?alt=media&token=ca46f1b1-430c-4d42-a2c7-56a3255473cc",
+      "location": "Sulawesi Utara",
+      "open": "24 hours",
+      "rating": 4.2,
+      "category": "Beach",
+      "about": "Kejernihan air di sini membuat pantai ini sangat cocok untuk diving dan snorkeling. Tempat ini belum banyak dijamah. Pas banget untuk mencari inspirasi dan membuat pikiran jadi refresh.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pantai Ora",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Pantai-Ora-Surga-Tersembunyi-di-Maluku-Tengah.jpg?alt=media&token=a9d759c6-97d3-4611-8fda-3fa4d1c82d59",
+      "location": "Maluku Tengah",
+      "open": "24 hours",
+      "rating": 4.6,
+      "category": "Beach",
+      "about": "Pantai ini disebut sebagai Bora-Boranya Indonesia. Gak perlu jauh-jauh ke Bora-Bora, Polinesia Perancis, dan Maldives, Maluku Tengah punya pulau yang kalah indah dari semuanya.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pulau Belitung",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/KIAT%20PULAU%20BURUNG.jpg?alt=media&token=97b59d99-a96b-4b89-9d6d-9bffe1ad869b",
+      "location": "Kepulauan Bangka Belitung",
+      "open": "24 hours",
+      "rating": 3.8,
+      "category": "Beach",
+      "about": "Pulau Belitung memiliki berbagai pantai yang begitu indah dan menawan. Salah satunya Pantai Tanjung Tinggi. Pesonanya yang menakjubkan mulai dikenal dunia sejak dijadikan lokasi syuting film Laskar Pelangi.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Gili Trawangan",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/gili-trawangan.jpg?alt=media&token=53bd29da-f1e7-4192-8c13-0e43eb084863",
+      "location": "Lombok, Nusa Tenggara Barat",
+      "open": "24 hours",
+      "rating": 4.2,
+      "category": "Beach",
+      "about": "Nama ini pasti sudah gak asing lagi di telingamu. Tapi memang gak bisa dipungkiri, keindahan alam, pasir putih, dan suasana damai di Kepulauan Gili memang patut diacungi jempol.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pantai Senggigi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/keindahan-Pantai-Senggigi.jpg?alt=media&token=228a2598-b62a-4e1f-9239-4ac344d7005a",
+      "location": "Lombok, Bali",
+      "open": "24 hours",
+      "rating": 4.0,
+      "category": "Beach",
+      "about": "Pantai ini terletak di sebelah barat pesisir Pulau Lombok. Meski tidak sebesar Pantai Kuta di Bali, Pantai Sengigi dapat disandingkan keindahannya. Hamparan pasir putih sangat memanjakan mata Anda.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pantai Parangtritis",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Pantai-Parangtritis.jpg?alt=media&token=edb9d0d7-9991-471d-aae3-76115bb08824",
+      "location": "Yogyakarta",
+      "open": "24 hours",
+      "rating": 4.4,
+      "category": "Beach",
+      "about": "Pantai Parangtitis adalah pantai paling terkenal di Yogyakarta. Pantai Parangtritis terletak 27 km selatan Kota Yogyakarta.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pantai Bunaken",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bunaken_20171028_202821.jpg?alt=media&token=d147c80e-afa7-40b5-ab5a-860b08b015a1",
+      "location": "Manado, Sulawesi Utara",
+      "open": "24 hours",
+      "rating": 4.1,
+      "category": "Beach",
+      "about": "Pantai Bunaken merupakan salah satu dari kumpulan pulau dalam Taman Nasional Bunaken. Pantai Bunaken terletak Teluk Menado, Sulawesi Utara.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Pantai Ngurtafur",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Pantai-Ngurtafur-Maluku-Tenggara.jpg?alt=media&token=676a4fc5-c230-4f32-a2fc-2c9cf71bbe8f",
+      "location": "Maluku",
+      "open": "24 hours",
+      "rating": 4.6,
+      "category": "Beach",
+      "about": "Pantai yang terletak di Maluku ini terbilang cukup unik. Bagaimana tidak? Saat berwisata di pantai biasanya kamu hanya bisa menikmati keindahannya dari tepian. Namun di Pantai Ngurtafur, kamu bisa berjalan ke tengah laut tanpa kapal!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Dunia Fantasi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/dufan.jpg?alt=media&token=7a6e8a85-08b2-4a2f-a76f-519636b1a385",
+      "location": "Jl. Lodan Timur No.7, Ancol, Pademangan, RW.10, Ancol, Pademangan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta",
+      "open": "10.00 - 18.00",
+      "rating": 4.5,
+      "category": "Theme Park",
+      "about": "Dufan sangat identik dengan ‘bersenang-senang’. Salah satu taman bermain di Indonesia  yang paling dicari ini menawarkan banyak keseruan dan momen yang menyenangkan bagi siapa saja.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Jatim Park I",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Jatim_Park_1_Kota_Batu.jpg?alt=media&token=f2a5abf8-7a72-40fc-98ac-3606ef089f4c",
+      "location": "Jl. Kartika No.2, Sisir, Kec. Batu, Kota Batu, Jawa Timur",
+      "open": "08.30 - 16.30",
+      "rating": 4.1,
+      "category": "Theme Park",
+      "about": "Well, hingga saat ini, sudah ada tiga Jawa Timur Park yang bisa kamu pilih untuk momen liburan kamu, dan dijamin semuanya akan membuat liburanmu seru abis!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Jungleland",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/20140718-jungleland-sentul.jpg?alt=media&token=58e1d2b3-301b-448f-8e41-b08e3446de86",
+      "location": "Kawasan Sentul Nirwana, Jl. Jungleland Boulevard No. 1, Karang Tengah, Babakan Madang, Karang Tengah, Babakan Madang, Bogor, Jawa Barat",
+      "open": "10.00 - 17.00",
+      "rating": 3.8,
+      "category": "Theme Park",
+      "about": "Singkatnya, jika kamu tertarik liburan di taman bermain yang menyuguhkan beragam wahana dengan tingkat keseruan yang beragam, Jungleland Adventure Theme Park adalah jawabannya.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bounce Street Asia",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bounce%20street%20asia.jpg?alt=media&token=47407777-f79f-43a2-b77c-8324b53e4e77",
+      "location": "09.00 - 22.00",
+      "open": "Jln Sentra Bisnis Artha Gading Blod D Kav 8, Jakarta Utara",
+      "rating": 3.5,
+      "category": "Theme Park",
+      "about": "Melompat, melompat dan terus melompat. Si kecil, atau kamu sendiri, bisa melakukannya sesuka hati dengan aman di Taman Trampolin ini lho!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bali Treetop Adventure",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bali-treetop-2.jpg?alt=media&token=c73a84ac-e4f4-4a2c-8675-a3ef0e4e1273",
+      "location": "Candikuning, Baturiti, Tabanan Regency, Bali",
+      "open": "09.30 - 18.00",
+      "rating": 4.0,
+      "category": "Theme Park",
+      "about": "Satu lagi aktivitas yang asyik buat kamu dan si kecil, yaitu bergelantungan di antara pepohonan. Bali Treetop Adventure menawarkan pengalaman yang tidak biasa untuk memenuhi mimpi masa kecil kamu dan si kecil.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Mikie Funland",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/mikie%20funland.jpg?alt=media&token=44ca7be7-cab3-4511-b71d-a7c19fa635a4",
+      "location": "Jl. Jamin Ginting, Sempajaya, Kec Brastagi, Kabupaten Karo, Sumatera Utara",
+      "open": "10.00 - 17.00",
+      "rating": 3.8,
+      "category": "Theme Park",
+      "about": "etidaknya ada 35 wahana bermain yang bisa kamu coba dengan level keseruan yang berbeda-beda, tergantung penikmatnya. Kamu juga tidak perlu khawatir dengan faktor keselamatan dan keamanan karena disesuaikan dengan standar tertinggi.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Trans Studio Bandung",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/trans%20studio%20bandung.jpg?alt=media&token=ff91234f-6eba-4521-901a-6d1dc30ca164",
+      "location": "Jl. Gatot Subroto No.289, Cibangkong, Batununggal, Kota Bandung, Jawa Barat",
+      "open": "10.00 - 19.00",
+      "rating": 4.5,
+      "category": "Theme Park",
+      "about": "Berkonsep indoor, Trans Studio menawarkan beragam keseruan dan wahana yang membawa kamu ke dunia yang penuh dengan kebahagiaan. Tidak hanya menampilkan wahana bermain yang variatif, Trans Studio juga bisa mempertemukan kamu dengan tokoh idola.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Atmosfear",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/atmosfear.jpg?alt=media&token=88489280-8d5d-408c-8592-f56395d6c283",
+      "location": "fX Sudirman Mall, Jl. Jend. Sudirman, RT.1/RW.3, Gelora, Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta",
+      "open": "10.00 - 22.00",
+      "rating": 4.2,
+      "category": "Theme Park",
+      "about": "Kamu akan ditunggu perosotan transparan dari ketinggian 20 meter dan panjang lintasan 46 meter dengan waktu tempuh kurang lebih hanya enam detik. Bagi yang memiliki jantung lemah, dilarang ikut tantangan ini, ya!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Trans Studio Makassar",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/trans%20studio%20makassar.jpg?alt=media&token=50973acc-d670-4ebe-aa96-e010ffbfa21f",
+      "location": "Kawasan Terpadu Trans Studio Makassar, Jl.  HM. Dg. Patompo, Metro Tanjung Bunga, Maccini Sombala, Tamalate, Kota Makassar, Sulawesi Selatan",
+      "open": "10.00 - 19.00",
+      "rating": 4.2,
+      "category": "Theme Park",
+      "about": "Hampir di setiap kota besar di Indonesia tersedia Trans Studio Mini. Namun jika kamu tertarik menjajal wahana bermain yang lebih lengkap, Trans Studio Bandung dan Makassar bisa menjadi jujukan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Jatim Park III",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/jatim%20park%203.jpg?alt=media&token=c7befa00-f8ec-4f6a-ba90-ba251f000c5b",
+      "location": "Jl. Ir. Soekarno No.144, Beji, Junrejo, Kota Batu, Jawa Timur",
+      "open": "11.00 - 21.00",
+      "rating": 3.4,
+      "category": "Theme Park",
+      "about": "Jatim Park terbaru adalah Jatim Park 3. Selain instagenik, taman bermain di Indonesia ini juga menyuguhkan atraksi dinosaurus, dan banyak keseruan lain.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Angkut",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Review%20Museum%20Angkut%20Malang%20Tiket.jpg?alt=media&token=e7619ea7-ba31-47ed-ab32-154e64e481bc",
+      "location": "Jl. Terusan Sultan Agung No.2, Ngaglik, Kec. Batu, Kota Batu, Jawa Timur 65314",
+      "open": "12.00 - 20.00",
+      "rating": 4.3,
+      "category": "Museum",
+      "about": "Museum Angkut dikenal dengan koleksi transportasinya, baik di Indonesia maupun level dunia. Berbagai macam jenis transportasi bisa kamu temui di sini, mulai dari sepeda, mobil, kapal hingga pesawat.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Affandi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Gallery-3-di-Museum-Affandi.jpg?alt=media&token=bf46db67-a288-49ad-b195-3ee936c57d47",
+      "location": "Jl. Laksda Adisucipto No.167, Papringan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",
+      "open": "09.00 - 16.00",
+      "rating": 4.5,
+      "category": "Museum",
+      "about": "Affandi merupakan salah seorang pelukis terkenal di Indonesia. Karya-karyanya tidak hanya terkenal di dalam negeri tapi juga sudah diakui oleh dunia internasional lho. Di Jogja, kamu bisa berkunjung ke kediaman Affandi yang berada di dalam satu kompleks dengan galeri seninya.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Macan",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/museum%20macan.jpg?alt=media&token=b93c5d10-a39c-4fc6-bdaf-900f1f2f1a49",
+      "location": "AKR Tower Level MM, Jl. Perjuangan No.5, Kb. Jeruk, Daerah Khusus Ibukota Jakarta 11530",
+      "open": "10.00 - 18.00",
+      "rating": 4.0,
+      "category": "Museum",
+      "about": "Oke, jangan membayangkan kamu akan melihat harimau, singa atau sebangsanya di salah satu museum di Jakarta ini. Malahan, yang bakal kamu nikmati adalah hasil seni modern dan kontemporer asal Indonesia dan Internasional. Keren banget, lho!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Tsunami Aceh",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/museum%20tsunami%20aceh.jpg?alt=media&token=02429011-329f-42c9-a364-be6402dce97f",
+      "location": "Sukaramai, Baiturrahman, Banda Aceh City, Aceh 23116",
+      "open": "09.00 - 17.00",
+      "rating": 4.7,
+      "category": "Museum",
+      "about": "Ini merupakan museum simbolis yang dibuat sebagai rasa hormat atas kejadian bencana gempa bumi dan tsunami pada 2004 lalu. Museum ini sekaligus menjadi pusat pendidikan dan tempat perlindungan darurat, jika terjadi bencana serupa lagi.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Geologi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Museum-Geologi-Bandung.jpg?alt=media&token=f1a7283d-7de8-4a46-bd2b-d59962e638aa",
+      "location": "Jl. Diponegoro No.57, Cihaur Geulis, Cibeunying Kaler, Kota Bandung, Jawa Barat 40122",
+      "open": "08.00 - 16.00",
+      "rating": 4.0,
+      "category": "Museum",
+      "about": "Bagi kamu yang tertarik dengan dinosaurus dan fosil zaman purba, maka museum satu ini cocok untukmu. Bangunan ini dulunya dijaga oleh JICA Jepang (Japan International Coorperation Agency). Diresmikan pada 23 Agustus 2000, Museum Geologi dijadikan tempat untuk keperluan penelitian dan pendidikan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Toety Heraty",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/museum%20toety%20heraty.jpg?alt=media&token=ed38cc98-bbb9-44d2-bc65-da45fc224a7f",
+      "location": "Jl. HOS. Cokroaminoto No: 9 – 11 Menteng, Jakarta",
+      "open": "10.00 - 16.00",
+      "rating": 3.8,
+      "category": "Museum",
+      "about": "Dari sekadar galeri menjadi museum yang jauh lebih mengesankan. Itulah gambaran singkat dan dangkal, namun bisa menggambarkan seperti apa salah satu museum di Jakarta yang cukup unik dan anti-mainstream ini.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "MOJA Museum",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/moja%20museum.JPG?alt=media&token=3ecad99e-26d4-4fe1-89ee-9d8bf3ad075b",
+      "location": "Jl. Metro Pondok Indah Blok Tb No.27, RT.9/RW.16, Pondok Pinang, Kebayoran Lama, South Jakarta City, Jakarta 12310",
+      "open": "11.00 - 19.00",
+      "rating": 4.4,
+      "category": "Museum",
+      "about": "MOJA Museum menjadi salah satu bukti bahwa museum tidak lagi identik dengan bangunan suram dan membosankan. Malahan, di MOJA Museum, banyak spot Instagenik yang malah dijadikan andalan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Layang Layang",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/museum%20layang.jpg?alt=media&token=e8fba806-e435-4f14-9caa-c32e6584075d",
+      "location": "Museum Layang-Layang adalah sebuah museum yang terletak di Jl. H. Kamang No. 38, Pondok Labu, Jakarta Selatan",
+      "open": "09.00 - 04.00",
+      "rating": 4.2,
+      "category": "Museum",
+      "about": "Memasuki area museum, kamu akan mendapatkan kesan lingkungan yang asri dengan banyak layang-layang menemani di setiap penjelajahan kamu. Ada juga pemutaran video untuk menginformasikan sejarah layang-layang. Kamu juga bisa membuat kaos untuk souvenir, bahkan diajari membuat layang-layang.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Sandi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/museum%20sandi.jpg?alt=media&token=5d21965a-447b-4d7c-913c-c955b7377dff",
+      "location": "Jl. Faridan M Noto No.21, Kotabaru, Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55224",
+      "open": "07.30 - 16.00",
+      "rating": 4.0,
+      "category": "Museum",
+      "about": "Dalam perjuangan meraih kemerdekaan, sandi merupakan hal penting agar strategi para pejuang tidak terbaca oleh penjajah. Begitu pentingnya warisan sandi ini membuat Lembaga Sandi Negara bekerja sama dengan Kementerian Kebudayaan dan Pariwisata menginisiasi berdirinya Museum Sandi pertama dan satu-satunya yang ada di Indonesia.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Museum Nasional Indonesia",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/monas.jpg?alt=media&token=242b3f8e-f321-4c81-9fb9-d1e6db7863f4",
+      "location": "Jl. Medan Merdeka Barat No.12, Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110",
+      "open": "08.00 - 16.00",
+      "rating": 4.7,
+      "category": "Museum",
+      "about": "Museum yang berada di pusat ibu kota Jakarta ini merupakan yang terbesar di Indonesia. Museum ini juga sering dikenal sebagai Museum Gajah, karena adanya patung gajah perunggu pemberian Raja Chulalongkorn dari Thailand pada 1871. Museum bergaya Eropa ini menyimpan sekitar 141 ribu benda-benda sejarah dan prasejarah dari berbagai periode.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Batu Secret Zoo",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Batu-Secret-Zoo-Harimau.jpg?alt=media&token=761dee88-5a35-40d1-b519-9ec140359b9f",
+      "location": "Jl. Oro-Oro Ombo No.9, Temas, Kec. Batu, Kota Batu, Jawa Timur",
+      "open": "10.00 - 18.00",
+      "rating": 4.0,
+      "category": "Zoo",
+      "about": "Sementara itu, Jatim Park 2 lebih dikenal sebagai Batu Secret Zoo. Dari temanya, kamu mungkin bisa menebak taman bermain ini lebih mengedepankan interaksi dengan binatang.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bali Bird Park",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bali-bird-park-02.png?alt=media&token=c57c77dd-a9c4-4a0d-b829-8490335dd6bb",
+      "location": "Jl. Serma Cok Ngurah Gambir, Singapadu, Batubulan, Sukawati, Batubulan, Sukawati, Kabupaten Gianyar, Bali",
+      "open": "09.00 - 17.30",
+      "rating": 4.5,
+      "category": "Zoo",
+      "about": "Indonesia memang terkenal kaya akan spesies burung dan untuk membuktikannya, tempat yang paling tepat adalah di Bali Bird Park. Mulai dari tempat parkir kendaraan hingga pintu keluar, kamu akan mendengar nyanyian beragam jenis burung, kamu bahkan bisa melihat beberapa di antaranya memiliki bulu yang indah dan bentuk tubuh yang mengesankan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Taman Safari Bogor",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Taman-Safari-(11).jpg?alt=media&token=d80199ab-03d8-4b5b-92c6-27bcf19d10bf",
+      "location": "Jl. Kapten Harun Kabir No. 724, Cibeureum, Cisarua, Cibeureum, Cisarua, Bogor, Jawa Barat",
+      "open": "Zoo",
+      "rating": 3.9,
+      "category": "Zoo",
+      "about": "Siapa yang tidak suka melihat langsung raja hutan seperti singa, beruang, gajah dan binatang lain dari jarak dekat? Pengalaman itu bisa kamu dapatkan di Taman Safari Bogor, lho!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Taman Margastwa Ragunan",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/ragunan.jpg?alt=media&token=2e2580b0-039d-4075-a9fa-5e4051c91e60",
+      "location": "Jl. Harsono No.1, Ragunan, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta",
+      "open": "07.30 - 16.00",
+      "rating": 4.1,
+      "category": "Zoo",
+      "about": "Kebun binatang ini terletak di Pasar Minggu, Jakarta. Banyak fasilitas yang dapat dinikmati di ragunan dan koleksi hewan di sana juga beragam sekitar 295 spesies dengan 4040 spesimen. Kebun binatang Ragunan adalah kebun binatang yang pertama di Indonesia, lho!",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bali Safari and Marine Park",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bali-safari-marine-park.jpg?alt=media&token=88adcbf7-1745-4c1a-9c87-d215b8c0ffb6",
+      "location": "Jl. Bypass Prof. Dr. Ida Bagus Mantra Km. 19,8, Serongga, Kec. Gianyar, Kabupaten Gianyar, Bali 80551",
+      "open": "09.00 - 17.30",
+      "rating": 4.3,
+      "category": "Zoo",
+      "about": "Jika kamu berkunjung ke Bali, jangan lupa berkunjung ke salah satu kebun binatang yang menarik ini. Kebun binatang yang berada di Gianyar, Bali ini mempunyai luas tanah sekitar 12 hektar dengan 100 spesies binatang.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Kebun Binatang Gembira Loka",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/gembira%20loka.jpg?alt=media&token=e7f8f1d7-d230-4abb-9069-e03416deb350",
+      "location": " Jl. Kebun Raya No.2, Rejowinangun, Kotagede, Kota Yogyakarta, Daerah Istimewa Yogyakarta",
+      "open": "07.30 - 17.00",
+      "rating": 3.7,
+      "category": "Zoo",
+      "about": "Kebun Binatang Gembira Loka merupakan salah satu tempat wisata di Yogyakarta yang bisa dikunjungi wisatawan saat berkunjung ke Jogja. Kebun binatang ini juga berada di kawasan wisata Malioboro dan Keraton sehingga lebih mudah dijangkau.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Kebun Binatang Bandung",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bandung-zoo.jpeg?alt=media&token=5ceb9403-4420-405e-bea0-397e0f0659d4",
+      "location": "Jalan Kebun Binatang No.6, Lebak Siliwangi, Coblong, Kota Bandung",
+      "open": "08.00 - 16.30",
+      "rating": 4.0,
+      "category": "Zoo",
+      "about": "Bandung juga memiliki kebun binatang yang bisa dikunjungi saat berwisata ke kota kembang ini. Kebun binatang sederhana ini sudah ada sejak tahun 1930 dan bertahan hingga saat ini. Koleksi binatang yang ada di kebun binatang ini berjumlah 79 satwa langka dan ratusan lainnya adalah satwa yang umum ditemui. Selain itu, hewan-hewan di sini berasal dari dalam dan luar negeri.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Seaworld Indonesia",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/seaworld.jpg?alt=media&token=1ead82a6-3940-4731-9193-dd261aefb39e",
+      "location": "Jalan Lodan Timur No.7, RW.10, Ancol, Pademangan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta",
+      "open": "09.00 - 18.00",
+      "rating": 4.6,
+      "category": "Zoo",
+      "about": "Kebun binatang berkonsep laut dan hewan laun ini berada di kawasan Ancol Jakarta. Seaworld memiliki koleksi lengkap mengenai hewan air yang bisa dinikmati oleh wisatawan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bali Zoo Park",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bali_zoo_sign.jpg?alt=media&token=717cbdf6-1d1b-4ddc-9c4c-85cf8886f202",
+      "location": "Jl. Raya Singapadu Banjar Seseh Sukawati Batuan Sukawati Gianyar Bali, Singapadu, Sukawati, Kabupaten Gianyar, Bali",
+      "open": "09.00 - 17.00",
+      "rating": 4.6,
+      "category": "Zoo",
+      "about": "Ada lagi kebun binatang dengan penataan yang lebih menarik dari kebun binatang kebanyakan, yaitu Bali Zoo Park. Jika berwisata ke Pulau Dewata, jangan lupa mampir dulu ke Bali Zoo Park bersama keluarga.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Taman Safari Prigen",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/taman-safari-prigen.jpg?alt=media&token=a1440cfd-da30-402c-b1c9-9f5d903cca98",
+      "location": "Desa Jatiarjo, Prigen, Jatiarjo, Prigen, Pasuruan",
+      "open": "08.30 - 16.45",
+      "rating": 4.2,
+      "category": "Zoo",
+      "about": "Tidak hanya di Bogor, di Jawa Timur, lebih tepatnya di kawasan Prigen, juga ada kebun binatang berkonsep safari, yaitu Taman Safari Indonesia Prigen. Sama seperti taman safari yang di Bogor, taman safari ini juga menyimpan berbagai koleksi hewan yang dirawat dengan baik.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Skyline Best View Resto",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/1-4-SkyLineBestViewResto.jpg?alt=media&token=8126505f-65ab-4d21-b41c-6b0842f95982",
+      "location": "Jalan Dago Pakar Timur No. 108, Ciburial, Cimenyan, Ciburial, Cimenyan, Bandung, Jawa Barat 40198",
+      "open": "11.00 - 23.00",
+      "rating": 4.7,
+      "category": "Restaurant",
+      "about": "Kalau biasanya kamu kesal saat datang ke restoran rooftop karena outdoor space-nya terbatas, hal itu tidak akan terjadi di sini. Skyline Best View Resto terdiri dari tiga lantai sehingga dijamin kamu akan mendapatkan pemandangan terbaik kota Bandung.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Retaurant Bunga Pepaya",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bunga%20pepaya.jpg?alt=media&token=b4406817-f953-48bb-9e0f-94de94d0041e",
+      "location": "Jl. RP. Soeroso No.16, RT.9/RW.5, Cikini, Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "open": "10.00 - 22.00",
+      "rating": 4.0,
+      "category": "Restaurant",
+      "about": "Restoran Bunga Pepaya adalah salah satu Restoran Indonesia yang menyajikan masakan khas dari Manado ini, begitu kaya akan rempah dan salah satu Restoran Indonesia yang cukup digemari para pecinta masakan Indonesia.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bakmi Pelangi",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bakmi%20pelangi.jpg?alt=media&token=dde4e208-9b0b-4505-a645-204e8cf4a6d6",
+      "location": "Ruko Tol Boulevard Blok G No 1 Jalan Pelayangan BSD, Rw. Buntu, Tangerang Selatan, Kota Tangerang Selatan, Banten 15318",
+      "open": "06.30 - 21.00",
+      "rating": 3.8,
+      "category": "Restaurant",
+      "about": "Menyajikan masakan khas serba bakmi ini tentu akan mengingatkan kamu makanan yang begitu melekat di semua lapisan masyarakat, yang uniknya di dalam Restoran Indonesia ini, bakmi yang disajikan berwarna- warni layaknya pelangi.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Mie Ayam Kraton",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/mie%20ayam%20keraton.jpg?alt=media&token=4e7dc277-c114-42b6-9639-587e8f599c4d",
+      "location": "Jl. Cipaganti No.85, Pasteur, Sukajadi, Kota Bandung, Jawa Barat 40161",
+      "open": "06.00 - 17.00",
+      "rating": 4.4,
+      "category": "Restaurant",
+      "about": "Tentu kamu telah begitu mengenal makanan khas yang begitu familliar di lidah orang Indonesia ini. Yups, benar sekali Mie Ayam, salah satu Restoran yang ada di Bandung ini menyajikan aneka makanan yang beraneka Mie, di Mie Ayam Kerato lezat. dengan konsep restoran yang sangat menarik.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Goldstar 360",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/goldstar%20360.jpg?alt=media&token=9e958330-f137-4ceb-8386-51191f87268c",
+      "location": "Jl. Dangdeur Indah No.2b, Sukagalih, Sukajadi, Kota Bandung, Jawa Barat 40163",
+      "open": "11.00 - 00.00",
+      "rating": 4.0,
+      "category": "Restaurant",
+      "about": "Di belantara gedung-gedung kota Bandung, ada sebuah tempat makan tersembunyi yang sering didatangi oleh anak muda karena harga menunya cukup terjangkau. Kamu harus jeli saat mencari karena Goldstar 360 terletak di lantai tiga dan lima, sementara lantai satu dan dua merupakan arena futsal.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "DJengkol Cafe",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/d'jengkol%20cafe.jpg?alt=media&token=d32dc23a-65f2-4ca8-9644-70b1b8de329d",
+      "location": "Sektor 45, Palasari Street, Turangga, Lengkong, Bandung City, West Java 40262",
+      "open": "09.00 - 16.00",
+      "rating": 3.8,
+      "category": "Restaurant",
+      "about": "Adalah salah satu tempat kuliner makanan yang lezat, namun tetap mengangkat kulture budaya masyarakat Indonesia yang menyukai Jengkol, dengan aneka sajian serba jengkol nya.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Taste Restaurant",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/Taste%20Restaurant.jpg?alt=media&token=78166f8c-9370-4fab-9c57-dfc8bd4bc4d5",
+      "location": "Hotel Ibis Lt. Dasar, Jalan Kramat Raya No. 100, Senen, RT.2/RW.9, Kwitang, Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10420",
+      "open": "24 hours",
+      "rating": 3.9,
+      "category": "Restaurant",
+      "about": "Salah satu Restoran Indonesia yang mengusung konsep tempat makan yang begitu Indonesian Culinarry dan good taste, dengan aneka sajian makanan yang khas makanan sajian jawa, yang begitu dikenal masyarakat sebagai menu makanan yang khas kedaerahan yang begiru kaya akan rempah nan juga lezat.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bakso King Belitung",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bakso%20belitung.jpg?alt=media&token=acba1b6b-1cfa-406e-a0e3-ba34ba8a154d",
+      "location": "Jalan Kelapa Nias Raya Blok KR1 No 3 Kelapa Gading, RT.10/RW.17, Pegangsaan Dua, Jakarta Utara, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+      "open": "09.30 - 21.00",
+      "rating": 4.2,
+      "category": "Restaurant",
+      "about": "Bakso yang berada di Restoran Indonesia King Belitung ini begitu lezat dengan kuah kaldu yang begitu pas di lidah, sehingga menciptakan cita rasa khas bakso yang sangat lezat ini mampu membuat siapapun yang memakannya untuk ingin tahu resep masakan yang begitu lezat satu ini.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Bakmi Alit",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/bakmi%20alit.jpg?alt=media&token=b6076331-5050-4271-9806-6e6b5c6ca57e",
+      "location": "Ruko Pasar 8, Alam Sutera RB-08, Jalan Alam Utama, Pakulonan, North Serpong, South Tangerang City, Banten 15325",
+      "open": "06.00 - 17.00",
+      "rating": 3.7,
+      "category": "Restaurant",
+      "about": "Restoran Indonesia yang juga begitu khas dengan aneka sajiannya yang unik ini, mampu membuat kamu bernafsu untuk memakannya, dengan menu sajian utama yang serba mie ini kamu akan di bawa ke dunia sajian mie yang begitu berbeda dengan tempat makan mie yang lain.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    },
+    {
+      "name": "Picknik Bandung",
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/6-3-Picknick.jpg?alt=media&token=d2ef3bfd-f800-4c66-8f71-e3984cb4ae16",
+      "location": "Jl. Pasir Kaliki No.176, Pasirkaliki, Cicendo, Bandung City, West Java 40173",
+      "open": "10.00 - 22.00",
+      "rating": 4.5,
+      "category": "Restaurant",
+      "about": "Tempat nongkrong baru yang cocok untuk kamu yang hobi foto-foto. Lihat saja pernak-perniknya yang menggemaskan, dan warna tema yang cute abis. Pas banget buat nongkrong bareng teman pada akhir pekan.",
+      "gallery": [
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        },
+        {
+          "image": ""
+        }
+      ],
+      "review": [
+        {
+          "name": "Indah",
+          "review": "",
+          "rating": 4.7,
+          "date": "31 Jan 2018"
+        },
+        {
+          "name": "Angga",
+          "review": "",
+          "rating": 3.4,
+          "date": "10 Mar 2019"
+        },
+        {
+          "name": "Jaya",
+          "review": "",
+          "rating": 4,
+          "date": "21 Nov 2018"
+        }
+      ]
+    }
+  ]
+}

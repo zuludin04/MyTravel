@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/secondaryColor</item>
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
     </style>
 
     <style name="AppTheme.AppBarNormalFont" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
@@ -25,6 +26,16 @@
     <style name="AppTheme.AppbarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"
            tools:ignore="DuplicateDefinition">
         <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Title" parent="android:TextAppearance.Material.Title"
+           tools:targetApi="lollipop">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Title.Inverse" parent="android:TextAppearance.Material.Title"
+           tools:targetApi="lollipop">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
     </style>
 
     <style name="AppTheme.PaymentFlowTheme">
