@@ -52,7 +52,7 @@ class MainTransactionsFragment : Fragment() {
             intent.putExtra("DATA_KEY", it.id)
             startActivityForResult(intent, UPDATE_DELETE_TRANSACTION)
         }
-        setupTransactionList()
+//        setupTransactionList()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -71,7 +71,7 @@ class MainTransactionsFragment : Fragment() {
             adapter = this@MainTransactionsFragment.adapter
         }
 
-        loadFirebaseTransaction()
+//        loadFirebaseTransaction()
     }
 
     private fun loadFirebaseTransaction() {
@@ -96,7 +96,7 @@ class MainTransactionsFragment : Fragment() {
                 } else {
                     itemView.progress_bar.visibility = View.GONE
                     itemView.recycler_transactions.visibility = View.GONE
-                    itemView.empty_list.visibility = View.VISIBLE
+                    itemView.empty_layout.visibility = View.VISIBLE
                 }
             }
 

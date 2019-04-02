@@ -2,9 +2,25 @@ package com.app.zuludin.mytravel.utils
 
 import android.content.Context
 import com.app.zuludin.mytravel.R
+import com.app.zuludin.mytravel.data.model.local.CategoryItem
+import com.app.zuludin.mytravel.data.model.local.CategoryList
 import com.app.zuludin.mytravel.data.model.remote.*
 
 object DataProvider {
+
+    fun categoryList(): CategoryList {
+        val list: MutableList<CategoryItem> = mutableListOf()
+
+        val name = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
+        val total = arrayListOf("30", "63", "43", "78", "72", "59", "120")
+        val icon = arrayListOf(R.drawable.beach, R.drawable.theme_park, R.drawable.museum, R.drawable.zoo, R.drawable.restaurant)
+
+        for (i in name.indices) {
+            list.add(CategoryItem(icon[i], name[i], total[i]))
+        }
+
+        return CategoryList(list, "Category")
+    }
 
     fun hotelsData(
         city: String,

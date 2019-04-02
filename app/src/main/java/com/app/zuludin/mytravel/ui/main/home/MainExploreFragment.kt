@@ -1,5 +1,7 @@
 package com.app.zuludin.mytravel.ui.main.home
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.ActivityOptionsCompat
@@ -10,19 +12,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.local.CategoryItem
 import com.app.zuludin.mytravel.data.model.local.CategoryList
 import com.app.zuludin.mytravel.data.model.local.ExploreList
-import com.app.zuludin.mytravel.data.model.remote.TravelData
-import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.ui.category.CategoryActivity
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
 import com.app.zuludin.mytravel.ui.tickets.search.SearchTravelActivity
-import com.app.zuludin.mytravel.utils.JsonUtils
-import com.google.gson.GsonBuilder
+import com.app.zuludin.mytravel.utils.DataProvider.categoryList
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_explore_fragment.view.*
-import kotlin.random.Random
 
 /**
  * A simple [Fragment] subclass.
@@ -49,6 +46,10 @@ class MainExploreFragment : Fragment() {
                 startActivity(intent, options.toBundle())
             }
         }
+    }
+
+    private val viewModel: MainExploreViewModel by lazy {
+        ViewModelProviders.of(this).get(MainExploreViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -83,7 +84,13 @@ class MainExploreFragment : Fragment() {
         }
 
         adapter.insert(categoryList())
-        adapter.insert(exploreItems())
+
+        viewModel.getExplores().observe(this, Observer {
+            if (it != null) {
+                adapter.insert(it)
+                view.recycler_explore.adapter = adapter
+            }
+        })
     }
 
     private fun searchBookingTicket(search: String) {
@@ -91,50 +98,5 @@ class MainExploreFragment : Fragment() {
         intent.putExtra(SearchTravelActivity.TRAVEL_SEARCH, search)
         startActivity(intent)
         activity?.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
-    }
-
-    private fun categoryList(): CategoryList {
-        val list: MutableList<CategoryItem> = mutableListOf()
-
-        val name = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
-        val total = arrayListOf("30", "63", "43", "78", "72", "59", "120")
-        val icon = arrayListOf(R.drawable.beach, R.drawable.theme_park, R.drawable.museum, R.drawable.zoo, R.drawable.restaurant)
-
-        for (i in name.indices) {
-            list.add(CategoryItem(icon[i], name[i], total[i]))
-        }
-
-        return CategoryList(list, "Category")
-    }
-
-    private fun exploreItems(): List<ExploreList> {
-        val data = JsonUtils.readJsonFile(requireContext(), "explore.json")
-        val gson = GsonBuilder().setPrettyPrinting().create()
-        val travelData: TravelData = gson.fromJson(data, TravelData::class.java)
-
-        val list: MutableList<ExploreList> = mutableListOf()
-
-        val random = Random(travelData.explore.size)
-
-        val recommendations: ArrayList<TravelExplore> = ArrayList(10)
-        for (i in 1..10) {
-            recommendations.add(travelData.explore[random.nextInt(travelData.explore.size)])
-        }
-
-        val topSpot: ArrayList<TravelExplore> = ArrayList(10)
-        for (i in 1..10) {
-            topSpot.add(travelData.explore[random.nextInt(travelData.explore.size)])
-        }
-
-        val recent: ArrayList<TravelExplore> = ArrayList(10)
-        for (i in 1..10) {
-            recent.add(travelData.explore[random.nextInt(travelData.explore.size)])
-        }
-
-        list.add(ExploreList(recommendations, "Recommendations"))
-        list.add(ExploreList(topSpot, "Top Spots"))
-        list.add(ExploreList(recent, "Recent Place"))
-
-        return list
     }
 }

@@ -1,5 +1,7 @@
 package com.app.zuludin.mytravel.ui.category
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.ActivityOptionsCompat
@@ -10,11 +12,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.TravelData
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
-import com.app.zuludin.mytravel.utils.JsonUtils.readJsonFile
-import com.google.gson.GsonBuilder
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.category_list_fragment.view.*
 
@@ -38,6 +37,10 @@ class CategoryListFragment : Fragment() {
         }
     }
 
+    private val viewModel: CategoryViewModel by lazy {
+        ViewModelProviders.of(this).get(CategoryViewModel::class.java)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -50,14 +53,7 @@ class CategoryListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         adapter.set(ArrayList())
 
-        val category = arguments?.getString(PAGER_CATEGORY)
-
-        val data = readJsonFile(requireContext(), "explore.json")
-        val gson = GsonBuilder().setPrettyPrinting().create()
-        val travelData: TravelData = gson.fromJson(data, TravelData::class.java)
-
-        val explores: MutableList<TravelExplore> = mutableListOf()
-        explores.addAll(travelData.explore.filter { it.category == category }.toList())
+        val category = arguments?.getString(PAGER_CATEGORY).toString()
 
         view.recycler_category_explore.apply {
             layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
@@ -65,7 +61,12 @@ class CategoryListFragment : Fragment() {
             adapter = this@CategoryListFragment.adapter
         }
 
-        adapter.insert(explores)
+        viewModel.getExploreByCategory(category).observe(this, Observer {
+            if (it != null) {
+                adapter.insert(it)
+                view.recycler_category_explore.adapter = adapter
+            }
+        })
     }
 
     companion object {

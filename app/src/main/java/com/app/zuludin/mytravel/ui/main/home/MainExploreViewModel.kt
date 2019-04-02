@@ -2,7 +2,35 @@ package com.app.zuludin.mytravel.ui.main.home
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
+import android.arch.lifecycle.LiveData
+import android.arch.lifecycle.MutableLiveData
+import com.app.zuludin.mytravel.data.TravelDataRepository
+import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.utils.CoroutineContextProvider
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-class MainExploreViewModel(application: Application) : AndroidViewModel(application) {
+class MainExploreViewModel(
+    application: Application,
+    private val contextProvider: CoroutineContextProvider
+) : AndroidViewModel(application) {
 
+    lateinit var travelExploreDataList: MutableLiveData<List<ExploreList>>
+
+    private val repository = TravelDataRepository(getApplication())
+
+    fun getExplores(): LiveData<List<ExploreList>> {
+        if (!::travelExploreDataList.isInitialized) {
+            travelExploreDataList = MutableLiveData()
+            loadExploreList()
+        }
+        return travelExploreDataList
+    }
+
+    fun loadExploreList() {
+        GlobalScope.launch(contextProvider.main) {
+            val list: List<ExploreList> = repository.loadMainExploreData()
+            travelExploreDataList.value = list
+        }
+    }
 }

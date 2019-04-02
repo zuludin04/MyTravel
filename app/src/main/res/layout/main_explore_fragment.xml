@@ -18,7 +18,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="Book Ticket"
+                android:text="@string/book_ticket"
                 android:textStyle="bold"
                 android:id="@+id/list_title"/>
 
@@ -45,7 +45,7 @@
                     android:drawableTop="@drawable/ic_airplane"
                     android:drawablePadding="8dp"
                     android:gravity="center"
-                    android:text="Flight"
+                    android:text="@string/flight"
                     android:textColor="@color/primaryTextColor"/>
 
             <TextView
@@ -58,7 +58,7 @@
                     android:drawableTop="@drawable/ic_hotel"
                     android:drawablePadding="8dp"
                     android:gravity="center"
-                    android:text="Hotel"
+                    android:text="@string/hotel"
                     android:textColor="@color/primaryTextColor"/>
 
             <TextView
@@ -71,7 +71,7 @@
                     android:drawableTop="@drawable/ic_train_menu"
                     android:drawablePadding="8dp"
                     android:gravity="center"
-                    android:text="Train"
+                    android:text="@string/train"
                     android:textColor="@color/primaryTextColor"/>
 
             <TextView
@@ -84,7 +84,7 @@
                     android:drawableTop="@drawable/ic_taxi"
                     android:drawablePadding="8dp"
                     android:gravity="center"
-                    android:text="Rental"
+                    android:text="@string/rental"
                     android:textColor="@color/primaryTextColor"/>
 
         </LinearLayout>
