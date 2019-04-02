@@ -6,6 +6,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class TravelExplore(
+    @SerializedName("dataId")
+    val dataId: Int? = null,
+
     @SerializedName("thumbnail")
     val thumbnail: String? = null,
 

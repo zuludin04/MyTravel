@@ -5,7 +5,7 @@ import android.arch.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.TestContextProvider
 import com.app.zuludin.mytravel.data.TravelDataRepository
 import com.app.zuludin.mytravel.data.TravelDataSource
-import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.google.common.collect.Lists
 import kotlinx.coroutines.runBlocking
@@ -25,8 +25,8 @@ class MainExploreViewModelTest {
     @Mock
     private lateinit var exploreList: MutableLiveData<List<ExploreList>>
 
-    @Captor
-    private lateinit var exploreCaptureCallback: ArgumentCaptor<TravelDataSource.ExploreDataListCallback>
+//    @Captor
+//    private lateinit var exploreCaptureCallback: ArgumentCaptor<TravelDataSource.ExploreDataListCallback>
 
     private lateinit var viewModel: MainExploreViewModel
 
@@ -39,7 +39,10 @@ class MainExploreViewModelTest {
         viewModel = MainExploreViewModel(application, TestContextProvider())
 
         val recom: List<TravelExplore> = ArrayList(5)
-        explores = Lists.newArrayList(ExploreList(recom, "Recommendations"), ExploreList(recom, "Recent"))
+        explores = Lists.newArrayList(
+            ExploreList(recom, "Recommendations"),
+            ExploreList(recom, "Recent")
+        )
     }
 
     @Test

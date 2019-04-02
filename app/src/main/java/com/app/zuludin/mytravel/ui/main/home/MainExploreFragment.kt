@@ -13,11 +13,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.CategoryList
-import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.ui.category.CategoryActivity
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
 import com.app.zuludin.mytravel.ui.tickets.search.SearchTravelActivity
 import com.app.zuludin.mytravel.utils.DataProvider.categoryList
+import com.app.zuludin.mytravel.utils.ViewModelFactory
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_explore_fragment.view.*
 
@@ -49,7 +50,7 @@ class MainExploreFragment : Fragment() {
     }
 
     private val viewModel: MainExploreViewModel by lazy {
-        ViewModelProviders.of(this).get(MainExploreViewModel::class.java)
+        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!)).get(MainExploreViewModel::class.java)
     }
 
     override fun onCreateView(

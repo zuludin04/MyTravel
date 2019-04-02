@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
+import com.app.zuludin.mytravel.utils.ViewModelFactory
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.category_list_fragment.view.*
 
@@ -38,7 +39,7 @@ class CategoryListFragment : Fragment() {
     }
 
     private val viewModel: CategoryViewModel by lazy {
-        ViewModelProviders.of(this).get(CategoryViewModel::class.java)
+        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!)).get(CategoryViewModel::class.java)
     }
 
     override fun onCreateView(

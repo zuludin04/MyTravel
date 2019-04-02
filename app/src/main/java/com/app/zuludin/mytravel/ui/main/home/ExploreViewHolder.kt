@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.squareup.picasso.Picasso
 import com.tomasznajda.simplerecyclerview.SrvViewHolder

@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.data
 
 import android.content.Context
-import com.app.zuludin.mytravel.data.model.local.ExploreList
+import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.data.source.TravelRemoteSource
 
@@ -14,4 +14,7 @@ class TravelDataRepository(
 
     override suspend fun loadExploreByCategory(category: String): List<TravelExplore> =
         remoteSource.loadCategoryExplore(context, category)
+
+    override suspend fun loadDetailExplore(id: Int): TravelExplore =
+            remoteSource.loadDetailExplore(context, id)
 }

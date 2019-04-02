@@ -59,4 +59,6 @@
     <string name="train">Train</string>
     <string name="rental">Rental</string>
     <string name="book_ticket">Book Ticket</string>
+    <string name="about">About</string>
+    <string name="gallery">Gallery</string>
 </resources>

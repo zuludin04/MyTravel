@@ -1,12 +1,10 @@
 package com.app.zuludin.mytravel.data.source
 
 import android.content.Context
-import com.app.zuludin.mytravel.data.model.local.ExploreList
-import com.app.zuludin.mytravel.data.model.remote.Transaction
+import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelData
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.utils.JsonUtils
-import com.google.firebase.database.*
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -80,4 +78,15 @@ class TravelRemoteSource : TravelRemoteCallback {
 
             explores
         }
+
+    suspend fun loadDetailExplore(context: Context, id: Int): TravelExplore =
+            withContext(Dispatchers.Default) {
+                val data = JsonUtils.readJsonFile(context, "explore.json")
+                val gson = GsonBuilder().setPrettyPrinting().create()
+                val travelData: TravelData = gson.fromJson(data, TravelData::class.java)
+                val dataId = id.minus(1)
+
+                val explore: TravelExplore = travelData.explore[dataId]
+                explore
+            }
 }
