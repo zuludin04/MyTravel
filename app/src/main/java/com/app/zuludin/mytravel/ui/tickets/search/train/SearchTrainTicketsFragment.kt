@@ -50,7 +50,7 @@ class SearchTrainTicketsFragment : Fragment() {
                 train.adult = itemView.adult.getItemText().toInt()
                 train.child = itemView.child.getItemText().toInt()
                 train.seatClass = itemView.seat_class.getItemText()
-                train.departureDate = itemView.departure_date.getItemText()
+                train.date = itemView.departure_date.getItemText()
 
                 val intent = Intent(requireContext(), TicketListActivity::class.java)
                 intent.putExtra(TicketListActivity.LIST_TYPE, "Train")

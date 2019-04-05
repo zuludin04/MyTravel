@@ -1,9 +1,7 @@
 package com.app.zuludin.mytravel.data.source
 
 import android.content.Context
-import com.app.zuludin.mytravel.data.model.remote.ExploreList
-import com.app.zuludin.mytravel.data.model.remote.TravelData
-import com.app.zuludin.mytravel.data.model.remote.TravelExplore
+import com.app.zuludin.mytravel.data.model.remote.*
 import com.app.zuludin.mytravel.utils.JsonUtils
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.Dispatchers
@@ -89,4 +87,28 @@ class TravelRemoteSource : TravelRemoteCallback {
                 val explore: TravelExplore = travelData.explore[dataId]
                 explore
             }
+
+    suspend fun loadFlightTicketList(context: Context): FlightList =
+            withContext(Dispatchers.Default) {
+                val data = JsonUtils.readJsonFile(context, "flight.json")
+                val gson = GsonBuilder().setPrettyPrinting().create()
+                val tickets: FlightList = gson.fromJson(data, FlightList::class.java)
+                tickets
+            }
+
+    suspend fun loadTrainTicketList(context: Context): TrainList =
+        withContext(Dispatchers.Default) {
+            val data = JsonUtils.readJsonFile(context, "train.json")
+            val gson = GsonBuilder().setPrettyPrinting().create()
+            val tickets: TrainList = gson.fromJson(data, TrainList::class.java)
+            tickets
+        }
+
+    suspend fun loadCarRentals(context: Context): RentalList =
+        withContext(Dispatchers.Default) {
+            val data = JsonUtils.readJsonFile(context, "rental.json")
+            val gson = GsonBuilder().setPrettyPrinting().create()
+            val tickets: RentalList = gson.fromJson(data, RentalList::class.java)
+            tickets
+        }
 }

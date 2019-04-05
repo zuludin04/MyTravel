@@ -29,12 +29,12 @@ class DetailHotelFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val hotel: Hotel = arguments?.getParcelable(HOTEL_DATA)!!
 
-        view.detail_hotel_image.setImageResource(hotel.hotelImage!!)
-        view.detail_hotel_name.text = hotel.hotelName
-        view.detail_hotel_rating.rating = hotel.hotelRating?.toFloat()!!
-        view.detail_hotel_city.text = hotel.hotelCity
+        view.detail_hotel_image.setImageResource(hotel.thumbnail!!)
+        view.detail_hotel_name.text = hotel.name
+        view.detail_hotel_rating.rating = hotel.rating?.toFloat()!!
+        view.detail_hotel_city.text = hotel.city
 
-        view.room_price_started.currencyText(hotel.hotelPrice)
+        view.room_price_started.currencyText(hotel.startFrom)
 
         view.select_hotel_room_button.setOnClickListener {
             fragmentManager?.beginTransaction()?.run {

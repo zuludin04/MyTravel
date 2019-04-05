@@ -9,8 +9,8 @@ data class Review(
     @SerializedName("date")
     val date: String? = null,
 
-    @SerializedName("review")
-    val review: String? = null,
+    @SerializedName("comment")
+    val comment: String? = null,
 
     @SerializedName("name")
     val name: String? = null,

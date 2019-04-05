@@ -39,8 +39,8 @@
     </style>
 
     <style name="AppTheme.PaymentFlowTheme">
-        <item name="colorPrimary">#fafafa</item>
-        <item name="colorPrimaryDark">#c7c7c7</item>
+        <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="colorPrimaryDark">@color/secondaryColor</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

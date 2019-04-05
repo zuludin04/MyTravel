@@ -62,15 +62,15 @@ class RoomHotelFragment : Fragment(), RoomClickListener {
             adapter = this@RoomHotelFragment.adapter
         }
 
-        adapter.insert(hotelRooms(hotel.hotelName.toString()))
+        adapter.insert(hotelRooms(hotel.name.toString()))
     }
 
     override fun onRoomClick(hotelRoom: HotelRoom) {
-        transaction.city = hotel.hotelCity
-        transaction.book = hotel.hotelName
+        transaction.city = hotel.city
+        transaction.book = hotel.name
         transaction.date = "Data : ${hotel.checkIn} - ${hotel.checkOut}"
-        transaction.duration = "Duration : ${hotel.stayDuration} days"
-        transaction.service = "Room : ${hotelRoom.roomType}"
+        transaction.duration = "Duration : ${hotel.duration} days"
+        transaction.service = "Room : ${hotelRoom.name}"
         transaction.type = "Hotel"
         transaction.adult = 0
         transaction.child = 0
@@ -78,7 +78,7 @@ class RoomHotelFragment : Fragment(), RoomClickListener {
 
         val localeId = Locale("in", "ID")
         val numberFormat = NumberFormat.getCurrencyInstance(localeId)
-        val totalPrice = hotel.stayDuration?.let { hotelRoom.roomPrice?.times(it) }
+        val totalPrice = hotel.duration?.let { hotelRoom.price?.times(it) }
 
         transaction.price = numberFormat.format(totalPrice)
 

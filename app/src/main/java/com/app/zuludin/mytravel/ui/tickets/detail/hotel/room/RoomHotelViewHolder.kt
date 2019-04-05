@@ -13,8 +13,8 @@ class RoomHotelViewHolder(
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<HotelRoom> {
 
     override fun bind(item: HotelRoom) {
-        itemView.hotel_room_name.text = item.roomType
-        itemView.hotel_room_price.currencyText(item.roomPrice)
+        itemView.hotel_room_name.text = item.name
+        itemView.hotel_room_price.currencyText(item.price)
         itemView.hotel_name.text = item.hotel
         itemView.setOnClickListener { listener.onRoomClick(item) }
     }

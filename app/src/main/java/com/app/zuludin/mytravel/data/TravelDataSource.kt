@@ -1,7 +1,6 @@
 package com.app.zuludin.mytravel.data
 
-import com.app.zuludin.mytravel.data.model.remote.ExploreList
-import com.app.zuludin.mytravel.data.model.remote.TravelExplore
+import com.app.zuludin.mytravel.data.model.remote.*
 
 interface TravelDataSource {
 
@@ -10,4 +9,10 @@ interface TravelDataSource {
     suspend fun loadExploreByCategory(category: String): List<TravelExplore>
 
     suspend fun loadDetailExplore(id: Int): TravelExplore
+
+    suspend fun loadFlightTicket(): FlightList
+
+    suspend fun loadTrainTicket(): TrainList
+
+    suspend fun loadRentalCarList(): RentalList
 }

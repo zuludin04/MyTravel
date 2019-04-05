@@ -13,11 +13,11 @@ class TrainTicketViewHolder(
     private val listener: (train: Train, textTransition: TextView) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<Train> {
     override fun bind(item: Train) {
-        itemView.argo_train.text = item.argoName
+        itemView.argo_train.text = item.argo
         itemView.train_seat_class.text = item.seatClass
 
-        item.trainPrice?.let { itemView.train_price.currencyText(it) }
-        itemView.train_duration.text = item.trainDuration
+        item.price?.let { itemView.train_price.currencyText(it) }
+        itemView.train_duration.text = item.duration
         itemView.departure_station.text = item.cityOrigin
         itemView.departure_time.text = item.timeOrigin
         itemView.arrival_station.text = item.cityDestination

@@ -47,13 +47,12 @@ class SearchHotelListFragment : Fragment() {
         setupSearchLayout()
 
         view.search_hotel.setOnClickListener {
-            hotel.hotelCity = itemView.hotel_city.getItemText()
-            hotel.hotelLocation = itemView.hotel_city.getItemText()
+            hotel.city = itemView.hotel_city.getItemText()
             hotel.checkIn = itemView.check_in_hotel.getItemText()
             hotel.checkOut = itemView.check_out_hotel.getItemText()
-            hotel.stayDuration = itemView.total_night.getItemText().toInt()
-            hotel.totalGuest = itemView.hotel_guest.getItemText()
-            hotel.totalRoom = itemView.hotel_room.getItemText()
+            hotel.duration = itemView.total_night.getItemText().toInt()
+            hotel.guest = itemView.hotel_guest.getItemText()
+            hotel.room = itemView.hotel_room.getItemText()
 
             if (isSearchable()) {
                 val intent = Intent(requireContext(), TicketListActivity::class.java)

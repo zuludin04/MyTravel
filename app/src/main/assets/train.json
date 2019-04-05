@@ -1,0 +1,68 @@
+{
+  "train": [
+    {
+      "dataId": 1,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 110000,
+      "timeOrigin": "08.00",
+      "timeDestination": "10.00"
+    },
+    {
+      "dataId": 2,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 150000,
+      "timeOrigin": "11.30",
+      "timeDestination": "13.30"
+    },
+    {
+      "dataId": 3,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 175000,
+      "timeOrigin": "10.00",
+      "timeDestination": "12.00"
+    },
+    {
+      "dataId": 4,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 1300000,
+      "timeOrigin": "09.00",
+      "timeDestination": "11.00"
+    },
+    {
+      "dataId": 5,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 210000,
+      "timeOrigin": "15.00",
+      "timeDestination": "17.00"
+    },
+    {
+      "dataId": 6,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 250000,
+      "timeOrigin": "19.00",
+      "timeDestination": "21.00"
+    },
+    {
+      "dataId": 7,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 310000,
+      "timeOrigin": "16.00",
+      "timeDestination": "18.00"
+    },
+    {
+      "dataId": 8,
+      "duration": "2h 00m",
+      "argo": "Argo Parahyangan",
+      "price": 280000,
+      "timeOrigin": "14.00",
+      "timeDestination": "16.00"
+    }
+  ]
+}

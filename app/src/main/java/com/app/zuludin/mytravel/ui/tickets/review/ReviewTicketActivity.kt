@@ -1,6 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.review
 
 import android.content.Intent
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -13,6 +14,7 @@ import com.app.zuludin.mylibrary.dialog.listener.PassengerInputListener
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.Passenger
 import com.app.zuludin.mytravel.data.model.remote.Transaction
+import com.app.zuludin.mytravel.databinding.ReviewTicketActivityBinding
 import com.app.zuludin.mytravel.ui.payment.list.PaymentListActivity
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.review_ticket_activity.*
@@ -31,39 +33,18 @@ class ReviewTicketActivity : AppCompatActivity(), ContactInputListener, Passenge
     }
 
     private lateinit var transaction: Transaction
+    private lateinit var binding: ReviewTicketActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.review_ticket_activity)
+        binding = DataBindingUtil.setContentView(this, R.layout.review_ticket_activity)
 
         transaction = intent.getParcelableExtra("Transaction")
+        binding.transaction = transaction
 
-        setSupportActionBar(toolbar)
-        supportActionBar?.title = "Review"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        adapter.set(ArrayList())
-
-        review_book.text = transaction.book
-        review_city.text = transaction.city
-        review_price.text = transaction.price
-        review_service.text = transaction.service
-        review_date.text = transaction.date
-        review_duration.text = transaction.duration
-
+        setupToolbar()
         setupPassengerRecycler()
-
-        review_add_contact.setOnClickListener {
-            val dialog = ContactDialogFragment.getInstance(this)
-            dialog.show(supportFragmentManager, "Dialog")
-        }
-
-        confirm_button.setOnClickListener {
-            val intent = Intent(applicationContext, PaymentListActivity::class.java)
-            intent.putExtra(PaymentListActivity.TRANSACTION_DATA, transaction)
-            startActivity(intent)
-            overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
-        }
+        setupInputListener()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -90,7 +71,29 @@ class ReviewTicketActivity : AppCompatActivity(), ContactInputListener, Passenge
         dialog.show(supportFragmentManager, "Dialog")
     }
 
+    private fun setupToolbar() {
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Review"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    private fun setupInputListener() {
+        review_add_contact.setOnClickListener {
+            val dialog = ContactDialogFragment.getInstance(this)
+            dialog.show(supportFragmentManager, "Dialog")
+        }
+
+        confirm_button.setOnClickListener {
+            val intent = Intent(applicationContext, PaymentListActivity::class.java)
+            intent.putExtra(PaymentListActivity.TRANSACTION_DATA, transaction)
+            startActivity(intent)
+            overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
+        }
+    }
+
     private fun setupPassengerRecycler() {
+        adapter.set(ArrayList())
+
         recycler_passenger.apply {
             layoutManager = LinearLayoutManager(applicationContext)
             isNestedScrollingEnabled = false

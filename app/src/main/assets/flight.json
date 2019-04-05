@@ -1,0 +1,100 @@
+{
+  "flight": [
+    {
+      "dataId": 1,
+      "departureTime": "18.30",
+      "arrivalTime": "22.00",
+      "icon": "",
+      "price": 850000,
+      "machine": "BOEING 727",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Garuda Indonesia",
+      "seatLayout": "2x2 layout"
+    },
+    {
+      "dataId": 2,
+      "departureTime": "09.00",
+      "arrivalTime": "12.30",
+      "icon": "",
+      "price": 1150000,
+      "machine": "BOEING 767",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Lion Air",
+      "seatLayout": "3x3 layout"
+    },
+    {
+      "dataId": 3,
+      "departureTime": "11.30",
+      "arrivalTime": "15.00",
+      "icon": "",
+      "price": 1500000,
+      "machine": "BOEING X-30",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Batik Air",
+      "seatLayout": "2x2 layout"
+    },
+    {
+      "dataId": 4,
+      "departureTime": "07.30",
+      "arrivalTime": "11.00",
+      "icon": "",
+      "price": 1800000,
+      "machine": "BOEING 444",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Garuda Indonesia",
+      "seatLayout": "2x2 layout"
+    },
+    {
+      "dataId": 5,
+      "departureTime": "15.00",
+      "arrivalTime": "18.30",
+      "icon": "",
+      "price": 2210000,
+      "machine": "BOEING X-45",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Fly Emirates",
+      "seatLayout": "3x3 layout"
+    },
+    {
+      "dataId": 6,
+      "departureTime": "19.30",
+      "arrivalTime": "23.00",
+      "icon": "",
+      "price": 2250000,
+      "machine": "BOEING XXX",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Malaysia Airlines",
+      "seatLayout": "3x3 layout"
+    },
+    {
+      "dataId": 7,
+      "departureTime": "21.30",
+      "arrivalTime": "01.00",
+      "icon": "",
+      "price": 3250000,
+      "machine": "BOEING 777",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Citilink",
+      "seatLayout": "2x2 layout"
+    },
+    {
+      "dataId": 8,
+      "departureTime": "10.00",
+      "arrivalTime": "13.30",
+      "icon": "",
+      "price": 3100000,
+      "machine": "BOEING 007",
+      "cabin": "20kg",
+      "duration": "3h 30m",
+      "airline": "Air Asia",
+      "seatLayout": "3x3 layout"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.list
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.ActivityOptionsCompat
@@ -10,20 +12,18 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.CarRental
 import com.app.zuludin.mytravel.data.model.remote.Flight
 import com.app.zuludin.mytravel.data.model.remote.Hotel
+import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Train
-import com.app.zuludin.mytravel.ui.tickets.list.viewholder.CarListViewHolder
-import com.app.zuludin.mytravel.utils.DataProvider.flightTickets
-import com.app.zuludin.mytravel.utils.DataProvider.hotelsData
-import com.app.zuludin.mytravel.utils.DataProvider.rentalCarList
-import com.app.zuludin.mytravel.utils.DataProvider.trainTickets
-import com.app.zuludin.mytravel.utils.SpacingItemDecoration
 import com.app.zuludin.mytravel.ui.tickets.detail.DetailTicketActivity
+import com.app.zuludin.mytravel.ui.tickets.list.viewholder.CarListViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.FlightTicketViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.HotelListViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.TrainTicketViewHolder
+import com.app.zuludin.mytravel.utils.DataProvider.hotelsData
+import com.app.zuludin.mytravel.utils.SpacingItemDecoration
+import com.app.zuludin.mytravel.utils.ViewModelFactory
 import com.app.zuludin.mytravel.utils.toolbarTitle
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.ticket_list_activity.*
@@ -55,7 +55,7 @@ class TicketListActivity : AppCompatActivity() {
                     startActivity(intent, options.toBundle())
                 }
             }
-            addViewHolder(CarRental::class, R.layout.item_car_list) {
+            addViewHolder(Rental::class, R.layout.item_car_list) {
                 CarListViewHolder(it) { rental, imageTransition ->
                     val intent = Intent(applicationContext, DetailTicketActivity::class.java)
                     val imagePair =
@@ -81,92 +81,20 @@ class TicketListActivity : AppCompatActivity() {
         }
     }
 
+    private val viewModel: TicketListViewModel by lazy {
+        ViewModelProviders.of(this, ViewModelFactory.getInstance(application)).get(TicketListViewModel::class.java)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ticket_list_activity)
-
         setSupportActionBar(toolbar)
         supportActionBar?.apply {
-            title = intent.getStringExtra(TITLE)
-            subtitle = intent.getStringExtra(SUBTITLE)
             setDisplayHomeAsUpEnabled(true)
         }
 
-        recycler_ticket.layoutManager = LinearLayoutManager(applicationContext)
-        recycler_ticket.addItemDecoration(SpacingItemDecoration(16))
-        recycler_ticket.setHasFixedSize(true)
-        recycler_ticket.adapter = adapter
-
-        adapter.set(ArrayList())
-
-        when (intent.getStringExtra(LIST_TYPE)) {
-            "Flight" -> {
-                val flight: Flight = intent.getParcelableExtra(TICKET_DATA)
-                toolbarTitle("${flight.originCity} - ${flight.destinationCity}", flight.originDate)
-                adapter.insert(
-                    flightTickets(
-                        flight.airportOrigin.toString(),
-                        flight.airportDestination.toString(),
-                        flight.originCity.toString(),
-                        flight.destinationCity.toString(),
-                        flight.originCode.toString(),
-                        flight.destinationCode.toString(),
-                        flight.adultPassenger!!,
-                        flight.childPassenger!!,
-                        flight.infantPassenger!!,
-                        flight.seatClass.toString(),
-                        flight.originDate.toString(),
-                        flight.destinationDate.toString()
-                    )
-                )
-            }
-            "Hotel" -> {
-                val hotel: Hotel = intent.getParcelableExtra(TICKET_DATA)
-                toolbarTitle(hotel.hotelCity.toString(), hotel.checkIn)
-                adapter.insert(
-                    hotelsData(
-                        hotel.hotelCity.toString(),
-                        hotel.hotelLocation.toString(),
-                        hotel.checkIn.toString(),
-                        hotel.checkOut.toString(),
-                        hotel.stayDuration!!,
-                        hotel.totalGuest.toString(),
-                        hotel.totalRoom.toString()
-                    )
-                )
-            }
-            "Rental" -> {
-                val rental: CarRental = intent.getParcelableExtra(TICKET_DATA)
-                toolbarTitle(rental.rentalLocation.toString(), rental.startDate)
-                adapter.insert(
-                    rentalCarList(
-                        rental.rentalDuration.toString(),
-                        rental.pickupTime.toString(),
-                        rental.startDate.toString(),
-                        rental.finishDate.toString(),
-                        rental.rentalLocation.toString()
-                    )
-                )
-            }
-            "Train" -> {
-                val train: Train = intent.getParcelableExtra(TICKET_DATA)
-                toolbarTitle("${train.stationOrigin} - ${train.stationDestination}", train.departureDate)
-                adapter.insert(
-                    trainTickets(
-                        train.stationOrigin.toString(),
-                        train.stationDestination.toString(),
-                        train.cityOrigin.toString(),
-                        train.cityDestination.toString(),
-                        train.codeOrigin.toString(),
-                        train.codeDestination.toString(),
-                        train.adult!!,
-                        train.child!!,
-                        train.seatClass.toString(),
-                        train.departureDate.toString()
-                    )
-                )
-            }
-        }
+        setupRecycler()
+        setupTicketList()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -186,10 +114,95 @@ class TicketListActivity : AppCompatActivity() {
         overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right)
     }
 
+    private fun setupRecycler() {
+        recycler_ticket.layoutManager = LinearLayoutManager(applicationContext)
+        recycler_ticket.addItemDecoration(SpacingItemDecoration(16))
+        recycler_ticket.setHasFixedSize(true)
+        recycler_ticket.adapter = adapter
+
+        adapter.set(ArrayList())
+    }
+
+    private fun setupTicketList() {
+        when (intent.getStringExtra(LIST_TYPE)) {
+            "Flight" -> {
+                val flight: Flight = intent.getParcelableExtra(TICKET_DATA)
+                toolbarTitle("${flight.originCity} - ${flight.destinationCity}", flight.date)
+                viewModel.getFlightTickets(
+                    flight.airportOrigin.toString(),
+                    flight.airportDestination.toString(),
+                    flight.originCity.toString(),
+                    flight.destinationCity.toString(),
+                    flight.originCode.toString(),
+                    flight.destinationCode.toString(),
+                    flight.adult!!,
+                    flight.child!!,
+                    flight.infant!!,
+                    flight.seatClass.toString(),
+                    flight.date.toString()
+                ).observe(this, Observer { flights ->
+                    flights?.let {
+                        adapter.insert(it)
+                        recycler_ticket.adapter = adapter
+                    }
+                })
+            }
+            "Hotel" -> {
+                val hotel: Hotel = intent.getParcelableExtra(TICKET_DATA)
+                toolbarTitle(hotel.city.toString(), hotel.checkIn)
+                adapter.insert(
+                    hotelsData(
+                        hotel.city.toString(),
+                        hotel.checkIn.toString(),
+                        hotel.checkOut.toString(),
+                        hotel.duration!!,
+                        hotel.guest.toString(),
+                        hotel.room.toString()
+                    )
+                )
+            }
+            "Rental" -> {
+                val rental: Rental = intent.getParcelableExtra(TICKET_DATA)
+                toolbarTitle(rental.region.toString(), rental.startDate)
+                viewModel.getRentalCars(
+                    rental.duration.toString(),
+                    rental.pickUpTime.toString(),
+                    rental.startDate.toString(),
+                    rental.finishDate.toString(),
+                    rental.region.toString()
+                ).observe(this, Observer { rentals ->
+                    rentals?.let {
+                        adapter.insert(it)
+                        recycler_ticket.adapter = adapter
+                    }
+                })
+            }
+            "Train" -> {
+                val train: Train = intent.getParcelableExtra(TICKET_DATA)
+                toolbarTitle("${train.stationOrigin} - ${train.stationDestination}", train.date)
+                viewModel.getTrainTickets(
+                    train.stationOrigin.toString(),
+                    train.stationDestination.toString(),
+                    train.cityOrigin.toString(),
+                    train.cityDestination.toString(),
+                    train.codeOrigin.toString(),
+                    train.codeDestination.toString(),
+                    train.adult!!,
+                    train.child!!,
+                    train.seatClass.toString(),
+                    train.date.toString()
+                ).observe(this, Observer { trains ->
+                    trains?.let {
+                        adapter.insert(it)
+                        recycler_ticket.adapter = adapter
+                    }
+                })
+            }
+        }
+    }
+
     companion object {
         const val LIST_TYPE = "listType"
         const val TICKET_DATA = "ticketData"
-        const val TITLE = "title"
-        const val SUBTITLE = "subtitle"
     }
 }

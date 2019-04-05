@@ -53,14 +53,27 @@ class MainExploreFragment : Fragment() {
         ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!)).get(MainExploreViewModel::class.java)
     }
 
+    private lateinit var itemView: View
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.main_explore_fragment, container, false)
+        itemView = view
         adapter.set(ArrayList())
         return view
+    }
+
+    override fun onStart() {
+        super.onStart()
+        itemView.shimmer_view_container.startShimmerAnimation()
+    }
+
+    override fun onStop() {
+        itemView.shimmer_view_container.stopShimmerAnimation()
+        super.onStop()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -84,12 +97,13 @@ class MainExploreFragment : Fragment() {
             adapter = this@MainExploreFragment.adapter
         }
 
-        adapter.insert(categoryList())
-
         viewModel.getExplores().observe(this, Observer {
             if (it != null) {
+                adapter.insert(categoryList())
                 adapter.insert(it)
                 view.recycler_explore.adapter = adapter
+                view.shimmer_view_container.stopShimmerAnimation()
+                view.shimmer_view_container.visibility = View.GONE
             }
         })
     }

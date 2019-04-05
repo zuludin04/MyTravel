@@ -13,15 +13,15 @@ class FlightTicketViewHolder(
     private val listener: (flight: Flight, icon: ImageView) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<Flight> {
     override fun bind(item: Flight) {
-        itemView.origin_time.text = item.originTime
-        itemView.destination_time.text = item.destinationTime
+        itemView.origin_time.text = item.departureTime
+        itemView.destination_time.text = item.arrivalTime
         itemView.origin_code.text = item.originCode
         itemView.destination_code.text = item.destinationCode
         itemView.origin_city.text = item.originCity
         itemView.destination_city.text = item.destinationCity
-        item.airlineIcon?.let { itemView.flight_logo.setImageResource(it) }
+//        item.icon?.let { itemView.flight_logo.setImageResource(it) }
 
-        item.flightPrice?.let { itemView.flight_price.currencyText(it) }
+        item.price?.let { itemView.flight_price.currencyText(it) }
 
         itemView.setOnClickListener {
             listener(item, itemView.flight_logo)

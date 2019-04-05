@@ -16,8 +16,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/toolbar"
-                app:titleTextColor="@color/black"
-                app:subtitleTextColor="#75000000"
                 android:background="?attr/colorPrimary"
                 style="@style/ToolbarStyle"/>
 

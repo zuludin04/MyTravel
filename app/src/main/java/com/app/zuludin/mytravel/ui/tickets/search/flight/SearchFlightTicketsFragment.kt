@@ -34,10 +34,8 @@ class SearchFlightTicketsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.search_flight_tickets_fragment, container, false)
-
         itemView = view
         flight = Flight()
-
         return view
     }
 
@@ -46,12 +44,11 @@ class SearchFlightTicketsFragment : Fragment() {
         setupSearchLayout()
 
         view.search_ticket.setOnClickListener {
-            flight.adultPassenger = itemView.adult.getItemText().toInt()
-            flight.childPassenger = itemView.child.getItemText().toInt()
-            flight.infantPassenger = itemView.infant.getItemText().toInt()
+            flight.adult = itemView.adult.getItemText().toInt()
+            flight.child = itemView.child.getItemText().toInt()
+            flight.infant = itemView.infant.getItemText().toInt()
             flight.seatClass = itemView.seat_class.getItemText()
-            flight.originDate = itemView.departure_date.getItemText()
-            flight.destinationDate = itemView.departure_date.getItemText()
+            flight.date = itemView.departure_date.getItemText()
 
             if (isSearchable()) {
                 val intent = Intent(requireContext(), TicketListActivity::class.java)

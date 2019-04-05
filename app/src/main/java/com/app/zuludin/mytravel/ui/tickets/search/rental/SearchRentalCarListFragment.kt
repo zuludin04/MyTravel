@@ -12,7 +12,7 @@ import com.app.zuludin.mylibrary.dialog.listener.CalendarListener
 import com.app.zuludin.mylibrary.dialog.listener.CityListener
 import com.app.zuludin.mylibrary.dialog.model.City
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.CarRental
+import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.ui.tickets.list.TicketListActivity
 import com.app.zuludin.mytravel.utils.DataProvider.dropdownList
 import kotlinx.android.synthetic.main.search_rental_car_list_fragment.view.*
@@ -26,7 +26,7 @@ import java.util.*
 class SearchRentalCarListFragment : Fragment() {
 
     private lateinit var itemView: View
-    private lateinit var rental: CarRental
+    private lateinit var rental: Rental
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +36,7 @@ class SearchRentalCarListFragment : Fragment() {
         val view = inflater.inflate(R.layout.search_rental_car_list_fragment, container, false)
 
         itemView = view
-        rental = CarRental()
+        rental = Rental()
 
         return view
     }
@@ -47,10 +47,10 @@ class SearchRentalCarListFragment : Fragment() {
 
         view.search_rental.setOnClickListener {
             if (isSearchable()) {
-                rental.rentalDuration = itemView.rental_duration.getItemText()
-                rental.pickupTime = itemView.car_pickup_time.getItemText()
+                rental.duration = itemView.rental_duration.getItemText()
+                rental.pickUpTime = itemView.car_pickup_time.getItemText()
                 rental.startDate = itemView.rental_date.getItemText()
-                rental.rentalLocation = itemView.region_city.getItemText()
+                rental.region = itemView.region_city.getItemText()
 
                 val dateFormat = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
                 val duration = itemView.rental_duration.getItemText()

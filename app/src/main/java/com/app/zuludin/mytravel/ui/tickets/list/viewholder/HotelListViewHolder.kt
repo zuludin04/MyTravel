@@ -15,17 +15,17 @@ class HotelListViewHolder(
     private val listener: (hotel: Hotel, imageTransition: ImageView) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<Hotel> {
     override fun bind(item: Hotel) {
-        item.hotelImage?.let { itemView.hotel_image.setImageResource(it) }
-        itemView.hotel_name.text = item.hotelName
-        itemView.hotel_rating.rating = item.hotelRating?.toFloat()!!
+        item.thumbnail?.let { itemView.hotel_image.setImageResource(it) }
+        itemView.hotel_name.text = item.name
+        itemView.hotel_rating.rating = item.rating?.toFloat()!!
 
         val localeId = Locale("in", "ID")
         val numberFormat = NumberFormat.getCurrencyInstance(localeId)
 
         itemView.hotel_price.text =
-            itemView.context.getString(R.string.hotel_price, numberFormat.format(item.hotelPrice))
+            itemView.context.getString(R.string.hotel_price, numberFormat.format(item.startFrom))
 
-        itemView.hotel_place.text = item.hotelCity
+        itemView.hotel_place.text = item.city
 
         itemView.setOnClickListener {
             listener(item, itemView.hotel_image)

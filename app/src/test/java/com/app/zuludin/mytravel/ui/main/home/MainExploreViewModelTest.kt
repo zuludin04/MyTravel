@@ -4,7 +4,6 @@ import android.app.Application
 import android.arch.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.TestContextProvider
 import com.app.zuludin.mytravel.data.TravelDataRepository
-import com.app.zuludin.mytravel.data.TravelDataSource
 import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.google.common.collect.Lists
@@ -12,7 +11,9 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import org.mockito.*
+import org.mockito.Mock
+import org.mockito.Mockito
+import org.mockito.MockitoAnnotations
 
 class MainExploreViewModelTest {
 
@@ -24,9 +25,6 @@ class MainExploreViewModelTest {
 
     @Mock
     private lateinit var exploreList: MutableLiveData<List<ExploreList>>
-
-//    @Captor
-//    private lateinit var exploreCaptureCallback: ArgumentCaptor<TravelDataSource.ExploreDataListCallback>
 
     private lateinit var viewModel: MainExploreViewModel
 

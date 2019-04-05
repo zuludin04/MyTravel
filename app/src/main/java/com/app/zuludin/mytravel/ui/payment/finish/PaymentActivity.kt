@@ -22,7 +22,6 @@ class PaymentActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
         toolbarTitle(type, "${transaction.book}")
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         if (savedInstanceState == null) {

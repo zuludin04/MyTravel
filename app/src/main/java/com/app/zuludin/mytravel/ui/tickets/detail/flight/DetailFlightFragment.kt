@@ -1,6 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.flight
 
 import android.content.Intent
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Flight
 import com.app.zuludin.mytravel.data.model.remote.Transaction
+import com.app.zuludin.mytravel.databinding.DetailFlightFragmentBinding
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
 import com.app.zuludin.mytravel.utils.currencyText
 import kotlinx.android.synthetic.main.detail_flight_fragment.view.*
@@ -20,13 +22,15 @@ import kotlinx.android.synthetic.main.detail_flight_fragment.view.*
 class DetailFlightFragment : Fragment() {
 
     private lateinit var transaction: Transaction
+    private lateinit var binding: DetailFlightFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.detail_flight_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.detail_flight_fragment, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -46,32 +50,12 @@ class DetailFlightFragment : Fragment() {
     private fun setupDetailLayout(view: View) {
         val flight: Flight = arguments?.getParcelable(FLIGHT_DATA)!!
 
-        view.detail_airline_icon.setImageResource(flight.airlineIcon!!)
-        view.detail_airline_name.text = flight.airlineName
-        view.detail_trip_city.text = getString(R.string.city_trip, flight.originCity, flight.destinationCity)
-        view.detail_trip_duration.text = flight.flightDuration
-        view.detail_trip_machine.text = flight.machine
-        view.detail_flight_cabin.text = flight.baggage
-        view.detail_trip_origin.setTitle(flight.airportOrigin)
-        view.detail_trip_origin.setSubtitle("${flight.originCity} - ${flight.originCode} (${flight.originTime})")
-        view.detail_trip_origin.setAnchor(flight.originDate)
-        view.detail_trip_destination.setTitle(flight.airportDestination)
-        view.detail_trip_destination.setSubtitle("${flight.destinationCity} - ${flight.destinationCode} (${flight.destinationTime})")
-        view.detail_trip_destination.setAnchor(flight.destinationDate)
-        view.adult_price_title.text = "${flight.airlineName} (Adult) ${flight.adultPassenger}"
-        view.child_price_title.text = "${flight.airlineName} (Child) ${flight.childPassenger}"
-        view.infant_price_title.text = "${flight.airlineName} (Infant) ${flight.infantPassenger}"
+        binding.flight = flight
 
-        val childPrice = flight.flightPrice?.div(2)
-
-        val totalAdultPrice = flight.flightPrice?.times(flight.adultPassenger!!)
-        val totalChildPrice = childPrice?.times(flight.childPassenger!!)
-        val totalInfantPrice = childPrice?.times(flight.infantPassenger!!)
-
-        view.adult_price.currencyText(totalAdultPrice)
-        view.child_price.currencyText(totalChildPrice)
-        view.infant_price.currencyText(totalInfantPrice)
-
+        val childPrice = flight.price?.div(2)
+        val totalAdultPrice = flight.price?.times(flight.adult!!)
+        val totalChildPrice = childPrice?.times(flight.child!!)
+        val totalInfantPrice = childPrice?.times(flight.infant!!)
         val total = totalAdultPrice?.plus(totalChildPrice!!)?.plus(totalInfantPrice!!)
 
         view.total_price.currencyText(total)
@@ -79,13 +63,13 @@ class DetailFlightFragment : Fragment() {
         transaction.city = getString(R.string.city_trip, flight.originCity, flight.destinationCity)
         transaction.book = getString(R.string.city_trip, flight.airportOrigin, flight.airportDestination)
         transaction.price = view.total_price.text.toString()
-        transaction.service = "Airline : ${flight.airlineName}"
-        transaction.date = "Date : ${flight.originDate}"
-        transaction.duration = "Duration : ${flight.flightDuration}"
+        transaction.service = "Airline : ${flight.airline}"
+        transaction.date = "Date : ${flight.date}"
+        transaction.duration = "Duration : ${flight.duration}"
         transaction.type = "Flight"
-        transaction.adult = flight.adultPassenger
-        transaction.child = flight.childPassenger
-        transaction.infant = flight.infantPassenger
+        transaction.adult = flight.adult
+        transaction.child = flight.child
+        transaction.infant = flight.infant
     }
 
     companion object {

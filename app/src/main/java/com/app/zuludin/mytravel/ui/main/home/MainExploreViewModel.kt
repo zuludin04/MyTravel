@@ -8,6 +8,7 @@ import com.app.zuludin.mytravel.data.TravelDataRepository
 import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.utils.CoroutineContextProvider
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainExploreViewModel(
@@ -29,6 +30,8 @@ class MainExploreViewModel(
 
     fun loadExploreList() {
         GlobalScope.launch(contextProvider.main) {
+            delay(3000)
+
             val list: List<ExploreList> = repository.loadMainExploreData()
             travelExploreDataList.value = list
         }

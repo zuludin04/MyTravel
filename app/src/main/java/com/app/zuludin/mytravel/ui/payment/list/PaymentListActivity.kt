@@ -21,7 +21,6 @@ class PaymentListActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Payment"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
 
         val transaction: Transaction = intent.getParcelableExtra(TRANSACTION_DATA)
 

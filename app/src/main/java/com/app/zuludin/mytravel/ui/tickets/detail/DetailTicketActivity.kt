@@ -1,11 +1,12 @@
 package com.app.zuludin.mytravel.ui.tickets.detail
 
+import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.CarRental
+import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Flight
 import com.app.zuludin.mytravel.data.model.remote.Hotel
 import com.app.zuludin.mytravel.data.model.remote.Train
@@ -32,7 +33,13 @@ class DetailTicketActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home) finish()
+        if (item.itemId == android.R.id.home) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                finishAfterTransition()
+            } else {
+                finish()
+            }
+        }
         return super.onOptionsItemSelected(item)
     }
 
@@ -45,7 +52,7 @@ class DetailTicketActivity : AppCompatActivity() {
             }
             "Hotel" -> {
                 val hotel: Hotel = intent.getParcelableExtra(DETAIL_DATA)
-                toolbarTitle(hotel.hotelName.toString())
+                toolbarTitle(hotel.name.toString())
                 initializeFragment(DetailHotelFragment.getInstance(hotel))
             }
             "Train" -> {
@@ -54,8 +61,8 @@ class DetailTicketActivity : AppCompatActivity() {
                 initializeFragment(DetailTrainFragment.getInstance(train))
             }
             "Rental" -> {
-                val rental: CarRental = intent.getParcelableExtra(DETAIL_DATA)
-                toolbarTitle(rental.carName.toString())
+                val rental: Rental = intent.getParcelableExtra(DETAIL_DATA)
+                toolbarTitle(rental.car.toString())
                 initializeFragment(DetailRentalFragment.getInstance(rental))
             }
         }

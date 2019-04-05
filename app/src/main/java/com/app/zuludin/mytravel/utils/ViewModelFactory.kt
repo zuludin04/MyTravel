@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModelProvider
 import com.app.zuludin.mytravel.ui.category.CategoryViewModel
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailViewModel
 import com.app.zuludin.mytravel.ui.main.home.MainExploreViewModel
+import com.app.zuludin.mytravel.ui.tickets.list.TicketListViewModel
 
 class ViewModelFactory(
     private val application: Application
@@ -22,6 +23,10 @@ class ViewModelFactory(
                 CoroutineContextProvider()
             ) as T
             modelClass.isAssignableFrom(ExploreDetailViewModel::class.java) -> ExploreDetailViewModel(
+                application,
+                CoroutineContextProvider()
+            ) as T
+            modelClass.isAssignableFrom(TicketListViewModel::class.java) -> TicketListViewModel(
                 application,
                 CoroutineContextProvider()
             ) as T

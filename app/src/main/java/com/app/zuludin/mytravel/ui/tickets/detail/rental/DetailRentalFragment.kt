@@ -1,6 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.rental
 
 import android.content.Intent
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -9,14 +10,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.CarRental
+import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Transaction
+import com.app.zuludin.mytravel.databinding.DetailRentalFragmentBinding
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
-import com.app.zuludin.mytravel.utils.currencyText
-import com.squareup.picasso.Callback
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail_rental_fragment.view.*
-import java.lang.Exception
 
 /**
  * A simple [Fragment] subclass.
@@ -25,13 +23,15 @@ import java.lang.Exception
 class DetailRentalFragment : Fragment() {
 
     private lateinit var transaction: Transaction
+    private lateinit var binding: DetailRentalFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.detail_rental_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.detail_rental_fragment, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -48,39 +48,10 @@ class DetailRentalFragment : Fragment() {
     }
 
     private fun setupDetailLayout(view: View) {
-        val rental: CarRental = arguments?.getParcelable(RENTAL_DATA)!!
+        val rental: Rental = arguments?.getParcelable(RENTAL_DATA)!!
 
-        Picasso.get()
-            .load(rental.carImage!!)
-            .noFade()
-            .into(view.rental_detail_image, object : Callback {
-                override fun onSuccess() {
-                    activity?.supportStartPostponedEnterTransition()
-                }
-
-                override fun onError(e: Exception?) {
-                    activity?.supportStartPostponedEnterTransition()
-                }
-            })
-
-//        view.rental_detail_image.setImageResource(rental.carImage!!)
-        view.rental_detail_car.text = rental.carName
-        view.rental_detail_rental.text = rental.rentalName
-        view.rental_detail_rating.rating = rental.rentalRating?.toFloat()!!
-
-        view.detail_rental_city.text = rental.rentalLocation
-        view.detail_rental_date.text = rental.startDate
-        view.detail_rental_duration.text = "${rental.rentalDuration} days"
-        view.detail_rental_machine.text = "RX Machine"
-        view.detail_rental_seat.text = "6 seater"
-
-        view.rental_price_title.text = "${rental.carName} x ${rental.rentalDuration} days"
-        view.rental_price.currencyText(rental.rentalPrice)
-
-        val duration = rental.rentalDuration?.toInt()
-
-        val totalPrice = duration?.let { rental.rentalPrice?.times(it) }
-        view.total_price.currencyText(totalPrice)
+        binding.rental = rental
+        binding.rentalDetailRating.rating = rental.rating?.toFloat()!!
 
         view.recycler_review.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
@@ -90,10 +61,10 @@ class DetailRentalFragment : Fragment() {
 
         PagerSnapHelper().attachToRecyclerView(view.recycler_review)
 
-        transaction.city = rental.rentalLocation
-        transaction.book = rental.carName
+        transaction.city = rental.region
+        transaction.book = rental.car
         transaction.price = view.total_price.text.toString()
-        transaction.service = "Rental : ${rental.rentalName}"
+        transaction.service = "Rental : ${rental.rental}"
         transaction.date = "Date : ${rental.startDate}"
         transaction.duration = "Duration : ${view.detail_rental_duration.text}"
         transaction.type = "Rental"
@@ -105,7 +76,7 @@ class DetailRentalFragment : Fragment() {
     companion object {
         const val RENTAL_DATA = "rentalData"
 
-        fun getInstance(rental: CarRental): DetailRentalFragment {
+        fun getInstance(rental: Rental): DetailRentalFragment {
             val fragment = DetailRentalFragment()
             val args = Bundle()
 

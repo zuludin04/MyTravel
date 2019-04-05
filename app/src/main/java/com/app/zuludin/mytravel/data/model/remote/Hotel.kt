@@ -1,24 +1,45 @@
 package com.app.zuludin.mytravel.data.model.remote
 
 import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Hotel(
-    val hotelImage: Int? = null,
-    val hotelName: String? = null,
-    var hotelPrice: Int? = null,
-    val hotelRating: Double? = null,
-    var hotelLocation: String? = null,
-    var hotelCity: String? = null,
+    @SerializedName("dataId")
+    val dataId: Int? = null,
+
+    @SerializedName("thumbnail")
+    val thumbnail: Int? = null,
+
+    @SerializedName("name")
+    val name: String? = null,
+
+    @SerializedName("startFrom")
+    val startFrom: Int? = null,
+
+    @SerializedName("rating")
+    val rating: Double? = null,
+
+    @SerializedName("region")
+    val location: String? = null,
+
+    @SerializedName("timeIn")
+    val timeIn: String? = null,
+
+    @SerializedName("timeOut")
+    val timeOut: String? = null,
+
+    @SerializedName("rooms")
+    val rooms: ArrayList<HotelRoom>? = null,
+
+    @SerializedName("review")
+    val review: List<Review>? = null,
+
+    var city: String? = null,
     var checkIn: String? = null,
     var checkOut: String? = null,
-    var stayDuration: Int? = null,
-    val timeIn: String? = null,
-    val timeOut: String? = null,
-    var totalGuest: String? = null,
-    var totalRoom: String? = null,
-    var roomSelected: HotelRoom? = null,
-    var totalPrice: String? = null,
-    val rooms: ArrayList<HotelRoom>? = null
+    var duration: Int? = null,
+    var guest: String? = null,
+    var room: String? = null
 ): Parcelable

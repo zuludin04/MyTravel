@@ -24,7 +24,6 @@ object DataProvider {
 
     fun hotelsData(
         city: String,
-        location: String,
         checkIn: String,
         checkOut: String,
         stay: Int,
@@ -35,155 +34,146 @@ object DataProvider {
 
         list.add(
             Hotel(
-                hotelImage = R.drawable.hotel_room,
-                hotelName = "Hotel Indah Kapuk",
-                hotelPrice = 860000,
-                hotelRating = 3.4,
+                thumbnail = R.drawable.hotel_room,
+                name = "Hotel Indah Kapuk",
+                startFrom = 860000,
+                rating = 3.4,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.bali,
-                hotelName = "Hotel Jaya",
-                hotelPrice = 1200000,
-                hotelRating = 3.0,
+                thumbnail = R.drawable.bali,
+                name = "Hotel Jaya",
+                startFrom = 1200000,
+                rating = 3.0,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.singapore,
-                hotelName = "Hotel Nusa Dua",
-                hotelPrice = 1500000,
-                hotelRating = 4.2,
+                thumbnail = R.drawable.singapore,
+                name = "Hotel Nusa Dua",
+                startFrom = 1500000,
+                rating = 4.2,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.hotel_room,
-                hotelName = "Hotel Bangsa Bangsa",
-                hotelPrice = 2300000,
-                hotelRating = 3.8,
+                thumbnail = R.drawable.hotel_room,
+                name = "Hotel Bangsa Bangsa",
+                startFrom = 2300000,
+                rating = 3.8,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.bali,
-                hotelName = "Hotel Harapan",
-                hotelPrice = 3800000,
-                hotelRating = 4.5,
+                thumbnail = R.drawable.bali,
+                name = "Hotel Harapan",
+                startFrom = 3800000,
+                rating = 4.5,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.singapore,
-                hotelName = "Hotel Purnama",
-                hotelPrice = 4000000,
-                hotelRating = 4.3,
+                thumbnail = R.drawable.singapore,
+                name = "Hotel Purnama",
+                startFrom = 4000000,
+                rating = 4.3,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.hotel_room,
-                hotelName = "Hotel Surya Kencana",
-                hotelPrice = 5200000,
-                hotelRating = 4.5,
+                thumbnail = R.drawable.hotel_room,
+                name = "Hotel Surya Kencana",
+                startFrom = 5200000,
+                rating = 4.5,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.bali,
-                hotelName = "Hotel Jaja",
-                hotelPrice = 5500000,
-                hotelRating = 2.5,
+                thumbnail = R.drawable.bali,
+                name = "Hotel Jaja",
+                startFrom = 5500000,
+                rating = 2.5,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
         list.add(
             Hotel(
-                hotelImage = R.drawable.singapore,
-                hotelName = "Hotel Angkasa Pribadi",
-                hotelPrice = 6000000,
-                hotelRating = 4.9,
+                thumbnail = R.drawable.singapore,
+                name = "Hotel Angkasa Pribadi",
+                startFrom = 6000000,
+                rating = 4.9,
                 timeIn = "14:00",
                 timeOut = "13:00",
-                hotelCity = city,
-                hotelLocation = location,
+                city = city,
                 checkIn = checkIn,
                 checkOut = checkOut,
-                stayDuration = stay,
-                totalGuest = totalGuest,
-                totalRoom = totalRoom
+                duration = stay,
+                guest = totalGuest,
+                room = totalRoom
             )
         )
 
@@ -196,493 +186,6 @@ object DataProvider {
         rooms.add(HotelRoom(hotelName, "Regular", 1200000))
         rooms.add(HotelRoom(hotelName, "Double Deluxe", 2000000))
         return rooms
-    }
-
-    fun flightTickets(
-        airportOrigin: String,
-        airportDestination: String,
-        originCity: String,
-        destinationCity: String,
-        originCode: String,
-        destinationCode: String,
-        adult: Int,
-        child: Int,
-        infant: Int,
-        seatClass: String,
-        originDate: String,
-        destinationDate: String
-    ): List<Flight> {
-        val list: MutableList<Flight> = mutableListOf()
-
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Garuda Indonesia",
-                airlineIcon = R.drawable.garuda_indonesia,
-                flightPrice = 850000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Lion Air",
-                airlineIcon = R.drawable.lion_air,
-                flightPrice = 1150000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Batik Air",
-                airlineIcon = R.drawable.batik_air,
-                flightPrice = 1500000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Fly Emirates",
-                airlineIcon = R.drawable.fly_emirates,
-                flightPrice = 1800000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Malaysia Airlines",
-                airlineIcon = R.drawable.malaysia_airlines,
-                flightPrice = 2210000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Citilink",
-                airlineIcon = R.drawable.citilink,
-                flightPrice = 2750000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Air Asia",
-                airlineIcon = R.drawable.air_asia,
-                flightPrice = 3000000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-        list.add(
-            Flight(
-                flightDuration = "3h 45m",
-                airlineName = "Sriwijaya Air",
-                airlineIcon = R.drawable.sriwijaya_air,
-                flightPrice = 4250000,
-                originTime = "13:40",
-                destinationTime = "17:20",
-                baggage = "20 kg",
-                machine = "Boeing-727",
-                seatLayout = "3x3 inch",
-                airportOrigin = airportOrigin,
-                airportDestination = airportDestination,
-                originCity = originCity,
-                destinationCity = destinationCity,
-                originCode = originCode,
-                destinationCode = destinationCode,
-                adultPassenger = adult,
-                childPassenger = child,
-                infantPassenger = infant,
-                seatClass = seatClass,
-                originDate = originDate,
-                destinationDate = destinationDate
-            )
-        )
-
-        return list
-    }
-
-    fun trainTickets(
-        stationOrigin: String,
-        stationDestination: String,
-        originCity: String,
-        destinationCity: String,
-        originCode: String,
-        destinationCode: String,
-        adult: Int,
-        child: Int,
-        seatClass: String,
-        departureDate: String
-    ): List<Train> {
-        val list: MutableList<Train> = mutableListOf()
-
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 110000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 150000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 200000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 240000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 280000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 310000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 380000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-        list.add(
-            Train(
-                trainDuration = "3h 45m",
-                argoName = "Argo Parahyangan",
-                trainPrice = 450000,
-                timeOrigin = "18:40",
-                timeDestination = "21:50",
-                stationOrigin = stationOrigin,
-                stationDestination = stationDestination,
-                cityOrigin = originCity,
-                cityDestination = destinationCity,
-                codeOrigin = originCode,
-                codeDestination = destinationCode,
-                adult = adult,
-                child = child,
-                seatClass = seatClass,
-                departureDate = departureDate
-            )
-        )
-
-        return list
-    }
-
-    fun rentalCarList(
-        duration: String,
-        pickup: String,
-        start: String,
-        finish: String,
-        location: String
-    ): List<CarRental> {
-        val list: MutableList<CarRental> = mutableListOf()
-
-        list.add(
-            CarRental(
-                carName = "Avanza",
-                rentalName = "Surya Kencana Rental",
-                rentalPrice = 250000,
-                carImage = R.drawable.avanza,
-                rentalRating = 3.3,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-        list.add(
-            CarRental(
-                carName = "Xenia",
-                rentalName = "Rental Abadi",
-                rentalPrice = 295000,
-                carImage = R.drawable.xenia,
-                rentalRating = 3.7,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-        list.add(
-            CarRental(
-                carName = "Agya",
-                rentalName = "Rental Primus",
-                rentalPrice = 330000,
-                carImage = R.drawable.agya,
-                rentalRating = 4.0,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-        list.add(
-            CarRental(
-                carName = "Ertiga",
-                rentalName = "Sabar Rental",
-                rentalPrice = 365000,
-                carImage = R.drawable.ertiga,
-                rentalRating = 4.4,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-        list.add(
-            CarRental(
-                carName = "Innova",
-                rentalName = "Rental Sabar Makmur",
-                rentalPrice = 380000,
-                carImage = R.drawable.innova,
-                rentalRating = 4.2,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-        list.add(
-            CarRental(
-                carName = "Brio",
-                rentalName = "Sukaneka Rental",
-                rentalPrice = 450000,
-                carImage = R.drawable.brio,
-                rentalRating = 4.6,
-                rentalDuration = duration,
-                pickupTime = pickup,
-                startDate = start,
-                finishDate = finish,
-                rentalLocation = location
-            )
-        )
-
-        return list
     }
 
     fun dropdownList(context: Context, arrayList: Int): List<String> {

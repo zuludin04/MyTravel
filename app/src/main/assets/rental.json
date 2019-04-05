@@ -1,0 +1,100 @@
+{
+  "rental": [
+    {
+      "dataId": 1,
+      "car": "Avanza",
+      "rental": "Surya Kencana Rental",
+      "price": 250000,
+      "image": "",
+      "rating": 3.3,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    },
+    {
+      "dataId": 2,
+      "car": "Xenia",
+      "rental": "Rental Abadi",
+      "price": 295000,
+      "image": "",
+      "rating": 3.7,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    },
+    {
+      "dataId": 3,
+      "car": "Agya",
+      "rental": "Rental Primus",
+      "price": 330000,
+      "image": "",
+      "rating": 4.0,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    },
+    {
+      "dataId": 4,
+      "car": "Ertiga",
+      "rental": "Sabar Rental",
+      "price": 365000,
+      "image": "",
+      "rating": 4.4,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    },
+    {
+      "dataId": 5,
+      "car": "Innova",
+      "rental": "Rental Sabar Makmur",
+      "price": 380000,
+      "image": "",
+      "rating": 4.2,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    },
+    {
+      "dataId": 6,
+      "car": "Brio",
+      "rental": "Sukaneka Rental",
+      "price": 450000,
+      "image": "",
+      "rating": 4.6,
+      "review": [
+        {
+          "comment": "",
+          "name": "",
+          "date": "",
+          "rating": 0
+        }
+      ]
+    }
+  ]
+}

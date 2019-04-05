@@ -6,6 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Gallery(
-    @SerializedName("image")
+    @SerializedName("thumbnail")
     val image: String? = null
 ) : Parcelable

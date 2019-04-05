@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             android:padding="16dp"
-            android:background="@color/secondaryDarkColor"
+            android:background="#ffc53a"
             android:id="@+id/info">
 
         <TextView
@@ -22,7 +22,7 @@
                 android:layout_toStartOf="@+id/transaction_price"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/primaryTextColor"
                 android:id="@+id/transaction_main_information"/>
 
         <TextView
@@ -31,7 +31,6 @@
                 tools:text="Date"
                 android:layout_below="@+id/transaction_main_information"
                 android:textSize="12sp"
-                android:textColor="@color/background_color"
                 android:id="@+id/transaction_date"/>
 
         <TextView
@@ -40,7 +39,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 tools:text="Rp 320.000"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:id="@+id/transaction_price"/>
 
@@ -115,7 +114,7 @@
             android:id="@+id/confirm_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primaryColor"
+            android:background="#cccccc"
             android:textColor="@color/primaryTextColor"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/confirm"

@@ -18,7 +18,6 @@ data class TravelExplore(
     @SerializedName("name")
     val name: String? = null,
 
-
     @SerializedName("rating")
     val rating: Double? = null,
 

@@ -23,7 +23,13 @@
     <string name="status">Status</string>
     <string name="city">City</string>
     <string name="date">Date</string>
+    <string name="rental_duration">%s days</string>
     <string name="city_trip">%s - %s</string>
+    <string name="trip_information">%s - %s (%s)</string>
+    <string name="price_title_adult">%s (Adult) %s</string>
+    <string name="price_title_child">%s (Child) %s</string>
+    <string name="price_title_infant">%s (Infant) %s</string>
+    <string name="price_title_rental">%s x %s days</string>
     <string name="confirmation_number">Confirmation Number</string>
     <string name="weather">%s℃</string>
 
@@ -61,4 +67,5 @@
     <string name="book_ticket">Book Ticket</string>
     <string name="about">About</string>
     <string name="gallery">Gallery</string>
+    <string name="pay">Pay</string>
 </resources>

@@ -64,7 +64,7 @@ data class Transaction(
         return mapOf(
             "book" to book,
             "city" to city,
-            "price" to price,
+            "startFrom" to price,
             "service" to service,
             "date" to date,
             "duration" to duration,
