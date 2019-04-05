@@ -7,6 +7,8 @@
       "price": 250000,
       "image": "",
       "rating": 3.3,
+      "machine" : "Dual VVT-i",
+      "seats" : "6 seat",
       "review": [
         {
           "comment": "",
@@ -23,6 +25,8 @@
       "price": 295000,
       "image": "",
       "rating": 3.7,
+      "machine" : "1 NR-VE DOHC Dual VVT-i",
+      "seats" : "6 seat",
       "review": [
         {
           "comment": "",
@@ -39,6 +43,8 @@
       "price": 330000,
       "image": "",
       "rating": 4.0,
+      "machine" : "VVT-i / 3 Cylinder",
+      "seats" : "5 seat",
       "review": [
         {
           "comment": "",
@@ -55,6 +61,8 @@
       "price": 365000,
       "image": "",
       "rating": 4.4,
+      "machine" : "K15B, DOHC, 1.462CC",
+      "seats" : "7 seat",
       "review": [
         {
           "comment": "",
@@ -71,6 +79,8 @@
       "price": 380000,
       "image": "",
       "rating": 4.2,
+      "machine" : "16 valve DOHC with Dual VVT-i",
+      "seats" : "5 seat",
       "review": [
         {
           "comment": "",
@@ -87,6 +97,8 @@
       "price": 450000,
       "image": "",
       "rating": 4.6,
+      "machine" : "1.2 LI-VTEC",
+      "seats" : "4 seat",
       "review": [
         {
           "comment": "",
