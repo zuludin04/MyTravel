@@ -10,7 +10,7 @@ data class Hotel(
     val dataId: Int? = null,
 
     @SerializedName("thumbnail")
-    val thumbnail: Int? = null,
+    val thumbnail: String? = null,
 
     @SerializedName("name")
     val name: String? = null,
@@ -36,6 +36,9 @@ data class Hotel(
     @SerializedName("review")
     val review: List<Review>? = null,
 
+    @SerializedName("facilities")
+    val facilities: List<Facility>? = null,
+
     var city: String? = null,
     var checkIn: String? = null,
     var checkOut: String? = null,
@@ -43,3 +46,8 @@ data class Hotel(
     var guest: String? = null,
     var room: String? = null
 ): Parcelable
+
+data class HotelList (
+    @SerializedName("hotel")
+    val hotels: List<Hotel>
+)

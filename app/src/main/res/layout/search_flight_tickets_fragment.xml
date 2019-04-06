@@ -13,7 +13,7 @@
             android:layout_margin="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:dropdownItem="Initial airport"
-            app:dropdownIcon="@drawable/ic_flight_origin"
+            app:dropdownIcon="@drawable/ic_take_off"
             android:id="@+id/origin_airport"
             android:padding="8dp"
             android:background="@color/white"/>
@@ -27,7 +27,7 @@
             app:dropdownLabel="Destination"
             app:layout_constraintTop_toBottomOf="@+id/origin_airport"
             app:dropdownItem="Arrival airport"
-            app:dropdownIcon="@drawable/ic_flight_destination"
+            app:dropdownIcon="@drawable/ic_landing"
             android:id="@+id/destination_airport"
             android:padding="8dp"
             android:background="@color/white"/>
@@ -49,7 +49,7 @@
                 android:layout_weight="1"
                 app:dropdownLabel="Departure"
                 app:dropdownItem="03 Jan 2018"
-                app:dropdownIcon="@drawable/ic_flight_departure"
+                app:dropdownIcon="@drawable/ic_schedule"
                 android:id="@+id/departure_date"
                 android:padding="8dp"
                 android:background="@color/white"/>
@@ -136,7 +136,7 @@
             app:dropdownLabel="Seat Class"
             app:layout_constraintTop_toBottomOf="@+id/input_pass"
             app:dropdownItem="Pick seat class"
-            app:dropdownIcon="@drawable/ic_seat_class"
+            app:dropdownIcon="@drawable/ic_flight_seat"
             android:id="@+id/seat_class"
             app:dropdownMode="true"
             android:layout_margin="8dp"

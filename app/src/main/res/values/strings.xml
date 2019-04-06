@@ -68,4 +68,9 @@
     <string name="about">About</string>
     <string name="gallery">Gallery</string>
     <string name="pay">Pay</string>
+    <string name="select">Select</string>
+    <string name="rooms">Rooms</string>
+    <string name="refundable">Refundable</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="wifi">WiFi</string>
 </resources>

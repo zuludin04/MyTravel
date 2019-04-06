@@ -14,6 +14,7 @@ import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.databinding.DetailRentalFragmentBinding
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail_rental_fragment.view.*
 
 /**
@@ -51,6 +52,7 @@ class DetailRentalFragment : Fragment() {
         val rental: Rental = arguments?.getParcelable(RENTAL_DATA)!!
 
         binding.rental = rental
+        Picasso.get().load(rental.image).into(binding.rentalDetailImage)
         binding.rentalDetailRating.rating = rental.rating?.toFloat()!!
 
         view.recycler_review.apply {

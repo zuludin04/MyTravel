@@ -21,7 +21,6 @@ import com.app.zuludin.mytravel.ui.tickets.list.viewholder.CarListViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.FlightTicketViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.HotelListViewHolder
 import com.app.zuludin.mytravel.ui.tickets.list.viewholder.TrainTicketViewHolder
-import com.app.zuludin.mytravel.utils.DataProvider.hotelsData
 import com.app.zuludin.mytravel.utils.SpacingItemDecoration
 import com.app.zuludin.mytravel.utils.ViewModelFactory
 import com.app.zuludin.mytravel.utils.toolbarTitle
@@ -150,16 +149,19 @@ class TicketListActivity : AppCompatActivity() {
             "Hotel" -> {
                 val hotel: Hotel = intent.getParcelableExtra(TICKET_DATA)
                 toolbarTitle(hotel.city.toString(), hotel.checkIn)
-                adapter.insert(
-                    hotelsData(
-                        hotel.city.toString(),
-                        hotel.checkIn.toString(),
-                        hotel.checkOut.toString(),
-                        hotel.duration!!,
-                        hotel.guest.toString(),
-                        hotel.room.toString()
-                    )
-                )
+                viewModel.getHotels(
+                    hotel.city.toString(),
+                    hotel.checkIn.toString(),
+                    hotel.checkOut.toString(),
+                    hotel.duration!!,
+                    hotel.guest.toString(),
+                    hotel.room.toString()
+                ).observe(this, Observer { hotels ->
+                    hotels?.let {
+                        adapter.insert(it)
+                        recycler_ticket.adapter = adapter
+                    }
+                })
             }
             "Rental" -> {
                 val rental: Rental = intent.getParcelableExtra(TICKET_DATA)

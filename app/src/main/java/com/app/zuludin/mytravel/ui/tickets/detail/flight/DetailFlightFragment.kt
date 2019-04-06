@@ -13,6 +13,7 @@ import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.databinding.DetailFlightFragmentBinding
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
 import com.app.zuludin.mytravel.utils.currencyText
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail_flight_fragment.view.*
 
 /**
@@ -51,6 +52,7 @@ class DetailFlightFragment : Fragment() {
         val flight: Flight = arguments?.getParcelable(FLIGHT_DATA)!!
 
         binding.flight = flight
+        Picasso.get().load(flight.icon).into(binding.detailAirlineIcon)
 
         val childPrice = flight.price?.div(2)
         val totalAdultPrice = flight.price?.times(flight.adult!!)

@@ -6,6 +6,7 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.data.TravelDataRepository
 import com.app.zuludin.mytravel.data.model.remote.Flight
+import com.app.zuludin.mytravel.data.model.remote.Hotel
 import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Train
 import com.app.zuludin.mytravel.utils.CoroutineContextProvider
@@ -19,7 +20,8 @@ class TicketListViewModel(
 
     lateinit var flightTicketDataList: MutableLiveData<List<Flight>>
     lateinit var rentalCarDataList: MutableLiveData<List<Rental>>
-    lateinit var traintTicketDataList: MutableLiveData<List<Train>>
+    lateinit var trainTicketDataList: MutableLiveData<List<Train>>
+    lateinit var hotelDataList: MutableLiveData<List<Hotel>>
 
     private val repository = TravelDataRepository(getApplication())
 
@@ -73,8 +75,8 @@ class TicketListViewModel(
         seatClass: String,
         date: String
     ): LiveData<List<Train>> {
-        if (!::traintTicketDataList.isInitialized) {
-            traintTicketDataList = MutableLiveData()
+        if (!::trainTicketDataList.isInitialized) {
+            trainTicketDataList = MutableLiveData()
 
             GlobalScope.launch(contextProvider.main) {
                 val trains: List<Train> = repository.loadTrainTicket().trains
@@ -91,10 +93,10 @@ class TicketListViewModel(
                     train.seatClass = seatClass
                     train.date = date
                 }
-                traintTicketDataList.value = trains
+                trainTicketDataList.value = trains
             }
         }
-        return traintTicketDataList
+        return trainTicketDataList
     }
 
     fun getRentalCars(
@@ -120,5 +122,32 @@ class TicketListViewModel(
             }
         }
         return rentalCarDataList
+    }
+
+    fun getHotels(
+        city: String,
+        checkIn: String,
+        checkOut: String,
+        stay: Int,
+        totalGuest: String,
+        totalRoom: String
+    ): LiveData<List<Hotel>> {
+        if (!::hotelDataList.isInitialized) {
+            hotelDataList = MutableLiveData()
+            GlobalScope.launch(contextProvider.main) {
+                val hotels: List<Hotel> = repository.loadHotelList().hotels
+                for (i in hotels.indices) {
+                    val hotel: Hotel = hotels[i]
+                    hotel.city = city
+                    hotel.checkIn = checkIn
+                    hotel.checkOut = checkOut
+                    hotel.duration = stay
+                    hotel.guest = totalGuest
+                    hotel.room = totalRoom
+                }
+                hotelDataList.value = hotels
+            }
+        }
+        return hotelDataList
     }
 }

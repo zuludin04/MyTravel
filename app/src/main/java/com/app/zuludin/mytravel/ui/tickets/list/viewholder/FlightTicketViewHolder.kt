@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.ImageView
 import com.app.zuludin.mytravel.data.model.remote.Flight
 import com.app.zuludin.mytravel.utils.currencyText
+import com.squareup.picasso.Picasso
 import com.tomasznajda.simplerecyclerview.SrvViewHolder
 import kotlinx.android.synthetic.main.item_flight_ticket.view.*
 
@@ -19,7 +20,7 @@ class FlightTicketViewHolder(
         itemView.destination_code.text = item.destinationCode
         itemView.origin_city.text = item.originCity
         itemView.destination_city.text = item.destinationCity
-//        item.icon?.let { itemView.flight_logo.setImageResource(it) }
+        Picasso.get().load(item.icon).into(itemView.flight_logo)
 
         item.price?.let { itemView.flight_price.currencyText(it) }
 

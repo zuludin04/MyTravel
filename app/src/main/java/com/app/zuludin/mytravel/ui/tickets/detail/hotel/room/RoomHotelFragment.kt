@@ -3,7 +3,6 @@ package com.app.zuludin.mytravel.ui.tickets.detail.hotel.room
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,7 @@ import com.app.zuludin.mytravel.data.model.remote.Hotel
 import com.app.zuludin.mytravel.data.model.remote.HotelRoom
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
-import com.app.zuludin.mytravel.utils.DataProvider.hotelRooms
+import com.app.zuludin.mytravel.utils.SpacingItemDecoration
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.room_hotel_fragment.view.*
 import java.text.NumberFormat
@@ -58,11 +57,11 @@ class RoomHotelFragment : Fragment(), RoomClickListener {
         view.recycler_room_hotel.apply {
             layoutManager = LinearLayoutManager(requireContext())
             setHasFixedSize(true)
-            addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+            addItemDecoration(SpacingItemDecoration(16))
             adapter = this@RoomHotelFragment.adapter
         }
 
-        adapter.insert(hotelRooms(hotel.name.toString()))
+        hotel.rooms?.let { adapter.insert(it) }
     }
 
     override fun onRoomClick(hotelRoom: HotelRoom) {

@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.ImageView
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Hotel
+import com.squareup.picasso.Picasso
 import com.tomasznajda.simplerecyclerview.SrvViewHolder
 import kotlinx.android.synthetic.main.item_hotel_list.view.*
 import java.text.NumberFormat
@@ -15,7 +16,7 @@ class HotelListViewHolder(
     private val listener: (hotel: Hotel, imageTransition: ImageView) -> Unit
 ) : RecyclerView.ViewHolder(itemView), SrvViewHolder<Hotel> {
     override fun bind(item: Hotel) {
-        item.thumbnail?.let { itemView.hotel_image.setImageResource(it) }
+        Picasso.get().load(item.thumbnail).into(itemView.hotel_image)
         itemView.hotel_name.text = item.name
         itemView.hotel_rating.rating = item.rating?.toFloat()!!
 

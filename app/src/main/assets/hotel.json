@@ -1,0 +1,1213 @@
+{
+  "hotel": [
+    {
+      "dataId": 1,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_1.jpeg?alt=media&token=d13c401a-e8e7-46b7-8ac9-4a61c31bf4f1",
+      "name": "Hotel Indah Kapuk",
+      "startFrom": 860000,
+      "rating": 3.4,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "13.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 860000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Indah Kapuk",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Indah Kapuk",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 1100000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Indah Kapuk",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 1350000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Indah Kapuk",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        }
+      ]
+    },
+    {
+      "dataId": 2,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_2.jpeg?alt=media&token=c7b8d97f-7ba2-4505-a56b-7f70418e85dd",
+      "name": "Hotel Jaya",
+      "startFrom": 1200000,
+      "rating": 4.0,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "13.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 1200000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Jaya",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 1350000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Jaya",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 1550000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Jaya",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 1850000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Jaya",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Family Room",
+          "price": 2050000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Jaya",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        }
+      ]
+    },
+    {
+      "dataId": 3,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_3.jpeg?alt=media&token=2e291064-1532-46b6-8588-f7e676a2ed30",
+      "name": "Hotel Nusa Dua",
+      "startFrom": 1500000,
+      "rating": 4.3,
+      "location": "",
+      "timeIn": "13.00",
+      "timeOut": "12.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 1500000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Nusa Dua",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 1650000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Nusa Dua",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 1950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Nusa Dua",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 2150000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Nusa Dua",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        }
+      ]
+    },
+    {
+      "dataId": 4,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_4.jpeg?alt=media&token=4cde3354-7231-4745-9744-2d3176107962",
+      "name": "Hotel Bangsa Bangsa",
+      "startFrom": 2300000,
+      "rating": 4.5,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "14.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 2300000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 2450000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 2750000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 2950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Family Room",
+          "price": 3100000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Junior Suites 2 Bedrooms",
+          "price": 3300000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Bangsa Bangsa",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F010-basketball.png?alt=media&token=226a3d10-b044-4426-8e35-9f6154d27b3b",
+          "facility": "Sport Center"
+        }
+      ]
+    },
+    {
+      "dataId": 5,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_5.jpeg?alt=media&token=1ec7db34-6ee2-4ef9-9130-24fbb1855b1e",
+      "name": "Hotel Harapan",
+      "startFrom": 3800000,
+      "rating": 4.5,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "13.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 3800000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Harapan",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 3950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Harapan",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 4150000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Harapan",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 4450000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Harapan",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F010-basketball.png?alt=media&token=226a3d10-b044-4426-8e35-9f6154d27b3b",
+          "facility": "Sport Center"
+        }
+      ]
+    },
+    {
+      "dataId": 6,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_6.jpeg?alt=media&token=5304a468-a9b7-41e5-a08d-2dffb575ec9a",
+      "name": "Hotel Purnama",
+      "startFrom": 4000000,
+      "rating": 4.3,
+      "location": "",
+      "timeIn": "13.00",
+      "timeOut": "12.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 4000000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Purnama",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 4150000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Purnama",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 4650000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Purnama",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 4900000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Purnama",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Family Room",
+          "price": 5100000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Purnama",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        }
+      ]
+    },
+    {
+      "dataId": 7,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_7.jpeg?alt=media&token=22d269e3-5c35-4a36-b07f-433da4bcc232",
+      "name": "Hotel Surya Kencana",
+      "startFrom": 850000,
+      "rating": 3.4,
+      "location": "",
+      "timeIn": "12.00",
+      "timeOut": "12.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 850000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Surya Kencana",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Surya Kencana",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        }
+      ]
+    },
+    {
+      "dataId": 8,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_8.jpeg?alt=media&token=b3419bb6-fa66-491c-87f4-b28774fe9e02",
+      "name": "Hotel Jaja",
+      "startFrom": 1200000,
+      "rating": 4.6,
+      "location": "",
+      "timeIn": "13.00",
+      "timeOut": "12.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 1200000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Jaja",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 1350000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Jaja",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": false,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 1500000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Jaja",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        }
+      ]
+    },
+    {
+      "dataId": 9,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_9.jpeg?alt=media&token=07c719d5-2247-443e-96f8-e6b3778c59b6",
+      "name": "Hotel Angkasa Pribadi",
+      "startFrom": 3200000,
+      "rating": 4.8,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "14.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 3200000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Angkasa Pribadi",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 3350000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Angkasa Pribadi",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 3835000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Angkasa Pribadi",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 4050000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Angkasa Pribadi",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F010-basketball.png?alt=media&token=226a3d10-b044-4426-8e35-9f6154d27b3b",
+          "facility": "Sport Center"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F009-tea.png?alt=media&token=461ac24b-4d91-4248-b904-186dbd3412ed",
+          "facility": "Caffe"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F008-tools-and-utensils.png?alt=media&token=c9d72060-9115-4a9a-80e4-c13aed90b63d",
+          "facility": "Salon"
+        }
+      ]
+    },
+    {
+      "dataId": 10,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Fhotel_10.jpeg?alt=media&token=fc1f498c-da89-4b2c-9572-15a1cb3df204",
+      "name": "Hotel Pusaka Abadi",
+      "startFrom": 4150000,
+      "rating": 4.6,
+      "location": "",
+      "timeIn": "14.00",
+      "timeOut": "13.00",
+      "rooms": [
+        {
+          "name": "Deluxe Twin Bed",
+          "price": 4150000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": false,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe Twin Bed With Breakfast",
+          "price": 4300000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20twin%20bed.jpeg?alt=media&token=e6e13fc2-b20f-4825-b938-b1a5e0adfd2b",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "2 Guests",
+          "bed": "2 Single Beds",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Deluxe King Bed",
+          "price": 4550000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "2 Guests",
+          "bed": "1 King Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Executive Room",
+          "price": 4950000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fjunior%20suites.jpeg?alt=media&token=dcd08585-4c96-44f2-a0c5-9a9adb3b7432",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "2 Guests",
+          "bed": "1 Double Bed",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Family Room",
+          "price": 4350000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Fdeluxe%20king.jpeg?alt=media&token=fdb4c0dd-02b8-4ff9-a66a-6775d7f6a856",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        },
+        {
+          "name": "Junior Suites 2 Bedrooms",
+          "price": 4750000,
+          "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Froom%2Ffamily.png?alt=media&token=c08a0bae-62af-41fe-b944-f852a3f070db",
+          "hotel": "Hotel Pusaka Abadi",
+          "guest": "3 Guests",
+          "bed": "1 Double Bed and 1 Single Bad",
+          "refundable": true,
+          "breakfast": true,
+          "wifi": true
+        }
+      ],
+      "review": [
+        {
+          "comment": "I am always satisfied everytime I stayed here. Always be my first choice everytime I want to have short escape. Pleasant room ambience and hospitality. Highly recommended.",
+          "name": "Maryaman",
+          "date": "10 Jan 2018",
+          "rating": 4.8
+        },
+        {
+          "comment": "The room was good and quite big. However, we only can get 1 access which is we need to ask the reception downstairs if we wanna go out and they were helping us. Hair dryer did not provide in the room and when we request to have a mineral water it did not provide until we check out.",
+          "name": "Tia",
+          "date": "21 Dec 2018",
+          "rating": 4.3
+        },
+        {
+          "comment": "All good except you can hear everything that happen on the street. Super noisy. If you wish for a peaceful sleep, you won't get it here unless you're a deep sleeper",
+          "name": "Olive",
+          "date": "30 Jun 2018",
+          "rating": 3.9
+        },
+        {
+          "comment": "The room is clean and tidy, it has wider room with the same class as other hotels. Hotel Location is quite near from Theme Park.",
+          "name": "Sodikin",
+          "date": "18 Oct 2018",
+          "rating": 4.2
+        },
+        {
+          "comment": "So comfort and nice hotel to stay. Good food and services. Thanks you.",
+          "name": "Ali",
+          "date": "21 Feb 2018",
+          "rating": 4.8
+        }
+      ],
+      "facilities": [
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F002-air-conditioner.png?alt=media&token=953da47c-9f9f-486d-8977-f49dc964510e",
+          "facility": "Air Conditioner"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F004-wifi.png?alt=media&token=ae831860-52ae-4499-bcf8-8004a9161ba1",
+          "facility": "Wi-Fi"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F005-dinner.png?alt=media&token=d776b89a-ee4e-47fc-9697-a0db4f73f0bd",
+          "facility": "Restaurant"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F007-car.png?alt=media&token=a2606d73-13d0-4005-9214-633ca70cce8f",
+          "facility": "Parking"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F006-reception-desk.png?alt=media&token=56f85a04-212f-4892-a5f5-3bd337550ca4",
+          "facility": "24 Hours Receptionist"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F001-lift.png?alt=media&token=104ec5bc-b445-4c81-9063-2847d806bba9",
+          "facility": "Lift"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F003-sun.png?alt=media&token=3d2b22cc-1f57-4508-8ef4-3fa3e340b0ba",
+          "facility": "Swimming Pool"
+        },
+        {
+          "icon": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Fhotel%2Ffacility%2F010-basketball.png?alt=media&token=226a3d10-b044-4426-8e35-9f6154d27b3b",
+          "facility": "Sport Center"
+        }
+      ]
+    }
+  ]
+}

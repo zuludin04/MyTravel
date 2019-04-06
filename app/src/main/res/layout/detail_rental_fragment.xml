@@ -29,7 +29,6 @@
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
-                        android:src="@drawable/avanza"
                         android:scaleType="fitXY"
                         android:transitionName="@string/image_transition_name"
                         android:id="@+id/rental_detail_image"

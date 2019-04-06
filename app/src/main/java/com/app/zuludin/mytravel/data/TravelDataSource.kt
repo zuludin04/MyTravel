@@ -15,4 +15,6 @@ interface TravelDataSource {
     suspend fun loadTrainTicket(): TrainList
 
     suspend fun loadRentalCarList(): RentalList
+
+    suspend fun loadHotelList(): HotelList
 }

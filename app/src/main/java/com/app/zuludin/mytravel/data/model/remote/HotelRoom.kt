@@ -16,5 +16,20 @@ data class HotelRoom(
     val price: Int? = 0,
 
     @SerializedName("image")
-    val image: String? = null
+    val image: String? = null,
+
+    @SerializedName("guest")
+    val guest: String? = null,
+
+    @SerializedName("bed")
+    val bed: String? = null,
+
+    @SerializedName("refundable")
+    val refundable: Boolean? = null,
+
+    @SerializedName("breakfast")
+    val breakfast: Boolean? = null,
+
+    @SerializedName("wifi")
+    val wifi: Boolean? = null
 ): Parcelable

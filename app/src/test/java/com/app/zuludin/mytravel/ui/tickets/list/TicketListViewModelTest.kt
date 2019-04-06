@@ -29,6 +29,9 @@ class TicketListViewModelTest {
     private lateinit var rentalData: MutableLiveData<List<Rental>>
 
     @Mock
+    private lateinit var hotelData: MutableLiveData<List<Hotel>>
+
+    @Mock
     private lateinit var repository: TravelDataRepository
 
     private lateinit var viewModel: TicketListViewModel
@@ -38,6 +41,8 @@ class TicketListViewModelTest {
     private lateinit var trainResult: TrainList
 
     private lateinit var rentalResult: RentalList
+
+    private lateinit var hotelResult: HotelList
 
     @Before
     fun setupTicketDataTest() {
@@ -62,6 +67,12 @@ class TicketListViewModelTest {
             Rental(dataId = 2, car = "Brio")
         )
         rentalResult = RentalList(rentals)
+
+        val hotels: List<Hotel> = Lists.newArrayList(
+            Hotel(dataId = 1, name = "Hotel Jaya"),
+            Hotel(dataId = 2, name = "Hotel Jayabaya")
+        )
+        hotelResult = HotelList(hotels)
     }
 
     @Test
@@ -92,11 +103,11 @@ class TicketListViewModelTest {
 
     @Test
     fun `load train ticket list`() {
-        viewModel.traintTicketDataList = trainData
+        viewModel.trainTicketDataList = trainData
 
         runBlocking {
             Mockito.`when`(repository.loadTrainTicket()).thenReturn(trainResult)
-            Mockito.`when`(viewModel.traintTicketDataList.value).thenReturn(trainResult.trains)
+            Mockito.`when`(viewModel.trainTicketDataList.value).thenReturn(trainResult.trains)
 
             viewModel.getTrainTickets(
                 "Gambir",
@@ -111,7 +122,7 @@ class TicketListViewModelTest {
                 "05 Mei 2018"
             )
 
-            assertEquals(2, viewModel.traintTicketDataList.value?.size)
+            assertEquals(2, viewModel.trainTicketDataList.value?.size)
         }
     }
 
@@ -132,6 +143,27 @@ class TicketListViewModelTest {
             )
 
             assertEquals(2, viewModel.rentalCarDataList.value?.size)
+        }
+    }
+
+    @Test
+    fun `load hotel list test`() {
+        viewModel.hotelDataList = hotelData
+
+        runBlocking {
+            Mockito.`when`(repository.loadHotelList()).thenReturn(hotelResult)
+            Mockito.`when`(viewModel.hotelDataList.value).thenReturn(hotelResult.hotels)
+
+            viewModel.getHotels(
+                "Bogor",
+                "10 Oct 2018",
+                "11 Oct 2018",
+                1,
+                "2",
+                "1"
+            )
+
+            assertEquals(2, viewModel.hotelDataList.value?.size)
         }
     }
 }

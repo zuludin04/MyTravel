@@ -111,4 +111,12 @@ class TravelRemoteSource : TravelRemoteCallback {
             val tickets: RentalList = gson.fromJson(data, RentalList::class.java)
             tickets
         }
+
+    suspend fun loadHotelList(context: Context): HotelList =
+            withContext(Dispatchers.Default) {
+                val data = JsonUtils.readJsonFile(context, "hotel.json")
+                val gson = GsonBuilder().setPrettyPrinting().create()
+                val hotels: HotelList = gson.fromJson(data, HotelList::class.java)
+                hotels
+            }
 }

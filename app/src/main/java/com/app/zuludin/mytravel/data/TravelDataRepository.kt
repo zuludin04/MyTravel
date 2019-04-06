@@ -22,4 +22,6 @@ class TravelDataRepository(
     override suspend fun loadRentalCarList(): RentalList = remoteSource.loadCarRentals(context)
 
     override suspend fun loadTrainTicket(): TrainList = remoteSource.loadTrainTicketList(context)
+
+    override suspend fun loadHotelList(): HotelList = remoteSource.loadHotelList(context)
 }
