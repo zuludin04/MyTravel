@@ -1,12 +1,12 @@
 package com.app.zuludin.mylibrary.backdrop
 
 import android.content.Context
-import android.support.annotation.IdRes
-import android.support.design.widget.CoordinatorLayout
+import androidx.annotation.IdRes
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import android.util.AttributeSet
 import android.view.View
 
-class BackdropLayout : CoordinatorLayout.Behavior<View> {
+class BackdropLayout : androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior<View> {
 
     constructor() : super()
 
@@ -19,7 +19,7 @@ class BackdropLayout : CoordinatorLayout.Behavior<View> {
 
     private var dropState: DropState = DEFAULT_DROP_DATE
 
-    override fun layoutDependsOn(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
+    override fun layoutDependsOn(parent: androidx.coordinatorlayout.widget.CoordinatorLayout, child: View, dependency: View): Boolean {
         if (backdropLayoutId == null) return false
 
         return when (dependency.id) {
@@ -28,7 +28,7 @@ class BackdropLayout : CoordinatorLayout.Behavior<View> {
         }
     }
 
-    override fun onDependentViewChanged(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
+    override fun onDependentViewChanged(parent: androidx.coordinatorlayout.widget.CoordinatorLayout, child: View, dependency: View): Boolean {
         this.child = child
 
         when (dependency.id) {
@@ -74,7 +74,7 @@ class BackdropLayout : CoordinatorLayout.Behavior<View> {
         this.dropState = dropState
     }
 
-    private fun initView(parent: CoordinatorLayout, child: View, backdropContainer: View) {
+    private fun initView(parent: androidx.coordinatorlayout.widget.CoordinatorLayout, child: View, backdropContainer: View) {
         child.layoutParams.height = parent.height
         drawDropState(child, backdropContainer, false)
     }

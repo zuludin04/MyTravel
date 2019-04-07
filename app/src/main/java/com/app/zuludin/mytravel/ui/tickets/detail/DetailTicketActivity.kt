@@ -2,8 +2,8 @@ package com.app.zuludin.mytravel.ui.tickets.detail
 
 import android.os.Build
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Rental
@@ -68,7 +68,7 @@ class DetailTicketActivity : AppCompatActivity() {
         }
     }
 
-    private fun initializeFragment(fragment: Fragment) {
+    private fun initializeFragment(fragment: androidx.fragment.app.Fragment) {
         addFragment(fragment, R.id.frame_container)
     }
 

@@ -1,9 +1,9 @@
 package com.app.zuludin.mytravel.ui.main.home
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.data.TravelDataRepository
 import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.utils.CoroutineContextProvider

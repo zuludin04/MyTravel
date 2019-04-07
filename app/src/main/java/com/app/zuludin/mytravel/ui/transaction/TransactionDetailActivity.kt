@@ -2,8 +2,8 @@ package com.app.zuludin.mytravel.ui.transaction
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction

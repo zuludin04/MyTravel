@@ -1,7 +1,7 @@
 package com.app.zuludin.mylibrary.dropdown
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ class DropdownListAdapter(
     private val context: Context,
     private val items: MutableList<String>,
     private val listener: (String) -> Unit
-) : RecyclerView.Adapter<DropdownViewHolder>() {
+) : androidx.recyclerview.widget.RecyclerView.Adapter<DropdownViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DropdownViewHolder =
         DropdownViewHolder(
@@ -31,7 +31,7 @@ class DropdownListAdapter(
     override fun getItemCount(): Int = items.size
 }
 
-class DropdownViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+class DropdownViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
     val dropdownItem: TextView = view.findViewById(R.id.item_text)
 
     fun setListener(item: String, listener: (String) -> Unit) {

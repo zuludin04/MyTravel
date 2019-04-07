@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.main.transactions
 
 import android.graphics.Color
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction

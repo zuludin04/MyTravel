@@ -1,16 +1,15 @@
 package com.app.zuludin.mytravel.ui.main.home
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.Fragment
-import android.support.v4.util.Pair
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.CategoryList
 import com.app.zuludin.mytravel.data.model.remote.ExploreList
@@ -50,7 +49,8 @@ class MainExploreFragment : Fragment() {
     }
 
     private val viewModel: MainExploreViewModel by lazy {
-        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!)).get(MainExploreViewModel::class.java)
+        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!))
+            .get(MainExploreViewModel::class.java)
     }
 
     private lateinit var itemView: View
@@ -91,7 +91,7 @@ class MainExploreFragment : Fragment() {
 
     private fun setupRecyclerLayout(view: View) {
         view.recycler_explore.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
             setHasFixedSize(true)
             isNestedScrollingEnabled = false
             adapter = this@MainExploreFragment.adapter

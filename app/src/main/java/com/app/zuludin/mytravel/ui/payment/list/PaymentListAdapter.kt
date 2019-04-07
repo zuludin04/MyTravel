@@ -1,6 +1,6 @@
 package com.app.zuludin.mytravel.ui.payment.list
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_payment_type.view.*
 class PaymentListAdapter(
     private val items: List<Payment>,
     private val listener: (Payment) -> Unit
-) : RecyclerView.Adapter<PaymentViewHolder>() {
+) : androidx.recyclerview.widget.RecyclerView.Adapter<PaymentViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PaymentViewHolder =
         PaymentViewHolder(
             LayoutInflater.from(parent.context).inflate(
@@ -28,7 +28,7 @@ class PaymentListAdapter(
     override fun getItemCount(): Int = items.size
 }
 
-class PaymentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class PaymentViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
     fun bind(payment: Payment, listener: (Payment) -> Unit) {
         itemView.payment_icon.setImageResource(payment.icon)
         itemView.payment_name.text = payment.name

@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.payment.finish
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
@@ -27,11 +27,6 @@ class PaymentActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             addFragment(PaymentSelectFragment.getInstance(type, transaction), R.id.frame_container)
         }
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home) onBackPressed()
-        return super.onOptionsItemSelected(item)
     }
 
     override fun onBackPressed() {

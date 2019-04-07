@@ -2,11 +2,10 @@ package com.app.zuludin.mytravel.ui.payment.finish.success
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.main.MainActivity
@@ -37,8 +36,6 @@ class PaymentSuccessFragment : Fragment() {
 
         view.payment_method.text = transaction.method
         view.payment_price.text = transaction.price
-
-        Toast.makeText(requireContext(), transaction.status.toString(), Toast.LENGTH_SHORT).show()
 
         val database = FirebaseDatabase.getInstance().reference
         val transRef = database.child("Transaction")

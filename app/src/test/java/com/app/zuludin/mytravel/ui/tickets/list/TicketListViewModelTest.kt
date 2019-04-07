@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.list
 
 import android.app.Application
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.TestContextProvider
 import com.app.zuludin.mytravel.data.TravelDataRepository
 import com.app.zuludin.mytravel.data.model.remote.*

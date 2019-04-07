@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.hotel.room
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.HotelRoom
 import com.app.zuludin.mytravel.utils.currencyText

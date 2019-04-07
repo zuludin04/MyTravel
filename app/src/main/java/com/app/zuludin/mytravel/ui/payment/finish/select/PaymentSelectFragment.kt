@@ -1,16 +1,16 @@
 package com.app.zuludin.mytravel.ui.payment.finish.select
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DividerItemDecoration
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.payment.finish.PaymentInstructionAdapter
@@ -48,8 +48,13 @@ class PaymentSelectFragment : Fragment() {
         instructionAdapter = PaymentInstructionAdapter()
 
         view.recycler_instructions.apply {
-            layoutManager = LinearLayoutManager(requireContext())
-            addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
+            addItemDecoration(
+                androidx.recyclerview.widget.DividerItemDecoration(
+                    requireContext(),
+                    androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+                )
+            )
             this.adapter = instructionAdapter
         }
 
@@ -88,6 +93,11 @@ class PaymentSelectFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) activity?.onBackPressed()
+        return super.onOptionsItemSelected(item)
     }
 
     private fun paymentName(view: View): String {

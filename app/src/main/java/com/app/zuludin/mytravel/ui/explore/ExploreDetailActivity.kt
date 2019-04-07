@@ -1,17 +1,20 @@
 package com.app.zuludin.mytravel.ui.explore
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
-import android.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import android.content.Intent
+import androidx.databinding.DataBindingUtil
 import android.os.Build
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.transition.Slide
 import android.view.Gravity
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.databinding.ExploreDetailActivityBinding
+import com.app.zuludin.mytravel.ui.common.ReviewAdapter
+import com.app.zuludin.mytravel.ui.explore.gallery.ExploreFullGalleryActivity
 import com.app.zuludin.mytravel.utils.ViewModelFactory
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.explore_detail_activity.*
@@ -23,6 +26,7 @@ class ExploreDetailActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ExploreDetailActivityBinding
+    private var isAboutExpanded: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +54,21 @@ class ExploreDetailActivity : AppCompatActivity() {
                 binding.explore = it
             }
         })
+
+        expand_about.setOnClickListener {
+            if (!isAboutExpanded) {
+                binding.detailExploreAbout.maxLines = 10
+                expand_about.text = "Less"
+                isAboutExpanded = true
+            } else {
+                binding.detailExploreAbout.maxLines = 3
+                expand_about.text = "More"
+                isAboutExpanded = false
+            }
+        }
+
+        explore.review?.let { review_pager.adapter = ReviewAdapter(it) }
+        gallery_image.setOnClickListener { startActivity(Intent(applicationContext, ExploreFullGalleryActivity::class.java)) }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

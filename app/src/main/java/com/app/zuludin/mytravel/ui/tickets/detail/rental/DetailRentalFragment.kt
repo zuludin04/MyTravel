@@ -1,11 +1,9 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.rental
 
 import android.content.Intent
-import android.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.PagerSnapHelper
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +11,7 @@ import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Rental
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.databinding.DetailRentalFragmentBinding
+import com.app.zuludin.mytravel.ui.common.ReviewAdapter
 import com.app.zuludin.mytravel.ui.tickets.review.ReviewTicketActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail_rental_fragment.view.*
@@ -54,14 +53,7 @@ class DetailRentalFragment : Fragment() {
         binding.rental = rental
         Picasso.get().load(rental.image).into(binding.rentalDetailImage)
         binding.rentalDetailRating.rating = rental.rating?.toFloat()!!
-
-        view.recycler_review.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-            setHasFixedSize(true)
-            adapter = CarReviewAdapter()
-        }
-
-        PagerSnapHelper().attachToRecyclerView(view.recycler_review)
+        rental.review?.let { view.review_pager.adapter = ReviewAdapter(it) }
 
         transaction.city = rental.region
         transaction.book = rental.car

@@ -2,7 +2,7 @@ package com.app.zuludin.mytravel.ui.tickets.search.hotel
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,10 +35,8 @@ class SearchHotelListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.search_hotel_list_fragment, container, false)
-
         itemView = view
         hotel = Hotel()
-
         return view
     }
 

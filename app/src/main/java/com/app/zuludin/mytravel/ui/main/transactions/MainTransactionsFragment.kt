@@ -1,11 +1,11 @@
 package com.app.zuludin.mytravel.ui.main.transactions
 
 import android.app.Activity.RESULT_OK
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -40,11 +40,6 @@ class MainTransactionsFragment : Fragment() {
         return view
     }
 
-    override fun onStart() {
-        super.onStart()
-//        viewModel.getTransactions()
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         adapter = TransactionAdapter {
@@ -52,7 +47,7 @@ class MainTransactionsFragment : Fragment() {
             intent.putExtra("DATA_KEY", it.id)
             startActivityForResult(intent, UPDATE_DELETE_TRANSACTION)
         }
-//        setupTransactionList()
+        setupTransactionList()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -66,12 +61,12 @@ class MainTransactionsFragment : Fragment() {
 
     private fun setupTransactionList() {
         itemView.recycler_transactions.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
             addItemDecoration(SpacingItemDecoration(16))
             adapter = this@MainTransactionsFragment.adapter
         }
 
-//        loadFirebaseTransaction()
+        loadFirebaseTransaction()
     }
 
     private fun loadFirebaseTransaction() {
@@ -91,6 +86,7 @@ class MainTransactionsFragment : Fragment() {
                         }
 
                         adapter.refreshAdapterList(list)
+                        itemView.empty_layout.visibility = View.GONE
                         itemView.progress_bar.visibility = View.GONE
                     }
                 } else {

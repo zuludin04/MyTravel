@@ -1,6 +1,6 @@
 package com.app.zuludin.mytravel.ui.tickets.review
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import com.app.zuludin.mytravel.data.model.local.Passenger
 import com.tomasznajda.simplerecyclerview.SrvViewHolder

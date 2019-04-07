@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.main.home
 
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.CategoryItem
@@ -24,7 +24,11 @@ class CategoryListViewHolder(
     override fun bind(item: CategoryList) {
         itemView.list_title.text = item.title
         itemView.recycler_explore.apply {
-            layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false)
+            layoutManager = LinearLayoutManager(
+                itemView.context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
             adapter = this@CategoryListViewHolder.adapter
         }
         adapter.items = item.items
@@ -38,7 +42,6 @@ class CategoryItemViewHolder(
     override fun bind(item: CategoryItem) {
         itemView.category_image.setImageResource(item.image)
         itemView.category_name.text = item.item
-//        itemView.category_total.text = item.total
         itemView.setOnClickListener { listener(item, adapterPosition) }
     }
 }

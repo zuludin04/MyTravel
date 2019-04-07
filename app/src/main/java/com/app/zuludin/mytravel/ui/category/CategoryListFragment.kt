@@ -1,16 +1,16 @@
 package com.app.zuludin.mytravel.ui.category
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.Fragment
-import android.support.v4.util.Pair
-import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
@@ -39,7 +39,8 @@ class CategoryListFragment : Fragment() {
     }
 
     private val viewModel: CategoryViewModel by lazy {
-        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!)).get(CategoryViewModel::class.java)
+        ViewModelProviders.of(this, ViewModelFactory.getInstance(activity?.application!!))
+            .get(CategoryViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -57,7 +58,10 @@ class CategoryListFragment : Fragment() {
         val category = arguments?.getString(PAGER_CATEGORY).toString()
 
         view.recycler_category_explore.apply {
-            layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+            layoutManager = androidx.recyclerview.widget.StaggeredGridLayoutManager(
+                2,
+                androidx.recyclerview.widget.StaggeredGridLayoutManager.VERTICAL
+            )
             setHasFixedSize(true)
             adapter = this@CategoryListFragment.adapter
         }

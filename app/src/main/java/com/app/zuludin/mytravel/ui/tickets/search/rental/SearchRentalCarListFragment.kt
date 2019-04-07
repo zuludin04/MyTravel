@@ -2,7 +2,7 @@ package com.app.zuludin.mytravel.ui.tickets.search.rental
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,10 +34,8 @@ class SearchRentalCarListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.search_rental_car_list_fragment, container, false)
-
         itemView = view
         rental = Rental()
-
         return view
     }
 

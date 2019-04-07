@@ -3,13 +3,13 @@ package com.app.zuludin.mylibrary.dropdown
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.Window
 import com.app.zuludin.mylibrary.R
 
 class DropdownDialog(context: Context) : Dialog(context, R.style.FloatDropdownDialogTheme) {
 
-    lateinit var rv: RecyclerView
+    lateinit var rv: androidx.recyclerview.widget.RecyclerView
 
     init {
         requestWindowFeature(Window.FEATURE_NO_TITLE)

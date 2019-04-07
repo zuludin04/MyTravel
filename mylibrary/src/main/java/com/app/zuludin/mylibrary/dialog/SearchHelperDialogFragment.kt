@@ -1,8 +1,8 @@
 package com.app.zuludin.mylibrary.dialog
 
 import android.os.Bundle
-import android.support.v7.widget.DividerItemDecoration
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import com.app.zuludin.mylibrary.R
 import com.app.zuludin.mylibrary.dialog.listener.AirportListener
@@ -83,8 +83,13 @@ class SearchHelperDialogFragment : BaseDialogFragment() {
 
         if (type == "List") {
             view.recycler_helper.apply {
-                layoutManager = LinearLayoutManager(requireContext())
-                addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+                layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
+                addItemDecoration(
+                    androidx.recyclerview.widget.DividerItemDecoration(
+                        requireContext(),
+                        androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+                    )
+                )
                 adapter = this@SearchHelperDialogFragment.adapter
             }
             view.recycler_helper.visibility = View.VISIBLE

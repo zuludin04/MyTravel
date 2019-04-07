@@ -1,8 +1,8 @@
 package com.app.zuludin.mytravel.utils
 
 import android.app.Application
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.app.zuludin.mytravel.ui.category.CategoryViewModel
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailViewModel
 import com.app.zuludin.mytravel.ui.main.home.MainExploreViewModel

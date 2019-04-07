@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.tickets.search
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.ui.tickets.search.flight.SearchFlightTicketsFragment

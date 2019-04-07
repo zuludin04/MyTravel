@@ -1,7 +1,7 @@
 package com.app.zuludin.mytravel.ui.main.transactions
 
-import android.support.v7.util.DiffUtil
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.app.zuludin.mytravel.R

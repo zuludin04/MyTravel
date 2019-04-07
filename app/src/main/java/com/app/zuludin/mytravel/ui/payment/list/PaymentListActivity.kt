@@ -2,9 +2,9 @@ package com.app.zuludin.mytravel.ui.payment.list
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DividerItemDecoration
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.Payment
@@ -29,8 +29,13 @@ class PaymentListActivity : AppCompatActivity() {
         transaction_price.text = transaction.price
 
         recycler_payment.apply {
-            layoutManager = LinearLayoutManager(applicationContext)
-            addItemDecoration(DividerItemDecoration(applicationContext, DividerItemDecoration.VERTICAL))
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(applicationContext)
+            addItemDecoration(
+                androidx.recyclerview.widget.DividerItemDecoration(
+                    applicationContext,
+                    androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+                )
+            )
             adapter = PaymentListAdapter(paymentTypeList()) {
                 val intent =
                     Intent(applicationContext, PaymentActivity::class.java)

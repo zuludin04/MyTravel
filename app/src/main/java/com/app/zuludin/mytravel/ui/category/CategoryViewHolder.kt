@@ -1,8 +1,8 @@
 package com.app.zuludin.mytravel.ui.category
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
+import androidx.recyclerview.widget.RecyclerView
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.squareup.picasso.Picasso
 import com.tomasznajda.simplerecyclerview.SrvViewHolder

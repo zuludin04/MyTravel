@@ -1,14 +1,14 @@
 package com.app.zuludin.mytravel.ui.category
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 
-class CategoryPagerAdapter(manager: FragmentManager): FragmentPagerAdapter(manager) {
+class CategoryPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
 
     private val pagerCategory = arrayListOf("Beach", "Theme Park", "Museum", "Zoo", "Restaurant")
 
-    override fun getItem(position: Int): Fragment = CategoryListFragment.getInstance(pagerCategory[position])
+    override fun getItem(position: Int): androidx.fragment.app.Fragment =
+        CategoryListFragment.getInstance(pagerCategory[position])
 
     override fun getCount(): Int = pagerCategory.size
 

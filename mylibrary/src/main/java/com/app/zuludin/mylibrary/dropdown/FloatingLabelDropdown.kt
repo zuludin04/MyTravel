@@ -3,10 +3,10 @@ package com.app.zuludin.mylibrary.dropdown
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.os.Build
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.DividerItemDecoration
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -24,7 +24,7 @@ class FloatingLabelDropdown(context: Context, attrs: AttributeSet?) : LinearLayo
     private lateinit var mDropdownIcon: ImageView
     private lateinit var mContainer: RelativeLayout
     private lateinit var mRoot: ViewGroup
-    private lateinit var mDropdownList: RecyclerView
+    private lateinit var mDropdownList: androidx.recyclerview.widget.RecyclerView
     private lateinit var mLabel: String
 
     private lateinit var mItem: String
@@ -80,7 +80,7 @@ class FloatingLabelDropdown(context: Context, attrs: AttributeSet?) : LinearLayo
         mFloatLabelIcon = findViewById(R.id.float_icon)
         mDropdownIcon = findViewById(R.id.dropdown_icon)
         mContainer = findViewById(R.id.container)
-        mDropdownList = RecyclerView(context)
+        mDropdownList = androidx.recyclerview.widget.RecyclerView(context)
         mRoot = this
 
         bindView()
@@ -91,8 +91,13 @@ class FloatingLabelDropdown(context: Context, attrs: AttributeSet?) : LinearLayo
         dropdownItem.text = mItem
         mFloatLabelIcon.setImageDrawable(mIcon)
 
-        mDropdownList.layoutManager = LinearLayoutManager(context)
-        mDropdownList.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        mDropdownList.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)
+        mDropdownList.addItemDecoration(
+            androidx.recyclerview.widget.DividerItemDecoration(
+                context,
+                androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+            )
+        )
         mDropdownList.adapter = DropdownListAdapter(context, mItemList) {
             dropdownItem.text = it
             listener?.onItemSelected(it)

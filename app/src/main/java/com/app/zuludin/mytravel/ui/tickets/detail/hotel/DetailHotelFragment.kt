@@ -1,14 +1,15 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.hotel
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Facility
 import com.app.zuludin.mytravel.data.model.remote.Hotel
+import com.app.zuludin.mytravel.ui.common.ReviewAdapter
 import com.app.zuludin.mytravel.ui.tickets.detail.hotel.room.RoomHotelFragment
 import com.app.zuludin.mytravel.utils.currencyText
 import com.squareup.picasso.Picasso
@@ -45,11 +46,16 @@ class DetailHotelFragment : Fragment() {
         view.detail_hotel_rating.rating = hotel.rating?.toFloat()!!
         view.detail_hotel_city.text = hotel.city
         view.detail_guest_information.text = "${hotel.duration} Night - ${hotel.guest}"
+        hotel.review?.let { view.review_pager.adapter = ReviewAdapter(it) }
 
         view.room_price_started.currencyText(hotel.startFrom)
 
         view.recycler_facilities.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+                requireContext(),
+                androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
+                false
+            )
             setHasFixedSize(true)
             adapter = this@DetailHotelFragment.adapter
         }

@@ -3,15 +3,15 @@ package com.app.zuludin.mylibrary.dialog
 import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentTransaction
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.zuludin.mylibrary.R
 
-abstract class BaseDialogFragment : DialogFragment() {
+abstract class BaseDialogFragment : androidx.fragment.app.DialogFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(layoutId(), container, false)
@@ -24,11 +24,11 @@ abstract class BaseDialogFragment : DialogFragment() {
     }
 
     @SuppressLint("CommitTransaction")
-    override fun show(manager: FragmentManager, tag: String) {
+    override fun show(manager: androidx.fragment.app.FragmentManager, tag: String) {
         show(manager.beginTransaction(), tag)
     }
 
-    override fun show(transaction: FragmentTransaction, tag: String): Int {
+    override fun show(transaction: androidx.fragment.app.FragmentTransaction, tag: String): Int {
         return transaction
             .setCustomAnimations(R.anim.enter_from_bottom, 0, 0, R.anim.exit_to_bottom)
             .add(android.R.id.content, this, tag)

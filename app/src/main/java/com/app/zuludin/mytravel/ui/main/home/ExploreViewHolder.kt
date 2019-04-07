@@ -1,9 +1,9 @@
 package com.app.zuludin.mytravel.ui.main.home
 
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.ExploreList
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
@@ -26,7 +26,11 @@ class ExploreListViewHolder(
     override fun bind(item: ExploreList) {
         itemView.list_title.text = item.title
         itemView.recycler_explore.apply {
-            layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false)
+            layoutManager = LinearLayoutManager(
+                itemView.context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
             adapter = this@ExploreListViewHolder.adapter
         }
         adapter.items = item.explores

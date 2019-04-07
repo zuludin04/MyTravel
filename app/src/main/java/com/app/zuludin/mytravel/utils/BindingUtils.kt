@@ -1,6 +1,6 @@
 package com.app.zuludin.mytravel.utils
 
-import android.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso

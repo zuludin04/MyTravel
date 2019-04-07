@@ -7,14 +7,26 @@
       "price": 250000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Favanza.jpg?alt=media&token=b4a6837e-6ed8-4ea4-abfa-219c1a2ebd1b",
       "rating": 3.3,
-      "machine" : "Dual VVT-i",
-      "seats" : "6 seat",
+      "machine": "Dual VVT-i",
+      "seats": "6 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     },
@@ -25,14 +37,26 @@
       "price": 295000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Fxenia.jpg?alt=media&token=29b3e669-9b87-43c5-b8ec-8accd9e6d940",
       "rating": 3.7,
-      "machine" : "1 NR-VE DOHC Dual VVT-i",
-      "seats" : "6 seat",
+      "machine": "1 NR-VE DOHC Dual VVT-i",
+      "seats": "6 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     },
@@ -43,14 +67,26 @@
       "price": 330000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Fagya.png?alt=media&token=a4c72893-697d-430c-9975-4ab49f895628",
       "rating": 4.0,
-      "machine" : "VVT-i / 3 Cylinder",
-      "seats" : "5 seat",
+      "machine": "VVT-i / 3 Cylinder",
+      "seats": "5 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     },
@@ -61,14 +97,26 @@
       "price": 365000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Fertiga.png?alt=media&token=df0c0a45-7ebe-4097-a452-5fccc059cae1",
       "rating": 4.4,
-      "machine" : "K15B, DOHC, 1.462CC",
-      "seats" : "7 seat",
+      "machine": "K15B, DOHC, 1.462CC",
+      "seats": "7 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     },
@@ -79,14 +127,26 @@
       "price": 380000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Finnova.png?alt=media&token=585be135-e579-4239-95cd-1db702a8649f",
       "rating": 4.2,
-      "machine" : "16 valve DOHC with Dual VVT-i",
-      "seats" : "5 seat",
+      "machine": "16 valve DOHC with Dual VVT-i",
+      "seats": "5 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     },
@@ -97,14 +157,26 @@
       "price": 450000,
       "image": "https://firebasestorage.googleapis.com/v0/b/kotlinexample-6dd62.appspot.com/o/tickets%2Frental%2Fbrio.jpg?alt=media&token=fae14f70-d8dd-4cd8-ae53-80de82b49923",
       "rating": 4.6,
-      "machine" : "1.2 LI-VTEC",
-      "seats" : "4 seat",
+      "machine": "1.2 LI-VTEC",
+      "seats": "4 seat",
       "review": [
         {
-          "comment": "",
-          "name": "",
-          "date": "",
-          "rating": 0
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Bagus",
+          "date": "10 Mar 2019",
+          "rating": 4.3
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Ahmad",
+          "date": "01 Jan 2019",
+          "rating": 2.5
+        },
+        {
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book.",
+          "name": "Sinta",
+          "date": "29 Dec 2018",
+          "rating": 3.3
         }
       ]
     }

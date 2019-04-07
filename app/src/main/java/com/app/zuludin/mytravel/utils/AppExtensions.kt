@@ -1,9 +1,8 @@
 package com.app.zuludin.mytravel.utils
 
-import android.support.annotation.IdRes
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import androidx.annotation.IdRes
+import androidx.appcompat.app.AppCompatActivity
 import java.text.NumberFormat
 import java.util.*
 
@@ -14,13 +13,13 @@ fun TextView.currencyText(price: Int?) {
     this.text = numberFormat.format(price)
 }
 
-fun AppCompatActivity.addFragment(fragment: Fragment, @IdRes frameId: Int) {
+fun AppCompatActivity.addFragment(fragment: androidx.fragment.app.Fragment, @IdRes frameId: Int) {
     supportFragmentManager.beginTransaction()
         .add(frameId, fragment)
         .commit()
 }
 
-fun AppCompatActivity.replaceFragment(fragment: Fragment, @IdRes frameId: Int) {
+fun AppCompatActivity.replaceFragment(fragment: androidx.fragment.app.Fragment, @IdRes frameId: Int) {
     supportFragmentManager.beginTransaction()
         .replace(frameId, fragment)
         .commit()

@@ -1,6 +1,6 @@
 package com.app.zuludin.mytravel.ui.tickets.detail.hotel
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import com.app.zuludin.mytravel.data.model.remote.Facility
 import com.squareup.picasso.Picasso

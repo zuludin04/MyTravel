@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,12 +7,12 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppbarOverlay">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/toolbar"
@@ -21,7 +21,7 @@
                 android:theme="@style/ToolbarStyle"
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
             android:layout_width="match_parent"
@@ -66,8 +66,8 @@
                 android:layout_height="wrap_content"
                 app:bt_colorActive="@color/blue"
                 app:bt_colorInactive="@color/inactiveColor"
-                app:bt_icon="@drawable/ic_book"
-                app:bt_title="Booking"/>
+                app:bt_icon="@drawable/ic_favorite"
+                app:bt_title="Favorite"/>
 
         <com.gauravk.bubblenavigation.BubbleToggleView
                 android:id="@+id/l_item_notification"
@@ -80,4 +80,4 @@
 
     </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
