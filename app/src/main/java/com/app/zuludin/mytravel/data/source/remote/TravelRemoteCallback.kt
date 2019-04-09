@@ -1,4 +1,4 @@
-package com.app.zuludin.mytravel.data.source
+package com.app.zuludin.mytravel.data.source.remote
 
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 

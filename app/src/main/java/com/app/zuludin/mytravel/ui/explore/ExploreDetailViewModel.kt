@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.data.TravelDataRepository
+import com.app.zuludin.mytravel.data.model.local.Favourite
 import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.utils.CoroutineContextProvider
 import kotlinx.coroutines.GlobalScope
@@ -33,4 +34,22 @@ class ExploreDetailViewModel(
             exploreDetailData.value = explore
         }
     }
+
+    fun favouritePlace() {
+        val data = exploreDetailData.value
+        val favourite = Favourite(
+            dataId = data?.dataId.toString(),
+            name = data?.name,
+            thumbnail = data?.thumbnail,
+            category = data?.category
+        )
+        repository.insertFavourite(favourite)
+    }
+
+    fun removeFavourite() {
+        val id = exploreDetailData.value?.dataId.toString()
+        repository.deleteFavourite(id)
+    }
+
+    fun isFavourite(id: String): Boolean = repository.isPlaceFavourite(id)
 }

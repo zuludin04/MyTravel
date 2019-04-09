@@ -6,24 +6,28 @@
             android:title="Basic">
 
         <Preference
-            android:summary="Manage your account"
-            android:title="Account"/>
+                android:summary="Manage your account"
+                android:title="Account"
+                android:icon="@drawable/ic_account_circle"/>
 
         <ListPreference
-            android:dialogTitle="Your Language"
-            android:key="languages"
-            android:summary="Application language"
-            android:title="Language"/>
+                android:dialogTitle="Your Language"
+                android:key="languages"
+                android:summary="Application language"
+                android:title="Language"
+                android:icon="@drawable/ic_language"/>
 
         <Preference
                 android:summary="Never miss an update from MyTravel"
-                android:title="Notification"/>
+                android:title="Notification"
+                android:icon="@drawable/ic_notifications"/>
 
         <SwitchPreference
-            android:key="switchNewsletter"
-            android:title="Newsletter"
-            android:summary="Always update on our latest promo"
-            android:defaultValue="false"/>
+                android:key="switchNewsletter"
+                android:title="Newsletter"
+                android:summary="Always update on our latest promo"
+                android:defaultValue="false"
+                android:icon="@drawable/ic_newsletter"/>
 
     </PreferenceCategory>
 
@@ -31,14 +35,17 @@
             android:title="About">
 
         <Preference
-            android:title="Help Center"
-            android:summary="Find the best answer"/>
+                android:title="Help Center"
+                android:summary="Find the best answer"
+                android:icon="@drawable/ic_help_center"/>
 
         <Preference
-            android:title="Terms and Condition"/>
+                android:title="Terms and Condition"
+                android:icon="@drawable/ic_terms"/>
 
         <Preference
-            android:title="Privacy Policy"/>
+                android:title="Privacy Policy"
+                android:icon="@drawable/ic_privacy"/>
 
     </PreferenceCategory>
 

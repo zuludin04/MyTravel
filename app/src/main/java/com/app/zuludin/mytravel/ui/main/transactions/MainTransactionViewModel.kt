@@ -5,14 +5,15 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.zuludin.mytravel.data.model.remote.Transaction
-import com.app.zuludin.mytravel.data.source.TravelRemoteCallback
-import com.app.zuludin.mytravel.data.source.TravelRemoteSource
+import com.app.zuludin.mytravel.data.source.remote.TravelRemoteCallback
+import com.app.zuludin.mytravel.data.source.remote.TravelRemoteSource
 
 class MainTransactionViewModel(application: Application) : AndroidViewModel(application) {
 
     private lateinit var transactionDataList: MutableLiveData<List<Transaction>>
 
-    private val repository: TravelRemoteSource = TravelRemoteSource()
+    private val repository: TravelRemoteSource =
+        TravelRemoteSource()
 
     fun getTransactions(): LiveData<List<Transaction>> {
         if (!::transactionDataList.isInitialized) {
