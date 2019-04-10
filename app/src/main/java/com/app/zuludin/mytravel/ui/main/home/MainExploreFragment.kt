@@ -42,7 +42,8 @@ class MainExploreFragment : Fragment() {
                 val intent = Intent(requireContext(), ExploreDetailActivity::class.java)
                 val pair: Pair<View, String> = Pair.create(image, getString(R.string.image_transition_name))
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(activity!!, pair)
-                intent.putExtra("explore", item)
+                intent.putExtra("title", item.name)
+                intent.putExtra("dataId", item.dataId)
                 startActivity(intent, options.toBundle())
             }
         }
@@ -54,6 +55,7 @@ class MainExploreFragment : Fragment() {
     }
 
     private lateinit var itemView: View
+    private lateinit var explores: java.util.ArrayList<ExploreList>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,6 +64,7 @@ class MainExploreFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.main_explore_fragment, container, false)
         itemView = view
+        explores = java.util.ArrayList()
         adapter.set(ArrayList())
         return view
     }
@@ -76,10 +79,15 @@ class MainExploreFragment : Fragment() {
         super.onStop()
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelableArrayList(EXPLORE_LIST, explores)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupBookingMenu(view)
-        setupRecyclerLayout(view)
+        setupRecyclerLayout(view, savedInstanceState)
     }
 
     private fun setupBookingMenu(view: View) {
@@ -89,7 +97,7 @@ class MainExploreFragment : Fragment() {
         view.book_train.setOnClickListener { searchBookingTicket("Train") }
     }
 
-    private fun setupRecyclerLayout(view: View) {
+    private fun setupRecyclerLayout(view: View, savedInstanceState: Bundle?) {
         view.recycler_explore.apply {
             layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
             setHasFixedSize(true)
@@ -97,15 +105,25 @@ class MainExploreFragment : Fragment() {
             adapter = this@MainExploreFragment.adapter
         }
 
-        viewModel.getExplores().observe(this, Observer {
-            if (it != null) {
-                adapter.insert(categoryList())
-                adapter.insert(it)
-                view.recycler_explore.adapter = adapter
-                view.shimmer_view_container.stopShimmerAnimation()
-                view.shimmer_view_container.visibility = View.GONE
-            }
-        })
+        if (savedInstanceState != null) {
+            adapter.insert(categoryList())
+            val data: java.util.ArrayList<ExploreList> = savedInstanceState.getParcelableArrayList(EXPLORE_LIST)!!
+            adapter.insert(data)
+            view.recycler_explore.adapter = adapter
+            view.shimmer_view_container.stopShimmerAnimation()
+            view.shimmer_view_container.visibility = View.GONE
+        } else {
+            viewModel.getExplores().observe(this, Observer {
+                if (it != null) {
+                    explores.addAll(it)
+                    adapter.insert(categoryList())
+                    adapter.insert(it)
+                    view.recycler_explore.adapter = adapter
+                    view.shimmer_view_container.stopShimmerAnimation()
+                    view.shimmer_view_container.visibility = View.GONE
+                }
+            })
+        }
     }
 
     private fun searchBookingTicket(search: String) {
@@ -113,5 +131,9 @@ class MainExploreFragment : Fragment() {
         intent.putExtra(SearchTravelActivity.TRAVEL_SEARCH, search)
         startActivity(intent)
         activity?.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
+    }
+
+    companion object {
+        private const val EXPLORE_LIST = "explore"
     }
 }

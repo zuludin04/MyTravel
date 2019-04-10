@@ -1,19 +1,18 @@
 package com.app.zuludin.mytravel.ui.main.transactions
 
 import android.app.Activity.RESULT_OK
-import androidx.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.transaction.TransactionDetailActivity
 import com.app.zuludin.mytravel.utils.SpacingItemDecoration
+import com.app.zuludin.mytravel.utils.begone
+import com.app.zuludin.mytravel.utils.visible
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.main_transactions_fragment.view.*
 
@@ -22,10 +21,6 @@ import kotlinx.android.synthetic.main.main_transactions_fragment.view.*
  *
  */
 class MainTransactionsFragment : Fragment() {
-
-    private val viewModel: MainTransactionViewModel by lazy {
-        ViewModelProviders.of(this).get(MainTransactionViewModel::class.java)
-    }
 
     private lateinit var adapter: TransactionAdapter
     private lateinit var itemView: View
@@ -76,7 +71,6 @@ class MainTransactionsFragment : Fragment() {
 
         query.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                Log.d("size", "${snapshot.childrenCount} ${snapshot.children.count()}")
                 if (snapshot.childrenCount.toInt() > 0) {
                     for (data in snapshot.children) {
                         val transaction = data.getValue(Transaction::class.java)
@@ -86,13 +80,14 @@ class MainTransactionsFragment : Fragment() {
                         }
 
                         adapter.refreshAdapterList(list)
-                        itemView.empty_layout.visibility = View.GONE
-                        itemView.progress_bar.visibility = View.GONE
+                        itemView.recycler_transactions.visible()
+                        itemView.empty_layout.begone()
+                        itemView.progress_bar.begone()
                     }
                 } else {
-                    itemView.progress_bar.visibility = View.GONE
-                    itemView.recycler_transactions.visibility = View.GONE
-                    itemView.empty_layout.visibility = View.VISIBLE
+                    itemView.progress_bar.begone()
+                    itemView.recycler_transactions.begone()
+                    itemView.empty_layout.visible()
                 }
             }
 

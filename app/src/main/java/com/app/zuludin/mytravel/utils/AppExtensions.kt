@@ -1,6 +1,7 @@
 package com.app.zuludin.mytravel.utils
 
 import android.content.Context
+import android.view.View
 import android.widget.TextView
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,14 @@ fun AppCompatActivity.toolbarTitle(title: String, subtitle: String? = null) {
         this.title = title
         this.subtitle = subtitle
     }
+}
+
+fun View.begone() {
+    visibility = View.GONE
+}
+
+fun View.visible() {
+    visibility = View.VISIBLE
 }
 
 val Context.travelDb: TravelDbHelper

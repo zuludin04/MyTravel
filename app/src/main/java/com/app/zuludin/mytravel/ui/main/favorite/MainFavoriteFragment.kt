@@ -30,7 +30,8 @@ class MainFavoriteFragment : Fragment() {
                     val intent = Intent(requireContext(), ExploreDetailActivity::class.java)
                     val pair: Pair<View, String> = Pair.create(image, getString(R.string.image_transition_name))
                     val options = ActivityOptionsCompat.makeSceneTransitionAnimation(activity!!, pair)
-                    intent.putExtra("explore", item)
+                    intent.putExtra("title", item.name)
+                    intent.putExtra("dataId", item.dataId?.toInt())
                     startActivity(intent, options.toBundle())
                 }
             }

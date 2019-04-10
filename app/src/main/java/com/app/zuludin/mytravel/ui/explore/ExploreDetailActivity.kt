@@ -1,5 +1,6 @@
 package com.app.zuludin.mytravel.ui.explore
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -13,7 +14,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.app.zuludin.mytravel.R
-import com.app.zuludin.mytravel.data.model.remote.TravelExplore
 import com.app.zuludin.mytravel.databinding.ExploreDetailActivityBinding
 import com.app.zuludin.mytravel.ui.common.ReviewAdapter
 import com.app.zuludin.mytravel.ui.explore.gallery.ExploreFullGalleryActivity
@@ -29,7 +29,6 @@ class ExploreDetailActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ExploreDetailActivityBinding
-    private lateinit var exploreId: String
     private var isAboutExpanded: Boolean = false
     private var menuItem: Menu? = null
     private var isFavourite = false
@@ -38,14 +37,12 @@ class ExploreDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.explore_detail_activity)
 
-        val explore: TravelExplore = intent.getParcelableExtra("explore")
+        val exploreId = intent.getIntExtra("dataId", 0)
+        isFavourite = viewModel.isFavourite(exploreId.toString())
 
-        exploreId = explore.dataId?.toString().toString()
-        isFavourite = viewModel.isFavourite(exploreId)
-
-        loadExploreData(explore)
+        loadExploreData(exploreId)
         windowsAnimation()
-        setupToolbar(explore)
+        setupToolbar()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -66,6 +63,7 @@ class ExploreDetailActivity : AppCompatActivity() {
             if (isFavourite) {
                 viewModel.removeFavourite()
                 showSnackbar("Favourite is Removed")
+                setResult(Activity.RESULT_OK)
             } else {
                 viewModel.favouritePlace()
                 showSnackbar("Favourite is Added")
@@ -92,19 +90,23 @@ class ExploreDetailActivity : AppCompatActivity() {
         Snackbar.make(toolbar, message, Snackbar.LENGTH_SHORT).show()
     }
 
-    private fun setupToolbar(explore: TravelExplore) {
+    private fun setupToolbar() {
+        val name = intent.getStringExtra("title")
         setSupportActionBar(toolbar)
         supportActionBar?.apply {
-            title = explore.name
+            title = name
             setDisplayHomeAsUpEnabled(true)
         }
     }
 
-    private fun loadExploreData(explore: TravelExplore) {
-        viewModel.getDetail(explore.dataId!!).observe(this, Observer { travel ->
+    private fun loadExploreData(dataId: Int) {
+        viewModel.getDetail(dataId).observe(this, Observer { travel ->
             travel?.let {
                 Picasso.get().load(it.thumbnail).into(binding.detailExploreImage)
                 binding.explore = it
+                it.review?.let { review ->
+                    review_pager.adapter = ReviewAdapter(review)
+                }
             }
         })
 
@@ -120,7 +122,6 @@ class ExploreDetailActivity : AppCompatActivity() {
             }
         }
 
-        explore.review?.let { review_pager.adapter = ReviewAdapter(it) }
         gallery_image.setOnClickListener {
             startActivity(
                 Intent(
