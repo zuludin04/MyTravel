@@ -113,11 +113,11 @@ class ExploreDetailActivity : AppCompatActivity() {
         expand_about.setOnClickListener {
             if (!isAboutExpanded) {
                 binding.detailExploreAbout.maxLines = 10
-                expand_about.text = "Less"
+                expand_about.text = getString(R.string.less)
                 isAboutExpanded = true
             } else {
                 binding.detailExploreAbout.maxLines = 3
-                expand_about.text = "More"
+                expand_about.text = getString(R.string.more)
                 isAboutExpanded = false
             }
         }

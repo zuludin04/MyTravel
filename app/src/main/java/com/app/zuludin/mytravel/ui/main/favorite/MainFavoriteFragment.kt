@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.local.Favourite
 import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
+import com.app.zuludin.mytravel.utils.begone
+import com.app.zuludin.mytravel.utils.visible
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_favorite_fragment.view.*
 
@@ -66,12 +68,12 @@ class MainFavoriteFragment : Fragment() {
         viewModel.loadFavouritePlaces().observe(this, Observer {
             it?.let { favourites ->
                 if (favourites.isEmpty()) {
-                    view.recycler_favourite.visibility = View.GONE
+                    view.recycler_favourite.begone()
                 } else {
                     adapter.insert(favourites)
                     view.recycler_favourite.adapter = adapter
-                    view.empty_icon.visibility = View.GONE
-                    view.empty_message.visibility = View.GONE
+                    view.empty_icon.begone()
+                    view.empty_message.visible()
                 }
             }
         })

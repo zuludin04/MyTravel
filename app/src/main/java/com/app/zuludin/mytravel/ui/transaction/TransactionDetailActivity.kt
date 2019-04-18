@@ -2,11 +2,14 @@ package com.app.zuludin.mytravel.ui.transaction
 
 import android.app.Activity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
+import com.app.zuludin.mytravel.utils.begone
+import com.app.zuludin.mytravel.utils.visible
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -19,10 +22,9 @@ class TransactionDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.transaction_detail_activity)
 
-        setSupportActionBar(toolbar)
-        supportActionBar?.title = "Transaction"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        setupToolbar()
 
+//        loadTransactionData()
         val database = FirebaseDatabase.getInstance().reference
         val transactionRef = database.child("Transaction")
         var dataTransaction = Transaction()
@@ -45,17 +47,21 @@ class TransactionDetailActivity : AppCompatActivity() {
                     transaction_type.text = transaction.type
                     transaction_date.text = transaction.date
                     transaction_price.text = transaction.price
+                    virtual_code.text = virtualAccount(transaction.code!!)
 
                     if (transaction.status == "Finish") {
-                        price.visibility = View.GONE
-                        confirm_payment_button.visibility = View.GONE
+                        price.begone()
+                        confirm_payment_button.begone()
+                        virtual_account.text = virtualAccount(transaction.code!!)
                         cancel_payment_button.text = "Remove this Transaction"
-                        ticket_code.visibility = View.VISIBLE
+                        ticket_code.visible()
+                        code.begone()
                     }
                 }
             }
         })
 
+//        buttonListener()
         confirm_payment_button.setOnClickListener {
             progress_layout.visibility = View.VISIBLE
 
@@ -71,6 +77,7 @@ class TransactionDetailActivity : AppCompatActivity() {
                 adult = dataTransaction.adult,
                 child = dataTransaction.child,
                 infant = dataTransaction.infant,
+                code = dataTransaction.code,
                 status = "Finish"
             )
 
@@ -79,12 +86,13 @@ class TransactionDetailActivity : AppCompatActivity() {
             update["/Transaction/$key"] = postTransaction
 
             database.updateChildren(update).addOnSuccessListener {
-                progress_layout.visibility = View.GONE
+                progress_layout.begone()
 
-                price.visibility = View.GONE
-                confirm_payment_button.visibility = View.GONE
+                price.begone()
+                confirm_payment_button.begone()
+                code.begone()
                 cancel_payment_button.text = "Remove this Transaction"
-                ticket_code.visibility = View.VISIBLE
+                ticket_code.visible()
 
                 setResult(Activity.RESULT_OK)
             }
@@ -106,5 +114,33 @@ class TransactionDetailActivity : AppCompatActivity() {
             val dialog = builder.create()
             dialog.show()
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right)
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Transaction"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    private fun loadTransactionData() {
+
+    }
+
+    private fun virtualAccount(code: String): String {
+        val builder = StringBuilder(code)
+        builder.insert(4, " ")
+        return builder.toString()
     }
 }

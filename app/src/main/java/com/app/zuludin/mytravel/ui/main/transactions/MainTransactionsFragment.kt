@@ -41,6 +41,7 @@ class MainTransactionsFragment : Fragment() {
             val intent = Intent(requireContext(), TransactionDetailActivity::class.java)
             intent.putExtra("DATA_KEY", it.id)
             startActivityForResult(intent, UPDATE_DELETE_TRANSACTION)
+            activity?.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left)
         }
         setupTransactionList()
     }

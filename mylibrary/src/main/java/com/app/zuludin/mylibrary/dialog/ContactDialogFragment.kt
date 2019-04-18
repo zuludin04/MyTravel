@@ -17,7 +17,7 @@ class ContactDialogFragment : BaseDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.input_button.setOnClickListener {
-            if (TextUtils.isEmpty(view.input_name.text) || TextUtils.isEmpty(view.input_email.text) || TextUtils.isEmpty(
+           /* if (TextUtils.isEmpty(view.input_name.text) || TextUtils.isEmpty(view.input_email.text) || TextUtils.isEmpty(
                     view.input_phone.text
                 )
             ) {
@@ -25,7 +25,7 @@ class ContactDialogFragment : BaseDialogFragment() {
             } else {
                 listener.onContact(view.input_name.text.toString())
                 dismiss()
-            }
+            }*/
         }
     }
 

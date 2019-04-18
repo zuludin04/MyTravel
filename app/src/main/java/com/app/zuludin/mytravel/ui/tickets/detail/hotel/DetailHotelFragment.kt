@@ -45,15 +45,16 @@ class DetailHotelFragment : Fragment() {
         view.detail_hotel_name.text = hotel.name
         view.detail_hotel_rating.rating = hotel.rating?.toFloat()!!
         view.detail_hotel_city.text = hotel.city
-        view.detail_guest_information.text = "${hotel.duration} Night - ${hotel.guest}"
+        view.detail_guest_information.text =
+            getString(R.string.hotel_information, hotel.duration.toString(), hotel.guest)
         hotel.review?.let { view.review_pager.adapter = ReviewAdapter(it) }
 
         view.room_price_started.currencyText(hotel.startFrom)
 
         view.recycler_facilities.apply {
-            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+            layoutManager = LinearLayoutManager(
                 requireContext(),
-                androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
+                LinearLayoutManager.HORIZONTAL,
                 false
             )
             setHasFixedSize(true)

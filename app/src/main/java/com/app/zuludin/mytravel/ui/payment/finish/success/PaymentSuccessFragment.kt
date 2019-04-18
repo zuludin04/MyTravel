@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.main.MainActivity
+import com.app.zuludin.mytravel.utils.begone
+import com.app.zuludin.mytravel.utils.visible
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.payment_success_fragment.view.*
 import kotlinx.coroutines.Dispatchers
@@ -43,9 +45,9 @@ class PaymentSuccessFragment : Fragment() {
         transRef.push().setValue(transaction)
             .addOnSuccessListener {
                 GlobalScope.launch(Dispatchers.Main) {
-                    view.progress_bar.visibility = View.GONE
-                    view.check_image.visibility = View.VISIBLE
-                    view.payment_process.text = "Transaction Success"
+                    view.progress_bar.begone()
+                    view.check_image.visible()
+                    view.payment_process.text = getString(R.string.transaction_success)
 
                     delay(2500)
 

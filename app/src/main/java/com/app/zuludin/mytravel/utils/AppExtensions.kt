@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
+import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.source.local.TravelDbHelper
 import java.text.NumberFormat
 import java.util.*
@@ -41,6 +42,15 @@ fun View.begone() {
 
 fun View.visible() {
     visibility = View.VISIBLE
+}
+
+@Suppress("DEPRECATION")
+fun TextView.isAvailableColorText(available: Boolean) {
+    if (available) {
+        setTextColor(this.context.resources.getColor(R.color.available))
+    } else {
+        setTextColor(this.context.resources.getColor(R.color.unavailable))
+    }
 }
 
 val Context.travelDb: TravelDbHelper

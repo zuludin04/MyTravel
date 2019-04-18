@@ -1,14 +1,14 @@
 package com.app.zuludin.mytravel.ui.payment.finish.confirm
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.appcompat.app.AlertDialog
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.payment.finish.PaymentInstructionAdapter
@@ -44,15 +44,16 @@ class PaymentConfirmFragment : Fragment() {
         view.transaction_date.text = transaction.date
         view.transaction_price.text = transaction.price
         view.payment_method.text = transaction.method
+        view.payment_virtual_account.text = virtualAccount(transaction.code!!)
 
         val adapter = PaymentInstructionAdapter()
 
         view.recycler_instructions.apply {
-            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext())
             addItemDecoration(
-                androidx.recyclerview.widget.DividerItemDecoration(
+                DividerItemDecoration(
                     requireContext(),
-                    androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+                    DividerItemDecoration.VERTICAL
                 )
             )
             this.adapter = adapter
@@ -71,6 +72,12 @@ class PaymentConfirmFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) confirmCancel()
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun virtualAccount(code: String): String {
+        val builder = StringBuilder(code)
+        builder.insert(4, " ")
+        return builder.toString()
     }
 
     private fun confirmCancel() {

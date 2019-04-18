@@ -19,6 +19,7 @@ data class Transaction(
     var adult: Int? = null,
     var child: Int? = null,
     var infant: Int? = null,
+    var code: String? = null,
     val status: String? = "Process"
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
@@ -34,6 +35,7 @@ data class Transaction(
         parcel.readValue(Int::class.java.classLoader) as? Int,
         parcel.readValue(Int::class.java.classLoader) as? Int,
         parcel.readValue(Int::class.java.classLoader) as? Int,
+        parcel.readString(),
         parcel.readString()
     )
 
@@ -51,6 +53,7 @@ data class Transaction(
         parcel.writeValue(adult)
         parcel.writeValue(child)
         parcel.writeValue(infant)
+        parcel.writeString(code)
         parcel.writeString(status)
     }
 
@@ -73,6 +76,7 @@ data class Transaction(
             "adult" to adult,
             "child" to child,
             "infant" to infant,
+            "code" to code,
             "status" to status
         )
     }

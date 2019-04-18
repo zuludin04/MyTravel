@@ -18,6 +18,7 @@ import com.app.zuludin.mytravel.ui.explore.ExploreDetailActivity
 import com.app.zuludin.mytravel.ui.tickets.search.SearchTravelActivity
 import com.app.zuludin.mytravel.utils.DataProvider.categoryList
 import com.app.zuludin.mytravel.utils.ViewModelFactory
+import com.app.zuludin.mytravel.utils.begone
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.main_explore_fragment.view.*
 
@@ -111,7 +112,7 @@ class MainExploreFragment : Fragment() {
             adapter.insert(data)
             view.recycler_explore.adapter = adapter
             view.shimmer_view_container.stopShimmerAnimation()
-            view.shimmer_view_container.visibility = View.GONE
+            view.shimmer_view_container.begone()
         } else {
             viewModel.getExplores().observe(this, Observer {
                 if (it != null) {
@@ -120,7 +121,7 @@ class MainExploreFragment : Fragment() {
                     adapter.insert(it)
                     view.recycler_explore.adapter = adapter
                     view.shimmer_view_container.stopShimmerAnimation()
-                    view.shimmer_view_container.visibility = View.GONE
+                    view.shimmer_view_container.begone()
                 }
             })
         }

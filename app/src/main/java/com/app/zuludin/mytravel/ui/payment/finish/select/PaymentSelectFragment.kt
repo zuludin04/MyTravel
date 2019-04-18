@@ -1,9 +1,6 @@
 package com.app.zuludin.mytravel.ui.payment.finish.select
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -11,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.ui.payment.finish.PaymentInstructionAdapter
@@ -18,11 +18,14 @@ import com.app.zuludin.mytravel.ui.payment.finish.confirm.PaymentConfirmFragment
 import com.app.zuludin.mytravel.utils.DataProvider.getAtmTransferInstructions
 import com.app.zuludin.mytravel.utils.DataProvider.getMerchantPaymentTransactions
 import com.app.zuludin.mytravel.utils.DataProvider.getMobileBankingTransactions
+import com.app.zuludin.mytravel.utils.begone
+import com.app.zuludin.mytravel.utils.visible
 import kotlinx.android.synthetic.main.payment_select_fragment.view.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -48,11 +51,11 @@ class PaymentSelectFragment : Fragment() {
         instructionAdapter = PaymentInstructionAdapter()
 
         view.recycler_instructions.apply {
-            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext())
             addItemDecoration(
-                androidx.recyclerview.widget.DividerItemDecoration(
+                DividerItemDecoration(
                     requireContext(),
-                    androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+                    DividerItemDecoration.VERTICAL
                 )
             )
             this.adapter = instructionAdapter
@@ -68,17 +71,18 @@ class PaymentSelectFragment : Fragment() {
         if (type == "ATM" || type == "Bank Transfer" || type == "M-Banking") {
             setupSpinnerInstructionList(view, adapter)
         } else {
-            view.pick_payment_method.visibility = View.GONE
-            view.merchant.visibility = View.VISIBLE
-            view.payment_method_unselected.visibility = View.GONE
+            view.pick_payment_method.begone()
+            view.merchant.visible()
+            view.payment_method_unselected.begone()
             view.payment_merchant.text = type
             instructionAdapter.refreshList(getMerchantPaymentTransactions())
         }
 
         view.proceed_button.setOnClickListener {
-            view.progress_layout.visibility = View.VISIBLE
+            view.progress_layout.visible()
             val transaction: Transaction = arguments?.getParcelable(TRANSACTION)!!
             transaction.method = paymentName(view)
+            transaction.code = codeGenerator()
 
             GlobalScope.launch(Dispatchers.Main) {
                 delay(2000)
@@ -100,6 +104,27 @@ class PaymentSelectFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
+    private fun codeGenerator(): String {
+        val list: ArrayList<Int> = ArrayList()
+
+        for (i in 0 until 8) {
+            list.add(randomInt())
+        }
+
+        val builder = StringBuilder()
+
+        for (i in list.indices) {
+            builder.append(list[i])
+        }
+
+        return builder.toString()
+    }
+
+    private fun randomInt(): Int {
+        val random = Random()
+        return random.nextInt(9 - 1 + 1) + 1
+    }
+
     private fun paymentName(view: View): String {
         return if (type == "ATM" || type == "Bank Transfer" || type == "M-Banking") {
             "$type ${view.pick_payment_method.selectedItem}"
@@ -116,13 +141,13 @@ class PaymentSelectFragment : Fragment() {
 
             override fun onItemSelected(parent: AdapterView<*>?, v: View?, position: Int, id: Long) {
                 if (position >= 0) {
-                    view.payment_method_unselected.visibility = View.GONE
-                    view.recycler_instructions.visibility = View.VISIBLE
+                    view.payment_method_unselected.begone()
+                    view.recycler_instructions.visible()
                     val bank = spinnerItems(type)[position]
                     instructionAdapter.refreshList(instructionList(bank))
                 } else {
-                    view.payment_method_unselected.visibility = View.VISIBLE
-                    view.recycler_instructions.visibility = View.GONE
+                    view.payment_method_unselected.visible()
+                    view.recycler_instructions.begone()
                 }
             }
         }

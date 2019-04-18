@@ -24,7 +24,7 @@ class FloatingLabelDropdown(context: Context, attrs: AttributeSet?) : LinearLayo
     private lateinit var mDropdownIcon: ImageView
     private lateinit var mContainer: RelativeLayout
     private lateinit var mRoot: ViewGroup
-    private lateinit var mDropdownList: androidx.recyclerview.widget.RecyclerView
+    private lateinit var mDropdownList: RecyclerView
     private lateinit var mLabel: String
 
     private lateinit var mItem: String

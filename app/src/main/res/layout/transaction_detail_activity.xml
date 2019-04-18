@@ -18,7 +18,7 @@
                 android:id="@+id/toolbar"
                 android:background="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways"
-                style="@style/ToolbarStyle"/>
+                android:theme="@style/ToolbarStyle"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:padding="16dp">
 
@@ -98,7 +98,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-                android:id="@+id/price"
+                android:id="@+id/code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
@@ -109,7 +109,38 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Total Price"
+                    android:text="@string/virtual_account"
+                    android:textSize="14sp"
+                    android:id="@+id/va"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/virtual_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/va"
+                    tools:text="1234 56789"
+                    android:background="@drawable/rounded_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/code"
+                android:layout_marginTop="8dp"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price"
                     android:layout_toStartOf="@+id/transaction_price"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -139,7 +170,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Use this code to print ticket"/>
+                    android:text="@string/print_ticket"/>
 
             <ImageView
                     android:layout_width="200dp"
@@ -149,10 +180,11 @@
                     android:contentDescription="@null"/>
 
             <TextView
+                    android:id="@+id/virtual_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="345 459"
+                    tools:text="345 459"
                     android:textSize="16sp"
                     android:textColor="@color/primaryTextColor"
                     android:textStyle="bold"/>

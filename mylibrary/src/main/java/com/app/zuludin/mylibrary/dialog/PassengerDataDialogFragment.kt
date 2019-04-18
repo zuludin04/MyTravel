@@ -15,22 +15,22 @@ class PassengerDataDialogFragment : BaseDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.passenger_title.adapter = spinnerAdapter(R.array.title)
-        view.passenger_id.adapter = spinnerAdapter(R.array.id_type)
+//        view.passenger_title.adapter = spinnerAdapter(R.array.title)
+//        view.passenger_id.adapter = spinnerAdapter(R.array.id_type)
 
         val type = arguments?.getString("Type")
         val position = arguments?.getInt("Position")!!
 
         if (type != "Adult") {
             view.passenger_id.visibility = View.GONE
-            view.number.visibility = View.GONE
+//            view.number.visibility = View.GONE
         }
 
         view.input_button.setOnClickListener {
-            listener.onPassenger(
+          /*  listener.onPassenger(
                 "${view.passenger_title.selectedItem}. ${view.passenger_name.text.toString()} ($type)",
                 position
-            )
+            )*/
             dismiss()
         }
     }

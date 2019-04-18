@@ -1,12 +1,11 @@
 package com.app.zuludin.mytravel.ui.tickets.review
 
 import android.content.Intent
-import androidx.databinding.DataBindingUtil
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.MenuItem
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.zuludin.mylibrary.dialog.ContactDialogFragment
 import com.app.zuludin.mylibrary.dialog.PassengerDataDialogFragment
 import com.app.zuludin.mylibrary.dialog.listener.ContactInputListener
@@ -16,6 +15,7 @@ import com.app.zuludin.mytravel.data.model.local.Passenger
 import com.app.zuludin.mytravel.data.model.remote.Transaction
 import com.app.zuludin.mytravel.databinding.ReviewTicketActivityBinding
 import com.app.zuludin.mytravel.ui.payment.list.PaymentListActivity
+import com.app.zuludin.mytravel.utils.begone
 import com.tomasznajda.simplerecyclerview.adapter.AdvancedSrvAdapter
 import kotlinx.android.synthetic.main.review_ticket_activity.*
 
@@ -103,8 +103,8 @@ class ReviewTicketActivity : AppCompatActivity(), ContactInputListener, Passenge
         val passengers: MutableList<Passenger> = mutableListOf()
 
         if (transaction.adult == 0 && transaction.child == 0 && transaction.infant == 0) {
-            header_passenger.visibility = View.GONE
-            recycler_passenger.visibility = View.GONE
+            header_passenger.begone()
+            recycler_passenger.begone()
         } else {
             if (transaction.adult!! > 0) {
                 for (i in 1..transaction.adult!!) {

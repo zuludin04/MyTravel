@@ -8,4 +8,12 @@
         <attr name="dropdownMode" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="EditTextFloatingHint">
+        <attr name="android:hint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpinnerFloatingHint">
+        <attr name="spinnerHint" format="string"/>
+    </declare-styleable>
+
 </resources>

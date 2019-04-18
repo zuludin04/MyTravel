@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_gap">16dp</dimen>
+    <dimen name="small_gap">8dp</dimen>
+    <dimen name="foreground_radius">16dp</dimen>
+    <dimen name="menu_radius">8dp</dimen>
+    <dimen name="big_gap">32dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="decor_bottom">5dp</dimen>
+    <dimen name="title_left_offset">-20dp</dimen>
+    <dimen name="line_right_offset">20dp</dimen>
+    <dimen name="line_bottom_offset">20dp</dimen>
+    <dimen name="line_title_offset">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="cardHeight_initial">4dp</dimen>
+    <dimen name="cardHeight_final">55dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+
+    <dimen name="text_default">14sp</dimen>
+</resources>

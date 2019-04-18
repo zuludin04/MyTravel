@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.zuludin.mytravel.R
 import com.app.zuludin.mytravel.data.model.remote.Hotel
 import com.app.zuludin.mytravel.data.model.remote.HotelRoom
@@ -54,7 +55,7 @@ class RoomHotelFragment : Fragment(), RoomClickListener {
         adapter.set(ArrayList())
 
         view.recycler_room_hotel.apply {
-            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext())
             setHasFixedSize(true)
             addItemDecoration(SpacingItemDecoration(16))
             adapter = this@RoomHotelFragment.adapter
